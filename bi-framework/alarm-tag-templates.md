@@ -1,5 +1,5 @@
 ---
-uid: BIF-alarm-tag-templates
+uid: AlarmTagTemplates
 ---
 
 # Alarm tag templates
