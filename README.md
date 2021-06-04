@@ -1,6 +1,6 @@
-# <PROJECT_NAME_PLACEHOLDER>
+# PI Interface for ABB 800xA Documentation
 
-<!-- Describe purpose of doc project here -->
+User documentation for PI Interface for ABB 800xA Documentation
 
 ## License
 

@@ -1,8 +1,8 @@
 ---
-uid: uid
+uid: PIInterfaceForABB800XA
 ---
 
-# <DOC_PROJECT>
+# PI Interface for ABB 800xA
 
 Elit aliquip proident proident incididunt Lorem voluptate elit. Amet mollit velit elit fugiat culpa labore duis ex in et. Ut aute exercitation aute do id adipisicing aliquip nostrud cillum ipsum consectetur magna. Sint tempor labore sunt cupidatat nisi ullamco anim laboris ad excepteur culpa. Sit laborum pariatur laboris anim commodo ut qui consectetur nisi magna aliquip anim. Tempor duis irure cillum enim cupidatat est dolor nisi anim nulla culpa laboris irure minim.
 
