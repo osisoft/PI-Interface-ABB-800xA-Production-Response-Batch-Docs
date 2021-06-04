@@ -1,5 +1,0 @@
----
-uid: Placeholder
----
-
-# Placeholder
