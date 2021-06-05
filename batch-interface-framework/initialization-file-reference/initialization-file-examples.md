@@ -1,5 +1,5 @@
 ---
-uid: InitializationFileExamples
+uid: BIF_InitializationFileExamples
 ---
 
 # Initialization file examples

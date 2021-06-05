@@ -1,5 +1,5 @@
 ---
-uid: LinkTemplatesEFIM
+uid: BIF_LinkTemplatesEFIM
 ---
 
 # Link templates

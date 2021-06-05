@@ -1,5 +1,5 @@
 ---
-uid: SecurityOverview
+uid: BIF_SecurityOverview
 ---
 
 # Security overview 

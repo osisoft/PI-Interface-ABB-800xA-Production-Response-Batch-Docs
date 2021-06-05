@@ -1,5 +1,5 @@
 ---
-uid: RecipeTemplateExamples
+uid: BIF_RecipeTemplateExamples
 ---
 
 # Recipe template examples

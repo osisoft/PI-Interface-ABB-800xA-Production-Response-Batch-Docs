@@ -1,5 +1,5 @@
 ---
-uid: Introduction
+uid: BIF_Introduction
 ---
 
 # Introduction to batch interfaces

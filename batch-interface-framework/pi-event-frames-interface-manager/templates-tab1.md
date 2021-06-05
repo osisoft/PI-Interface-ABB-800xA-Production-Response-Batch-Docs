@@ -1,5 +1,5 @@
 ---
-uid: TemplatesTab1
+uid: BIF_TemplatesTab1
 ---
 
 # Templates tab

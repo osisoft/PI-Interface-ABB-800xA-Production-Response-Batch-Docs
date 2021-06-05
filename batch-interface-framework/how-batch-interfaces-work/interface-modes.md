@@ -1,5 +1,5 @@
 ---
-uid: InterfaceModes
+uid: BIF_InterfaceModes
 ---
 
 # Interface modes

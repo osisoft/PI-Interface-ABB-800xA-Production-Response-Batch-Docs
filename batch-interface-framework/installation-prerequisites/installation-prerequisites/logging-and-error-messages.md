@@ -1,5 +1,5 @@
 ---
-uid: LoggingAndErrorMessages
+uid: BIF_LoggingAndErrorMessages
 ---
 
 # Logging and error messages

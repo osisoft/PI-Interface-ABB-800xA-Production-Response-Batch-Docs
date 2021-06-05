@@ -1,5 +1,5 @@
 ---
-uid: FilterIncomingEvents
+uid: BIF_FilterIncomingEvents
 ---
 
 # Filter incoming events

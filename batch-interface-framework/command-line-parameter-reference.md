@@ -1,5 +1,5 @@
 ---
-uid: CommandLineParameterReference
+uid: BIF_CommandLineParameterReference
 ---
 
 # Command line parameter reference

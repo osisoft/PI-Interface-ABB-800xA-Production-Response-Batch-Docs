@@ -1,5 +1,5 @@
 ---
-uid: InitializationFileReference
+uid: BIF_InitializationFileReference
 ---
 
 # Initialization file reference
