@@ -1,5 +1,5 @@
 ---
-uid: FiltersTab
+uid: BIF_FiltersTab
 ---
 
 # Filters tab

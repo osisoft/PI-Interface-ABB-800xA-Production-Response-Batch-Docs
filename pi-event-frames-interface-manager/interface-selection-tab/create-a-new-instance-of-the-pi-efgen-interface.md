@@ -1,5 +1,5 @@
 ---
-uid: CreateANewInstanceOfThePIEFGenInterface
+uid: BIF_CreateANewInstanceOfThePIEFGenInterface
 ---
 
 # Create a new instance of the PI EFGen interface

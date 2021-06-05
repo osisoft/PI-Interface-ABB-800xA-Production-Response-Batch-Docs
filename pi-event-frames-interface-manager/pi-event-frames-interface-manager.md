@@ -1,5 +1,5 @@
 ---
-uid: PIEventFramesInterfaceManager
+uid: BIF_PIEventFramesInterfaceManager
 ---
 
 # PI Event Frames Interface Manager

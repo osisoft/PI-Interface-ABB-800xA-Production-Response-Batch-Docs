@@ -1,5 +1,5 @@
 ---
-uid: TimeSettingsTab
+uid: BIF_TimeSettingsTab
 ---
 
 # Time settings tab 

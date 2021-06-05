@@ -1,5 +1,5 @@
 ---
-uid: BatchSetupTab
+uid: BIF_BatchSetupTab
 ---
 
 # Batch Setup tab

@@ -1,5 +1,5 @@
 ---
-uid: InterfaceSelectionTab
+uid: BIF_InterfaceSelectionTab
 ---
 
 # Interface Selection tab

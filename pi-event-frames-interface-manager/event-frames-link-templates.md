@@ -1,5 +1,5 @@
 ---
-uid: EventFramesLinkTemplates
+uid: BIF_EventFramesLinkTemplates
 ---
 
 # Link Templates

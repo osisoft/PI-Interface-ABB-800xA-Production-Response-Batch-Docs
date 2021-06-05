@@ -1,5 +1,5 @@
 ---
-uid: EquipmentArbitrationEventsUnavailable
+uid: BIF_EquipmentArbitrationEventsUnavailable
 ---
 
 # Equipment arbitration events unavailable

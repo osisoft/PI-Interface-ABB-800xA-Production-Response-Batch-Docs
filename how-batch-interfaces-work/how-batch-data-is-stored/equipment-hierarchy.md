@@ -1,5 +1,5 @@
 ---
-uid: EquipmentHierarchy
+uid: BIF_EquipmentHierarchy
 ---
 
 # Equipment hierarchy

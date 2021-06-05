@@ -1,5 +1,5 @@
 ---
-uid: LinkTemplatesBatch
+uid: BIF_LinkTemplatesBatch
 ---
 
 # Link templates
