@@ -1,5 +1,5 @@
 ---
-uid: BIF-asset-attribute-template
+uid: BIF_BIF-asset-attribute-template
 ---
 
 # Asset attribute template

@@ -1,5 +1,5 @@
 ---
-uid: RecipeTemplatesBatch
+uid: BIF_RecipeTemplatesBatch
 ---
 
 # Recipe templates

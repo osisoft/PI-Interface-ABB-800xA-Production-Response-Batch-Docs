@@ -1,5 +1,5 @@
 ---
-uid: PropertyTemplatesEFIM
+uid: BIF_PropertyTemplatesEFIM
 ---
 
 # Property templates

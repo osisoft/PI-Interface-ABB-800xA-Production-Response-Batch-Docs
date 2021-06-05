@@ -1,5 +1,5 @@
 ---
-uid: OperationalSettingsTab
+uid: BIF_OperationalSettingsTab
 ---
 
 # Operational Settings tab

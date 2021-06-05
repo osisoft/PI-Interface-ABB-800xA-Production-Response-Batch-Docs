@@ -1,5 +1,5 @@
 ---
-uid: AssignPermissions
+uid: BIF_AssignPermissions
 ---
 
 # Assign permissions for user accounts and PI points

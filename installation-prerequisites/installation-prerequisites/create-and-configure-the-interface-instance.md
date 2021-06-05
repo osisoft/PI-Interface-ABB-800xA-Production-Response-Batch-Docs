@@ -1,5 +1,5 @@
 ---
-uid: CreateAndConfigureInterfaceInstance
+uid: BIF_CreateAndConfigureInterfaceInstance
 ---
 
 # Create and configure the interface instance**

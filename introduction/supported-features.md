@@ -1,5 +1,5 @@
 ---
-uid: SupportedFeatures
+uid: BIF_SupportedFeatures
 ---
 
 # Supported features

@@ -1,5 +1,5 @@
 ---
-uid: HowInterfacesProcessBatchEventData
+uid: BIF_HowInterfacesProcessBatchEventData
 ---
 
 # How interfaces process batch event data

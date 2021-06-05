@@ -1,5 +1,5 @@
 ---
-uid: TranslateForeignLanguageData
+uid: BIF_TranslateForeignLanguageData
 ---
 
 # Translate foreign language data

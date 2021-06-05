@@ -1,5 +1,5 @@
 ---
-uid: InstallationPrerequisites
+uid: BIF_InstallationPrerequisites
 ---
 
 # Prerequisites for installing PI Interface for EMBDVB
