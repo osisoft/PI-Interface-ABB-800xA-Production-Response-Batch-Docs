@@ -1,5 +1,5 @@
 ---
-uid: ServerInformationTab
+uid: BIF_ServerInformationTab
 ---
 
 # Server Information tab

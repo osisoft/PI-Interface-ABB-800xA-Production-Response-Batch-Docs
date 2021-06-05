@@ -1,5 +1,5 @@
 ---
-uid: ServiceConfigurationTab
+uid: BIF_ServiceConfigurationTab
 ---
 
 # Service Configuration tab

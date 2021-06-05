@@ -1,5 +1,5 @@
 ---
-uid: EventFileMonitorUtility
+uid: BIF_EventFileMonitorUtility
 ---
 
 # Event file monitor utility

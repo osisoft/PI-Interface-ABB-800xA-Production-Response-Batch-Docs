@@ -1,5 +1,5 @@
 ---
-uid: TemplatesForMappingDataSourceEvents
+uid: BIF_TemplatesForMappingDataSourceEvents
 ---
 
 # Templates for mapping data source events

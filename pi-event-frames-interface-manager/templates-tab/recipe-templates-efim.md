@@ -1,5 +1,5 @@
 ---
-uid: RecipeTemplatesEFIM
+uid: BIF_RecipeTemplatesEFIM
 ---
 
 # Recipe templates

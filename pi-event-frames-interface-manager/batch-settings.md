@@ -1,5 +1,5 @@
 ---
-uid: BatchSettings
+uid: BIF_BatchSettings
 ---
 
 # Batch settings

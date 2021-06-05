@@ -1,5 +1,5 @@
 ---
-uid: DefineAttributeTemplates
+uid: BIF_DefineAttributeTemplates
 ---
 
 # Define attribute templates

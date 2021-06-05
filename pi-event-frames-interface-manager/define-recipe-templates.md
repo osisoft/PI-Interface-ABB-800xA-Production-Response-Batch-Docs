@@ -1,5 +1,5 @@
 ---
-uid: DefineRecipeTemplates
+uid: BIF_DefineRecipeTemplates
 ---
 
 # Define Recipe templates

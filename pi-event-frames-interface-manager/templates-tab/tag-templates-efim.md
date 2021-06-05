@@ -1,5 +1,5 @@
 ---
-uid: TagTemplatesEFIM
+uid: BIF_TagTemplatesEFIM
 ---
 
 # Tag templates

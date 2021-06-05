@@ -1,5 +1,5 @@
 ---
-uid: ConfigureSecurityForPIDataArchive
+uid: BIF_ConfigureSecurityForPIDataArchive
 ---
 
 # Configure security for PI Data Archive

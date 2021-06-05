@@ -1,5 +1,5 @@
 ---
-uid: TagTemplateExamples
+uid: BIF_TagTemplateExamples
 ---
 # Tag template examples
 

@@ -1,5 +1,5 @@
 ---
-uid: MergeSettingsTab
+uid: BIF_MergeSettingsTab
 ---
 
 # Merge settings tab

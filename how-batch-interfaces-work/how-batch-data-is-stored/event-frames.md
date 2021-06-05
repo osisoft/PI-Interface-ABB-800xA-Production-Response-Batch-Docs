@@ -1,5 +1,5 @@
 ---
-uid: EventFrames
+uid: BIF_EventFrames
 ---
 
 # Event frames

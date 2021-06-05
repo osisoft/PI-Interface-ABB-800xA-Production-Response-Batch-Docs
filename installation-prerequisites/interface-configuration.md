@@ -1,5 +1,5 @@
 ---
-uid: InterfaceConfiguration
+uid: BIF_InterfaceConfiguration
 ---
 
 # Interface configuration

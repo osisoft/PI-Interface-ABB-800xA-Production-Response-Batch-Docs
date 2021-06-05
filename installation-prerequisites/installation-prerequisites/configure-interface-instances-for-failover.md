@@ -1,5 +1,5 @@
 ---
-uid: ConfigureInstancesForFailover
+uid: BIF_ConfigureInstancesForFailover
 ---
 
 # Configure interface instances for failover

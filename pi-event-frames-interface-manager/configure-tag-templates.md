@@ -1,5 +1,5 @@
 ---
-uid: ConfigureTagTemplates
+uid: BIF_ConfigureTagTemplates
 ---
 
 # Configure Tag templates
