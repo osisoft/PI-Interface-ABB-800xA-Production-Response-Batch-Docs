@@ -37,7 +37,9 @@ To configure batch interfaces to run as a service, the user who runs the PI Even
   * PIMODULES: read
   * PIPOINT: read
   * PIARCDATA: read (required for batch-to-event frames migration)
-  * PI Asset Framework permissions
+
+* PI Asset Framework permissions
+
   * Database: read 
   * Categories: read
   * Elements: read
