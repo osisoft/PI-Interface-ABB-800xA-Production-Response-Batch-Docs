@@ -13,10 +13,3 @@
 # docs/*  docs@example.com
 
 # https://github.blog/2017-07-06-introducing-code-owners/
-
-
-<<<<<<< HEAD
-test-change
-=======
-conflicts
->>>>>>> c24747af1917f8a8923ec66afbdf033ea2dd8dc6
