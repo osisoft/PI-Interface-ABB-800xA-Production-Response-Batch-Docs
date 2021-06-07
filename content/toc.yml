@@ -1,6 +1,7 @@
 - topicUid: Introduction
-  name: Introduction
   items:
   - topicUid: Overview
     name: Overview
   - topicUid: ReferenceManuals
+- topicUid: BIF_InstallationPrerequisites
+
