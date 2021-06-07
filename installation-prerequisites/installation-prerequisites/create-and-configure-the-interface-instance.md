@@ -10,7 +10,7 @@ A single batch interface instance can be configured to read from multiple data s
 
 **NOTE:**Each instance of an event frame generating interface, like PI EFGen, must run under a unique service account. For additional information, sign into the OSIsoft customer portal to read this Knowledge Base article on PI EFGen service accounts.
 
-To launch the PI Event Frames Interface Manager, click **Start** --> **All Programs** --> **PI System** --> **PI Event Frames Interface Manager**. For detailed information about the settings on each tab, see PI Event Frames Interface Manager.
+To launch the PI Event Frames Interface Manager, click **Start > All Programs > PI System > PI Event Frames Interface Manager**. For detailed information about the settings on each tab, see PI Event Frames Interface Manager.
 
 To create an instance of the interface, perform the following steps using PI Event Frames Interface Manager:
 

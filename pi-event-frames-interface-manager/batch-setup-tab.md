@@ -29,4 +29,3 @@ Select this option to use top level recipe start/end events for creating batch o
 ## Allow deferred units
     
 Select this option to enable the creation of unit batches for recipes in units that are allocated at the phase level rather than the unit batch level. 
-
