@@ -26,13 +26,23 @@ Directs the interface to release a unit on the first resource release event even
 
 ### Use batch recipe (/UBR)  
 
-* Emerson batch interfaces /UBR = false
+Default settings for batch interfaces:
 
-Batch /UBR C can be set in the INI file, on the command line or by using the PI Event Frames Interface Manager / batch Setup tab.
+* Emerson batch interfaces: `/UBR = false`
+* GE, Honeywell, ad Rockwell batch interfaces: `/UBR = true`
 
-If /UBR = true the interface will use SYSTEM MESSAGE to control the start and end of event frames. Example System Messages are BEGIN OF BATCH, END OF BATCH, UNIT PROCEDURE STARTED, and UNIT PROCEDURE ENDED.
+UBR works with following batch interfaces:
 
-If /UBR = false the interface will use STATE CHANGE to control the start and end of event frames. Example State Change messages are RUNNING, REMOVED, ABORTED, COMPLETE, STOPPED, and ABANDON. The interface will combine the state change with the recipe (Batch, UnitProcedure, Operation, Phase) to determine which recipe step has changed state.
+* Emerson DeltaV Batch, Emerson Syncade Batch, and Emerson DeltaV Syncade Batch
+* General Electric iBatch Batch
+* Honeywell TotalPlant Batch
+* Rockwell FactoryTalk Batch and Rockwell FactoryTalk OEM Batch 
+
+`/UBR` C can be set in the INI file, on the command line or by using the PI Event Frames Interface Manager / batch Setup tab.
+
+If `/UBR = true` the interface will use SYSTEM MESSAGE to control the start and end of event frames. Example System Messages are BEGIN OF BATCH, END OF BATCH, UNIT PROCEDURE STARTED, and UNIT PROCEDURE ENDED.
+
+If `/UBR = false` the interface will use STATE CHANGE to control the start and end of event frames. Example State Change messages are RUNNING, REMOVED, ABORTED, COMPLETE, STOPPED, and ABANDON. The interface will combine the state change with the recipe (`Batch`, `UnitProcedure`, `Operation`, `Phase`) to determine which recipe step has changed state.
 
 ### Use original batch event view (/UOBEV)
 

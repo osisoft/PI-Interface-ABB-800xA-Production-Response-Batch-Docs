@@ -33,4 +33,3 @@ Under **Enable Auto Checkin**, select from the following options:
 **Note:** If the same user account is running multiple batch interfaces, our recommendation is to set **Enable Auto Checkin** to None. The OSIsoft best practice is to have a separate service account for each batch interface.
 
 If you are not using Windows Integrated Security for authentication, check **User explicit login for PI Asset Framework** and enter the **Windows account** and **Password** for the Windows user account that you intend to use to connect to PI Asset Framework. 
-
