@@ -33,3 +33,35 @@
     - topicUid: BIF_FilterIncomingEvents
     - topicUid: BIF_TranslateForeignLanguageData
   - topicUid: BIF_InterfaceModes
+- topicUid: Interface
+  items:
+  - topicUid: DataSource
+  - topicUid: StartAndStopEvents
+  - topicUid: TemplatePlaceholders
+- topicUid: BIF_PIEventFramesInterfaceManager
+  items:
+  - topicUid: BIF_InterfaceSelectionTab
+  - topicUid: BIF_ServerInformationTab
+  - topicUid: BIF_SourceTab
+  - topicUid: BIF_TemplatesTab
+    items:
+    - topicUid: BIF_TagTemplatesBatch
+    - topicUid: BIF_PropertyTemplatesBatch
+    - topicUid: BIF_RecipeTemplatesBatch
+      items:
+      - topicUid: BIF_Triggers
+    - topicUid: BIF_LinkTemplatesBatch
+  - topicUid: BIF_FiltersTab
+  - topicUid: BIF_TimeSettingsTab
+  - topicUid: BIF_BatchSetupTab
+  - topicUid: BIF_MergeSettingsTab
+  - topicUid: BIF_OperationalSettingsTab
+  - topicUid: BIF_TestConfigurationTab
+  - topicUid: BIF_ServiceConfigurationTab
+- topicUid: BIF_CommandLineParameterReference
+- topicUid: BIF_InitializationFileReference
+  items: 
+  - topicUid: BIF_InitializationFileExamples
+- topicUid: BIF_DiagnosticTagReference
+#- topicUid: Glossary
+#- topicUid: TechnicalSupportAndOtherResources
