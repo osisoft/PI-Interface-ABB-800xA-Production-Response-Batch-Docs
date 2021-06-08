@@ -25,7 +25,7 @@ In recovery mode, the interface reads batch data from the data source for the sp
 
 For example, the following figure shows a data source that contains batch data for seven batches.
 
-![Interfacemodes](../images/Interfacemodes.png)
+![Interfacemodes](../images/interface-modes.png)
 
 If you recover data for the period from 12/15/2007 16:00:00 through 05/11/2008 2:00:05, the interface recovers contained batches (Batch 4 and 5) as well as border batches (Batch 1, Batch 3 and Batch 6). Batches outside the time frame (Batch 2 and 7) are not recovered.
 
