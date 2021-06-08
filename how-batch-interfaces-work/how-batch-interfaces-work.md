@@ -2,7 +2,7 @@
 uid: BIF_HowBatchInterfacesWork
 ---
 
-# How PI interfaces for batch and manufacturing execution systems work
+# PI interfaces for batch and manufacturing execution systems
 
 Batch interfaces scan a data source for events of interest, such as the start or end of a level, and the acquisition and release of equipment.
 

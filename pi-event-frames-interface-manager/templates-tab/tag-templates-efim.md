@@ -29,4 +29,3 @@ Unit Alias | Specifies an alias to be recorded under the Aliases node in the cor
 | Annotation | Specifies the annotation to be associated with the event. The result is stored in a PI tag as a string. |
 | Use the NamedValues collection for annotations | Store annotations in a PI tag as a name-value collection. The name is derived from the event sent by the data source. |
 | Remove annotations from tag values | Store values without annotations. |
-
