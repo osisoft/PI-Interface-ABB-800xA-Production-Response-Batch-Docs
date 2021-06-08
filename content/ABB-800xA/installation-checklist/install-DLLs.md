@@ -1,7 +1,7 @@
 ---
 uid: InstallDLLsforABB800xA
 ---
-# Install DLLs for ABB 800xA Production Response Batch
+# Install DLLs
 
 PI Interface for ABB 800xA Production Response Batch requires the installation of the the ABB Ability Manufacturing Operations Management (MOM) Process Intelligence SDK, which exposes the ABB 800xA Batch Production Response SDK DLLs that are required for the interface. After the DLLs are installed by the ABB Ability MOM Process Intelligence SDK, they must be copied to the batch interface executable directory.
 

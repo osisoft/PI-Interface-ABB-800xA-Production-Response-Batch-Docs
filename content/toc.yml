@@ -12,3 +12,13 @@
   - topicUid: BatchInterfaceConfigurations
   - topicUid: BIF_PIServerConnectivity
   - topicUid: BIF_LoggingAndErrorMessages
+- topicUid: BIF_HowBatchInterfacesWork
+  items:
+  - topicUid: BIF_HowInterfacesProcessBatchEventData
+    items:
+    - topicUid: BIF_EventFrames
+    - topicUid: BIF_EquipmentHierarchy
+  - topicUid: BIF_EquipmentArbitrationEventsUnavailable
+  - topicUid: BIF_TemplatesForMappingDataSourceEvents
+    items:
+    - topicUid: BIF_PlaceholdersAndAdvancedParsing
