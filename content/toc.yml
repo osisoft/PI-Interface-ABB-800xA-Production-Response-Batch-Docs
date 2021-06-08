@@ -29,7 +29,7 @@
     - topicUid: BIF_PropertyTemplatesBatch
     - topicUid: BIF_RecipeTemplatesBatch
       items:
-      - topicUid: BIF_RecipeTemplatesBatch
+      - topicUid: BIF_RecipeTemplateExamples
     - topicUid: BIF_FilterIncomingEvents
     - topicUid: BIF_TranslateForeignLanguageData
   - topicUid: BIF_InterfaceModes
