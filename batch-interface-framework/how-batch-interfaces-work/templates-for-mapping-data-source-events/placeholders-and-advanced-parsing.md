@@ -8,7 +8,7 @@ Placeholders enable you to incorporate data from incoming events into tag names 
 
 ![Placeholders and advanced parsing](../../images/placeholders-and-advanced-parsing.png)
 
-When you define templates using the PI Event Frame Interface Manager, you can choose from a list of supported placeholders. To use a placeholder in a field when editing a template, click the Add Placeholder… button and choose the desired placeholder.
+When you define templates using the PI Event Frame Interface Manager, you can choose from a list of supported placeholders. To use a placeholder in a field when editing a template, click the **Add Placeholder** button and choose the desired placeholder.
 
 You can define placeholders that read data from PI tags when triggered by batch events. To specify a tag-based placeholder, use the following syntax:
 
@@ -44,7 +44,8 @@ Following are wildcards, which you can use to define a mask for template setting
 
 For example, to match any event that starts with "Repo", use the * wildcard as follows: [EVENT, VALUE="Repo*"]. 
 
-The interface supports a set of parameters that provide fine control over how incoming data is parsed. These advanced parsing parameters can be used in all types of templates. To enable you to incorporate these parsing parameters into a placeholder expression, the Build a Placeholder dialog provides an Add Substring Parsing option.
+The interface supports a set of parameters that provide fine control over how incoming data is parsed. These advanced parsing parameters can be used in all types of templates. To enable you to incorporate these parsing parameters into a placeholder expression, the **Build a Placeholder** dialog provides an **Add Substring Parsing** option.
+
 If you specify parsing parameters for one or more placeholders and no matching data is found, the entry is set to blank. The following table lists the parameters for parsing incoming data. The names of parameters, placeholders, and value substrings are not case-sensitive.
 
 | Parameter | Description |

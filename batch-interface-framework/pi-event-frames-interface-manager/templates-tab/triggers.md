@@ -8,4 +8,4 @@ To specify the events that initiate updates to tags or properties, you define tr
 
 If you omit triggers, the target is updated by every event. If you specify multiple conditions in a single trigger, data is written only when all conditions are met (logical AND). If you define multiple triggers, data is written when any one of the conditions is met (logical OR).
 
-In the following example, the template is triggered when the PI System records the start of a batch: [Event,value="PIEVENT"] [Descript, value="BATCH"] [Pval, value="START"]
+In the following example, the template is triggered when the PI System records the start of a batch: `[Event,value="PIEVENT"] [Descript, value="BATCH"] [Pval, value="START"]`
