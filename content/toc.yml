@@ -25,3 +25,11 @@
     - topicUid: BIF_TagTemplatesBatch
       items:
       - topicUid: BIF_TagTemplateExamples
+    - topicUid: BIF_LinkTemplatesBatch
+    - topicUid: BIF_PropertyTemplatesBatch
+    - topicUid: BIF_RecipeTemplatesBatch
+      items:
+      - topicUid: BIF_RecipeTemplatesBatch
+    - topicUid: BIF_FilterIncomingEvents
+    - topicUid: BIF_TranslateForeignLanguageData
+  - topicUid: BIF_InterfaceModes
