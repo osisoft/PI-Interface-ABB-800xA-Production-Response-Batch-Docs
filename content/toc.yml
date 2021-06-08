@@ -3,5 +3,12 @@
   - topicUid: Overview
     name: Overview
   - topicUid: ReferenceManuals
-- topicUid: BIF_InstallationPrerequisites
-
+- name: Installation
+  items:
+  - topicUid: BIF_InstallationPrerequisites
+  - topicUid: InstallDLLsforABB800xA
+  - topicUid: BIF_SecurityOverview
+  - topicUid: BIF_CreateAndConfigureInterfaceInstance
+  - topicUid: BatchInterfaceConfigurations
+  - topicUid: BIF_PIServerConnectivity
+  - topicUid: BIF_LoggingAndErrorMessages
