@@ -19,7 +19,7 @@ attempts to recover any data written after it was shut down.
 
 ## Recovery mode
 
-To recover events that occurred during interface downtime, the interface scans the data source for a specified period. If you omit an end time or specify \"\*\" (current time), the interface recovers data and then starts collecting data in **RealTime** mode. If you specify an end time, the interface recovers data for the specified period and then exits. To ensure that history is recovered as completely as possibly, specify an end time of \"\*\" (current time).
+To recover events that occurred during interface downtime, the interface scans the data source for a specified period. If you omit an end time or specify `*` (current time), the interface recovers data and then starts collecting data in **RealTime** mode. If you specify an end time, the interface recovers data for the specified period and then exits. To ensure that history is recovered as completely as possibly, specify an end time of `*` (current time).
 
 In recovery mode, the interface reads batch data from the data source for the specified time period. This mode can be used to initialize the PI System with historical data from the data source. If batch data for the specified period already exists in the PI System and the interface detects discrepancies, it attempts to correct the PI System data, logging any errors.
 
@@ -31,9 +31,9 @@ If you recover data for the period from 12/15/2007 16:00:00 through 05/11/2008 2
 
 ## Preprocess mode
 
-If your data source contains data with timestamps that are earlier than the period covered by the primary archive, you can recover events by running the interface in *Preprocess** mode, which scans the data source and creates the required tags, modules and units in the PI System. After running the interface in **Preprocess** mode, you must reprocess older archives to create entries for the tags, modules and units, then run the interface in recovery mode. This process is also referred to as \"backfilling.\" (See the Backfill existing archives from new PI points for details on reprocessing archives.)
+If your data source contains data with timestamps that are earlier than the period covered by the primary archive, you can recover events by running the interface in *Preprocess** mode, which scans the data source and creates the required tags, modules and units in the PI System. After running the interface in **Preprocess** mode, you must reprocess older archives to create entries for the tags, modules and units, then run the interface in recovery mode. This process is also referred to as "backfilling". (See the [Backfill existing archives from new PI points](https://livelibrary.osisoft.com/LiveLibrary/content/en/server-v11/GUID-AC6FD05C-272B-416A-B58F-8D7E74955243?_ga=2.17113465.1160372036.1545157080-139070265.1539110441#addHistory=true&filename=GUID-703B22D1-0314-4920-801D-DF7BBDC129F7.xml&docid=GUID-3846AF0C-8A3A-413A-8403-F7652C96EA15&inner_id=&tid=&query=&scope=&resource=&toc=false&eventType=lcContent.loadDocGUID-3846AF0C-8A3A-413A-8403-F7652C96EA15) for details on reprocessing archives.)
 
-**NOTE:** For version 4 batch interfaces running with PI server version 390 or later, preprocessing is not required before recovering data.
+**Note:** For version 4 batch interfaces running with PI server version 390 or later, preprocessing is not required before recovering data.
 
 ## Statistics mode
 

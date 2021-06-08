@@ -78,7 +78,7 @@ This section details the procedure for configuring tag templates. The tables in 
     | **VALUE** | (Required) Value to be assigned to PI tag (text) |
     | **TRIGGER** | Event text from data source (can be specified using wildcards) |
     | **TYPE** | String/integer/float/auto. "Auto" directs the interface to automatically detect the data type. |
-    | **UNITALIAS** | Configure how unit alias (AF: PI point reference) is created. By default, the alias is created in the unit. To override the default, specify the path where you want the alias created. For example:<br><br>`UNITALIAS = \Building1\Unit2|[PHASE]`<br><br>The alias is created under the Unit2 module, named using the value of the [PHASE] column.<br><br>**NOTE:** All batch interfaces support unit- and phase-level equipment aliases. Some interface support creation of equipment aliases at all levels of the batch hierarchy. For details, refer to the interface-specific section of this guide. |
+    | **UNITALIAS** | Configure how unit alias (AF: PI point reference) is created. By default, the alias is created in the unit. To override the default, specify the path where you want the alias created. For example:<br><br>`UNITALIAS = \Building1\Unit2|[PHASE]`<br><br>The alias is created under the Unit2 module, named using the value of the [PHASE] column.<br><br>**Note:** All batch interfaces support unit- and phase-level equipment aliases. Some interface support creation of equipment aliases at all levels of the batch hierarchy. For details, refer to the interface-specific section of this guide. |
     | **PHASEALIAS** | Configure how the phase alias is created. By default, the alias is created in the phase module. To override the default, specify the path where you want the alias created. |
     | **DESCRIPTOR** | Value for PI point descriptor attribute. |
     | **ENGUNITS** | Engineering units |
@@ -91,15 +91,9 @@ This section details the procedure for configuring tag templates. The tables in 
     | Placeholder | Values | Description |
     |--|--|--|
     | **EVENT** | **PIEVENT** | Specify [EVENT, value="PIEVENT"] |
-    | **DESCRIPT** | **BATCH** | Specify the batch level you want to trigger on. For example:<br><br>[DESCRIPT, value="UNITBATCH"]<br>[DESCRIPT, value="PHASE"] |
-    |  | **UNITBATCH** |  |
-    |  | **OPERATION** |  |
-    |  | **PHASE** |  |
-    |  | **PHASESTATE** |  |
-    |  | **PHASESTEP** |  |
-    | **PVAL** | **START** | Specifies whether to catch the start or ending event of the specified level:<br><br>[PVAL, value="START"]<br>[PVAL, value="END"] |
-    |  | **END** |  |
-
+    | **DESCRIPT** | **BATCH**<br>**UNITBATCH**<br>**OPERATION**<br>**PHASE**<br>**PHASESTATE**<br>**PHASESTEP** | Specify the batch level you want to trigger on. For example:<br><br>[DESCRIPT, value="UNITBATCH"]<br>[DESCRIPT, value="PHASE"] |
+    | **PVAL** | **START**<br>**END** | Specifies whether to catch the start or ending event of the specified level:<br><br>[PVAL, value="START"]<br>[PVAL, value="END"] |
+    
     For example, to detect the start of a batch, specify the following expression:
 
     ```text
@@ -108,14 +102,14 @@ This section details the procedure for configuring tag templates. The tables in 
 
     The following placeholders are supported when the triggering expression contains [Parameter, value="PIEVENT"].
 
-    | Placeholder     | Batch Database                             | Event Frames                                                                                    |
-    |-----------------|--------------------------------------------|-------------------------------------------------------------------------------------------------|
-    | [BATCHID]       | PIBatch and PIUnitBatch: BatchID property. | For a top-level event frame, "Name" property. For second-level event frame, "BatchID" attribute |
-    | [PROCEDURE]     | PIBatch "Recipe" property                  | Event frame "Recipe" attribute                                                                  |
-    | [UNITPROCEDURE] | PIUnitBatch "Procedure" property           | Event frame "Name" property                                                                     |
-    | [OPERATION]     | PISubBatch "Name" property                 | Event frame "Name" property                                                                     |
-    | [PHASE]         | Level 4 PISubBatch "Name" property         | Event frame "Name" property                                                                     |
-    | [PHASESTATE]    | Level 5 PISubBatch "Name" property         | Event frame "Name" property                                                                     |
-    | [PHASESTEP]     | Level 6 PISubBatch "Name" property         | Event frame "Name" property                                                                     |
-    | [UNIT]          | PIUnit "Name" property                     | Event frame "Name" property                                                                     |
-    | [PHASEMODULE]   | Phase module "Name" property               | Event frame "Name" property                                                                     |
+    | Placeholder | Batch Database | Event Frames |
+    |--|--|--|
+    | [BATCHID] | PIBatch and PIUnitBatch: BatchID property. | For a top-level event frame, "Name" property. For second-level event frame, "BatchID" attribute |
+    | [PROCEDURE] | PIBatch "Recipe" property | Event frame "Recipe" attribute |
+    | [UNITPROCEDURE] | PIUnitBatch "Procedure" property | Event frame "Name" property |
+    | [OPERATION] | PISubBatch "Name" property | Event frame "Name" property |
+    | [PHASE] | Level 4 PISubBatch "Name" property | Event frame "Name" property |
+    | [PHASESTATE] | Level 5 PISubBatch "Name" property | Event frame "Name" property |
+    | [PHASESTEP] | Level 6 PISubBatch "Name" property | Event frame "Name" property |
+    | [UNIT] | PIUnit "Name" property | Event frame "Name" property |
+    | [PHASEMODULE] | Phase module "Name" property | Event frame "Name" property |

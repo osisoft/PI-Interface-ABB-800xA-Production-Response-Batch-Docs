@@ -19,10 +19,17 @@ To enable failover, perform the following steps before you start the interface i
 3. Using PI Event Frame Interface Manager, go to the **Operational Settings** tab and configure the failover settings.                                                    
 
     * **Failover tag**
-    The name of the tag that you created in the previous step.
+  
+        The name of the tag that you created in the previous step.
+    
     * **Failover identifier**
-    A unique ID for the interface instance.
+    
+        A unique ID for the interface instance.
+    
     * **Failover swap time**
-    The amount of time that the current primary interface must be unavailable before failover occurs.
+        
+        The amount of time that the current primary interface must be unavailable before failover occurs.
+
 4. Start the interface instances.
+
     When the primary interface instance is operational, it updates the failover tag with the timestamp of the last value written. The backup instance monitors this tag and, if the failover swap time elapses and the failover tag has not been updated, the backup instance takes over data collection and becomes the primary instance.
