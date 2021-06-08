@@ -23,3 +23,5 @@
     items:
     - topicUid: BIF_PlaceholdersAndAdvancedParsing
     - topicUid: BIF_TagTemplatesBatch
+      items:
+      - topicUid: BIF_TagTemplateExamples
