@@ -1,5 +1,5 @@
 ---
-uid: BIF_TagTemplatesBatch
+uid: BIF_TagTemplates
 ---
 
 # Tag templates
