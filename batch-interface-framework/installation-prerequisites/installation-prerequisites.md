@@ -2,6 +2,8 @@
 uid: BIF_InstallationPrerequisites
 ---
 
+<!-- Mark Bishop 6/8/21: Modified framework topic -->
+
 # Installation prerequisites
 
 Minimum required versions of PI Server software: PI Server 3.3 and PI AF 2010 R3 (2.4).
@@ -26,8 +28,14 @@ The interface installation directory contains all the files and folders required
 
 The interface can run on the same computer as the BES or on a dedicated node. To avoid affecting the performance of the PI Data Archive, do not install the interface on the same computer as the PI Data Archive. When installing the interface, reserve the C: drive for the operating system, and install the interface on another drive.
 
+<!-- 
+
+MB 6/8/21: This paragraph doesn't apply to ABB-800xA
+
 If the data source is Microsoft SQL Server, you must install the Microsoft SQL Native Client on the interface node. You can download the client from the MSDN web site. If the data source is an Oracle database, you must install the corresponding version of Oracle Provider for OLE DB.
+
+ -->
 
 To configure the interface, use the PI Event Frame Manager configuration tool.
     
-**Note:** To avoid potential interface configuration and startup issues, if you intend to run the interface as a Windows service and need to configure explicit login settings for your BES data sources, ensure that the account you configure for the service is the same account you use to run the configuration tool.
+**Note:** If you intend to run the interface as a Windows service and need to configure explicit login settings for your BES data sources, ensure that the account you configure for the service is the same account you use to run the configuration tool.
