@@ -85,7 +85,7 @@
   - topicUid: BIF_TemplatesTab
     items:
       # modified batch framework topic
-    - topicUid: BIF_TagTemplates
+    - topicUid: BIF_TagTemplatesBatch
       # modified batch framework topic
     - topicUid: BIF_PropertyTemplatesEFIM
       # modified batch framework topic
