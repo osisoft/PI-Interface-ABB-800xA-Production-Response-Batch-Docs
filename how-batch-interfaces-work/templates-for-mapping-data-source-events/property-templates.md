@@ -1,5 +1,5 @@
 ---
-uid: BIF_PropertyTemplatesBatch
+uid: BIF_PropertyTemplates
 ---
 
 # Property templates
