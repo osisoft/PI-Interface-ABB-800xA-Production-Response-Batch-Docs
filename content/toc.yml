@@ -109,6 +109,7 @@
   - topicUid: BIF_TestConfigurationTab
     # batch framework topic
   - topicUid: BIF_ServiceConfigurationTab
+  # modified batch framework topic
 - topicUid: BIF_CommandLineParameterReference
 - topicUid: BIF_InitializationFileReference
   items: 
