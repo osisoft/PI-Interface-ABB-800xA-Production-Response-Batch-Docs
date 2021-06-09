@@ -1,5 +1,5 @@
 ---
-uid: HowBatchDataIsStored
+uid: BIF_HowBatchDataIsStored
 ---
 
 # How batch data is stored

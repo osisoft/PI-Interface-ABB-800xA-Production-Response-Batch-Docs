@@ -1,5 +1,5 @@
 ---
-uid: DiagnosticTagReference
+uid: BIF_DiagnosticTagReference
 ---
 
 # Diagnostic/performance tag reference

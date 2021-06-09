@@ -1,16 +1,16 @@
 ---
-uid: CreateAndConfigureInterfaceInstance
+uid: BIF_CreateAndConfigureInterfaceInstance
 ---
 
-# Create and configure the interface instance**
+# Create and configure the interface instance
 
 For each instance you create, settings are stored in a separate Windows command (.bat) file and an initialization (.ini) file in the interface installation folder. The batch file launches the interface, specifying settings as command line parameters. The initialization file also contains settings, and it defines templates that determine how data from the data source is stored in the PI System. To configure settings for interfaces, use the PI Event Frames Interface Manager. Use this tool even if you are configuring the interface to store data in the PI Batch Database rather than event frames.
 
 A single batch interface instance can be configured to read from multiple data sources. This capability enables you to handle distributed batch processing scenarios, where multiple batch execution systems cooperate in the manufacturing of a single batch. If you configure multiple data sources, all data sources must be the same type, either event files or SQL databases.
 
-**NOTE:**Each instance of an event frame generating interface, like PI EFGen, must run under a unique service account. For additional information, sign into the OSIsoft customer portal to read this Knowledge Base article on PI EFGen service accounts.
+**Note:** Each instance of an event frame generating interface, like PI EFGen, must run under a unique service account. For additional information, sign into the OSIsoft customer portal to read this Knowledge Base article on PI EFGen service accounts.
 
-To launch the PI Event Frames Interface Manager, click **Start** --> **All Programs** --> **PI System** --> **PI Event Frames Interface Manager**. For detailed information about the settings on each tab, see PI Event Frames Interface Manager.
+To launch the PI Event Frames Interface Manager, click **Start > All Programs > PI System > PI Event Frames Interface Manager**. For detailed information about the settings on each tab, see [PI Event Frames Interface Manager](xref:BIF_PIEventFramesInterfaceManager).
 
 To create an instance of the interface, perform the following steps using PI Event Frames Interface Manager:
 
@@ -30,7 +30,7 @@ To create an instance of the interface, perform the following steps using PI Eve
     
 6. On the **Templates** tab, define templates for tags, properties and the batch recipe.
 
-    For details, see Templates for mapping data source events.
+    For details, see [Templates for mapping data source events](xref:BIF_TemplatesForMappingDataSourceEvents).
 
 7. On the **Filters** tab, specify any batch levels from the data source that you do not want the interface to process.
 

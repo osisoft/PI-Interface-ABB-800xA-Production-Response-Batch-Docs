@@ -1,5 +1,5 @@
 ---
-uid: TestConfigurationTab
+uid: BIF_TestConfigurationTab
 ---
 
 # Test configuration tab

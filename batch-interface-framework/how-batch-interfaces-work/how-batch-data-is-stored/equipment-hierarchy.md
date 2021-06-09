@@ -1,12 +1,12 @@
 ---
-uid: EquipmentHierarchy
+uid: BIF_EquipmentHierarchy
 ---
 
 # Equipment hierarchy
 
 When recording batch data from the data source in the PI Batch Database, the interface creates PI modules or PI AF elements representing equipment, according to the data from the data source. The following equipment hierarchy is created:
 
-![Equipmenthierarchy](../../images/Equipmenthierarchy.png)
+![Equipmenthierarchy](../../images/equipment-hierarchy.png)
 
 By default, the hierarchy is located at the root level of the PI Module Database or the PI AF element hierarchy. To specify a different root, use PI Event Frame Interface Manager to configure the start module path.
 

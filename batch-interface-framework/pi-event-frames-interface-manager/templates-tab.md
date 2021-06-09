@@ -1,6 +1,8 @@
 ---
-uid: TemplatesTab
+uid: BIF_TemplatesTab
 ---
+
+<!-- Mark Bishop 6/8/21: Modified batch framework topic. -->
 
 # Templates tab
 
@@ -8,11 +10,14 @@ Templates map data from the data source to PI tags, batches and event frames. Wh
 
 You can define the following types of templates:
 
-* **Alarm tag:** Writes data to a PI tag when the data source raises an alarm.
+* **Tag:** Creates and updates PI tags, specifying how they are named and what data is written to them.
 * **Property:** Maps data to batch properties in the PI Batch Database or event frame attributes in PI AF.
 * **Recipe:** Defines the information stored and the naming convention used at each level in the generated batch hierarchy.
-* **Tag:** Creates and updates PI tags, specifying how they are named and what data is written to them.
-* **Link:** <define>.
 
+<!-- Mark Bishop 6/8/21: Alarm tag does not apply to ABB 800xA. 
+
+* **Alarm tag:** Writes data to a PI tag when the data source raises an alarm.
+
+-->
 
 The following sections provide details about the specific types of templates.

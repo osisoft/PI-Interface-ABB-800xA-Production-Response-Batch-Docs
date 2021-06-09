@@ -29,7 +29,10 @@
       ],
       "resource": [
         {
-          "files": ["content/images/**"]
+          "files": [
+            "content/images/**",
+            "batch-interface-framework/images/**"
+          ]
         }
       ],
       "overwrite": [
