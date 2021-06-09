@@ -1,5 +1,5 @@
 ---
-uid: BIF_TagTemplatesBatch
+uid: BIF_TagTemplates
 ---
 
 <!-- Mark Bishop 6/8/21: Modified batch framework topic. -->

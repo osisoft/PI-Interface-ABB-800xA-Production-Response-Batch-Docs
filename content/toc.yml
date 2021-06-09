@@ -1,119 +1,134 @@
-  # ABB-800xA content
 - topicUid: Introduction
+  # ABB-800xA content
   items:
-    # ABB-800xA content
   - topicUid: Overview
     # ABB-800xA content
+  - topicUid: BIF_SupportedFeatures
+    # batch framework topic
   - topicUid: ReferenceManuals
+    # ABB-800xA content
 - name: Installation
   items:
-    # modified batch framework topic
   - topicUid: BIF_InstallationPrerequisites
+    # modified batch framework topic
+  - topicUid: BatchInterfaceConfigurations
     # ABB-800xA content
-  - topicUid: InstallDLLsforABB800xA
-    # batch framework topic
   - topicUid: BIF_SecurityOverview
     # batch framework topic
+    items: 
+    - topicUid: BIF_AssignPermissions
+      # batch framework topic
+    - topicUid: BIF_ConfigureSecurityForPIAF
+      # batch framework topic
+    - topicUid: BIF_ConfigureSecurityForPIDataArchive
+      # batch framework topic
   - topicUid: BIF_CreateAndConfigureInterfaceInstance
-    # ABB-800xA content
-  - topicUid: BatchInterfaceConfigurations
     # batch framework topic
+  - topicUid: BIF_ConfigureInstancesForFailover
+    # batch framework topic  NOTE: might require customization
   - topicUid: BIF_PIServerConnectivity
     # batch framework topic
   - topicUid: BIF_LoggingAndErrorMessages
-    #
-    # SECURITY SECTION FROM DELTAV IS NOT INCLUDED IN CMS PUBLICATION. ASK RICK IF THIS IS A MISTAKE.
-    #
-  # batch framework topic
-- topicUid: BIF_HowBatchInterfacesWork
-  items:
     # batch framework topic
+- topicUid: BIF_HowBatchInterfacesWork
+  # batch framework topic
+  items:
   - topicUid: BIF_HowInterfacesProcessBatchEventData
+    # batch framework topic
+  - topicUid: BIF_HowBatchDataIsStored
+    # batch framework topic
     items:
+    - topicUid: BIF_ThePIBatchDatabase
       # batch framework topic
     - topicUid: BIF_EventFrames
       # batch framework topic
     - topicUid: BIF_EquipmentHierarchy
-    # batch framework topic
-  - topicUid: BIF_HowBatchDataIsStored
-    # batch framework topic
+      # batch framework topic
   - topicUid: BIF_EquipmentArbitrationEventsUnavailable
     # batch framework topic
   - topicUid: BIF_TemplatesForMappingDataSourceEvents
+    # batch framework topic
     items:
-      # batch framework topic
     - topicUid: BIF_PlaceholdersAndAdvancedParsing
       # batch framework topic
-    - topicUid: BIF_TagTemplatesBatch
+    - topicUid: BIF_TagTemplates
+      # batch framework topic
       items:
-        # batch framework topic
       - topicUid: BIF_TagTemplateExamples
-      # batch framework topic
-    - topicUid: BIF_LinkTemplatesBatch
-      # batch framework topic
-    - topicUid: BIF_PropertyTemplatesBatch
-      # batch framework topic
-    - topicUid: BIF_RecipeTemplatesBatch
-      items:
         # batch framework topic
-      - topicUid: BIF_RecipeTemplateExamples
+    - topicUid: BIF_PropertyTemplates
       # batch framework topic
+    - topicUid: BIF_RecipeTemplates
+      # batch framework topic
+      items:
+      - topicUid: BIF_RecipeTemplateExamples
+        # batch framework topic
     - topicUid: BIF_FilterIncomingEvents
       # batch framework topic
     - topicUid: BIF_TranslateForeignLanguageData
-    # batch framework topic
+      # batch framework topic
   - topicUid: BIF_InterfaceModes
-  # ABB-800xA content
+    # batch framework topic
 - topicUid: Interface
+  # ABB-800xA content
   items:
-    # ABB-800xA content
   - topicUid: DataSource
     # ABB-800xA content
   - topicUid: StartAndStopEvents
     # ABB-800xA content
   - topicUid: TemplatePlaceholders
-  # batch framework topic
+    # ABB-800xA content
 - topicUid: BIF_PIEventFramesInterfaceManager
+  # batch framework topic
   items:
-    # batch framework topic
   - topicUid: BIF_InterfaceSelectionTab
     # batch framework topic
   - topicUid: BIF_ServerInformationTab
-    # modified batch framework topic
+    # batch framework topic
   - topicUid: BIF_SourceTab
     # modified batch framework topic
   - topicUid: BIF_TemplatesTab
+    # modified batch framework topic
     items:
-      # modified batch framework topic
-    - topicUid: BIF_TagTemplatesBatch
-      # modified batch framework topic
+    - topicUid: BIF_TagTemplatesEFIM
+      # batch framework topic
     - topicUid: BIF_PropertyTemplatesEFIM
       # modified batch framework topic
     - topicUid: BIF_RecipeTemplatesEFIM
+      # modified batch framework topic
       items:
-        # batch framework topic
       - topicUid: BIF_Triggers
+        # batch framework topic
+    - topicUid: BIF_LinkTemplates
       # batch framework topic
-    - topicUid: BIF_LinkTemplatesBatch
-    # batch framework topic
   - topicUid: BIF_FiltersTab
-    # modified batch framework topic
+    # batch framework topic
   - topicUid: BIF_TimeSettingsTab
     # modified batch framework topic
   - topicUid: BIF_BatchSetupTab
+    # modified batch framework topic
+  - topicUid: BIF_BatchSettings
     # batch framework topic
   - topicUid: BIF_MergeSettingsTab
-    # modified batch framework topic
-  - topicUid: BIF_OperationalSettingsTab
     # batch framework topic
+  - topicUid: BIF_OperationalSettingsTab
+    # modified batch framework topic
   - topicUid: BIF_TestConfigurationTab
     # batch framework topic
   - topicUid: BIF_ServiceConfigurationTab
-  # modified batch framework topic
+    # batch framework topic
 - topicUid: BIF_CommandLineParameterReference
+  # modified batch framework topic
 - topicUid: BIF_InitializationFileReference
+  # modified batch framework topic
   items: 
   - topicUid: BIF_InitializationFileExamples
+    # modified batch framework topic
 - topicUid: BIF_DiagnosticTagReference
+  # batch framework topic
+- topicUid: BIF_EventFileMonitorUtility
+  # batch framework topic
 #- topicUid: Glossary
+  # framework topic
 #- topicUid: TechnicalSupportAndOtherResources
+  # framework topic
