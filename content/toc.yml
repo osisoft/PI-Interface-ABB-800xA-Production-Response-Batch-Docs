@@ -128,7 +128,7 @@
   # batch framework topic
 - topicUid: BIF_EventFileMonitorUtility
   # batch framework topic
-#- topicUid: Glossary
+- topicUid: SK_Glossary
   # framework topic
-#- topicUid: TechnicalSupportAndOtherResources
+- topicUid: SK_Frontmatter
   # framework topic
