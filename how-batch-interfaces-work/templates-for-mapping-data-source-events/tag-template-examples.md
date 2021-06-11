@@ -3,9 +3,9 @@ uid: BIF_TagTemplateExamples
 ---
 # Tag template examples
 
-Capture report events for phase modules.
+## Capture report events for phase modules
 
-## Tag template one
+### Tag template
 
 ```text
 Tag[1].Name =[Unit] [phasemodule] [Event, value="Report"] 
@@ -16,7 +16,7 @@ Tag[1].phasealias=Report
 Tag[1].Annotation=[BatchID]
 ```
 
-## Incoming data one
+### Incoming data
 
 ```text
 [BatchID]=Batch_123 
@@ -39,9 +39,10 @@ Resulting event added to PI point:
 
 The MDB module or PI AF asset for this phase module will have an alias that refers to this point.
 
-## Tag template two
+## Multiple triggers for same tag
 
-Multiple triggers for same tag.
+### Tag template
+
 
 ```text
 Tag[1].Name = [Unit] Tester 
@@ -54,7 +55,7 @@ Tag[1].unitalias = Testing [Unit]
 Tag[1].phasealias = Testing phase alias
 ```
 
-## Incoming data two
+### Incoming data
 
 ```text
 Event 1: 
