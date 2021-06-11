@@ -10,9 +10,9 @@ This section details the procedure for configuring tag templates. The tables in 
 
 1. To create or update PI tags when specified events are read, configure tag templates.
 
-1. To define tag templates using PI Event Frame Interface Manager, go to the **Templates** page and click the **Tag** tab.
+2. To define tag templates using PI Event Frame Interface Manager, go to the **Templates** page and click the **Tag** tab.
 
-1. To configure the name of the tag to be created or updated, specify the **Name** field. To assign tag names based on incoming data, use placeholders.
+3. To configure the name of the tag to be created or updated, specify the **Name** field. To assign tag names based on incoming data, use placeholders.
 
     For example, to track phase module report events on a per-unit basis, you might configure the name as follows:
 
@@ -30,7 +30,7 @@ This section details the procedure for configuring tag templates. The tables in 
 
     Different templates can update the same PI tag, if the templates' name structure resolves to the same tag. This capability enables you to write different values to the tag depending on the nature of the triggering event. For example, a value of 1 can be written to the tag when a unit procedure starts and a value of 0 can be written to the same tag when the unit procedure ends.
 
-1. To specify the data to be written to the tag, configure the **Value** field. To include data read from the data source in the tag value, use placeholders.
+4. To specify the data to be written to the tag, configure the **Value** field. To include data read from the data source in the tag value, use placeholders.
 
     For example, to simply record the incoming value without transforming it, specify the [PVAL] placeholder. A more complex example: to configure a value that concatenates phase module, event, description, incoming value and engineering units, specify the following:
 
@@ -46,7 +46,7 @@ This section details the procedure for configuring tag templates. The tables in 
 
     Unlike placeholders in tag names, value placeholders can be replaced with empty fields from the incoming event, unless you use advanced field parsing to configure the value.
     
-1. To update a tag when a particular event is read from the data source, specify the EVENT keyword in the **Name** field, as follows:
+5. To update a tag when a particular event is read from the data source, specify the EVENT keyword in the **Name** field, as follows:
 
     ```text
     [EVENT, VALUE="event_text"]
@@ -70,7 +70,7 @@ This section details the procedure for configuring tag templates. The tables in 
 
     You can use wildcards to specify pattern-matching expressions in triggers.
 
-1. To configure the tag template settings, specify settings as described in the following table:
+6. To configure the tag template settings, specify settings as described in the following table:
 
     | Setting | Description |
     |--|--|
@@ -86,7 +86,7 @@ This section details the procedure for configuring tag templates. The tables in 
     | **ANNOTATION** | Simple annotation to be written to the tag when the interface updates it. |
     | **ANNOTATION2** | Structured annotation to be written to the tag when the interface updates it. For details about structured annotations, refer to the PI Data Archive System Management Guide. |
 
-1. To configure tag templates that catch events raised by the interface when it updates the PI Batch Database, specify the following placeholders in the TRIGGER setting of the tag template:
+7. To configure tag templates that catch events raised by the interface when it updates the PI Batch Database, specify the following placeholders in the TRIGGER setting of the tag template:
 
     | Placeholder | Values | Description |
     |--|--|--|
@@ -97,17 +97,21 @@ This section details the procedure for configuring tag templates. The tables in 
     For example, to detect the start of a batch, specify the following expression:
 
     ```text
-    [EVENT, VALUE="PIEVENT"][DESCRIPT, VALUE="BATCH"]
-    [PVAL, VALUE="START"]
+    [EVENT, VALUE="PIEVENT"][DESCRIPT, VALUE="BATCH"][PVAL, VALUE="START"]
     ```
     
-    <!-- Mark Bishop 6/8/21: Modified content below. -->
+    <!-- Mark Bishop 6/11/21: Modified content below. -->
 
-    Placeholders (see <xref:TemplatePlaceholders>) are supported when the triggering expression contains [Parameter, value="PIEVENT"].
+    The following placeholders are supported when the triggering expression contains [Parameter, value="PIEVENT"].
 
-    For a top-level event frame, the interface uses the "Name" property, as do all the Tag template placeholders with the following exceptions:
-
-    * For a second-level event frame, the interface uses the [BATCHID] attribute.
-    * The [PROCEDURE] placeholder uses uses the event frame "Recipe" attribute.
-
-    See <xref:TemplatePlaceholders> for the complete list of available placeholders.
+    | Placeholder | Event Frames |
+    |:-|:-|
+    | [BATCHID] | For a top-level event frame, Name property. For second-level event frame, BatchID attribute |
+    | [PROCEDURE] | Event frame Recipe attribute |
+    | [UNITPROCEDURE] | Event frame Name property |
+    | [OPERATION] | Event frame Name property |
+    | [PHASE] | Event frame Name property |
+    | [PHASESTATE] | Event frame Name property |
+    | [PHASESTEP] | Event frame Name property |
+    | [UNIT] | Event frame Name property |
+    | [PHASEMODULE] | Event frame Name property |

@@ -3,29 +3,19 @@
   items:
   - topicUid: Overview
     # ABB-800xA content
-  - topicUid: BIF_SupportedFeatures
-    # batch framework topic
   - topicUid: ReferenceManuals
     # ABB-800xA content
-- name: Installation
+- topicUid: BIF_InstallationPrerequisites
+  # modified batch framework topic
   items:
-  - topicUid: BIF_InstallationPrerequisites
+  - topicUid: InstallDLLsforABB800xA
+    # ABB-800xA content
+  - topicUid: BIF_SecurityOverview
+    # modified batch framework topic
+  - topicUid: BIF_CreateAndConfigureInterfaceInstance
     # modified batch framework topic
   - topicUid: BatchInterfaceConfigurations
     # ABB-800xA content
-  - topicUid: BIF_SecurityOverview
-    # batch framework topic
-    items: 
-    - topicUid: BIF_AssignPermissions
-      # batch framework topic
-    - topicUid: BIF_ConfigureSecurityForPIAF
-      # batch framework topic
-    - topicUid: BIF_ConfigureSecurityForPIDataArchive
-      # batch framework topic
-  - topicUid: BIF_CreateAndConfigureInterfaceInstance
-    # batch framework topic
-  - topicUid: BIF_ConfigureInstancesForFailover
-    # batch framework topic  NOTE: might require customization
   - topicUid: BIF_PIServerConnectivity
     # batch framework topic
   - topicUid: BIF_LoggingAndErrorMessages
@@ -34,12 +24,10 @@
   # batch framework topic
   items:
   - topicUid: BIF_HowInterfacesProcessBatchEventData
-    # batch framework topic
+    # modified batch framework topic
   - topicUid: BIF_HowBatchDataIsStored
     # batch framework topic
     items:
-    - topicUid: BIF_ThePIBatchDatabase
-      # batch framework topic
     - topicUid: BIF_EventFrames
       # batch framework topic
     - topicUid: BIF_EquipmentHierarchy
@@ -52,14 +40,14 @@
     - topicUid: BIF_PlaceholdersAndAdvancedParsing
       # batch framework topic
     - topicUid: BIF_TagTemplates
-      # batch framework topic
+      # modified batch framework topic
       items:
       - topicUid: BIF_TagTemplateExamples
         # batch framework topic
     - topicUid: BIF_PropertyTemplates
-      # batch framework topic
+      # modified batch framework topic
     - topicUid: BIF_RecipeTemplates
-      # batch framework topic
+      # modified batch framework topic
       items:
       - topicUid: BIF_RecipeTemplateExamples
         # batch framework topic
@@ -84,7 +72,7 @@
   - topicUid: BIF_InterfaceSelectionTab
     # batch framework topic
   - topicUid: BIF_ServerInformationTab
-    # batch framework topic
+    # modified batch framework topic
   - topicUid: BIF_SourceTab
     # modified batch framework topic
   - topicUid: BIF_TemplatesTab

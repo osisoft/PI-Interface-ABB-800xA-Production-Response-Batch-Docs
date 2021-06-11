@@ -4,6 +4,8 @@ uid: BIF_RecipeTemplates
 
 # Recipe templates
 
+<!-- This framework topic has been modified for the specific adapter. -->
+
 The interface includes a set of built-in default recipe templates that control the name assigned to each level in the batch hierarchy and the data stored at each level. To override the naming convention and data assigned to PI batches, unit batches, subbatches and event frames, you define recipe templates. To define recipe templates, launch the Event Frames Interface Manager and perform the following steps.
 
 1. Go to the **Templates** page and navigate to the list of recipe templates.
@@ -50,6 +52,10 @@ The interface includes a set of built-in default recipe templates that control t
     
         (Optional) To merge identically-named objects under the same parent, set to TRUE. Default: FALSE |
 
+    <!-- 
+    
+    MB 6/11/21: removed placeholders that don't apply to interface 
+    
     The following placeholders are supported:
 
     * AREA
@@ -71,12 +77,19 @@ The interface includes a set of built-in default recipe templates that control t
     * USERID
     * [*,value= "Field"]
     * [*,value= "mask"]
+    
+    -->
 
 4. For event frames, you can configure the following additional settings.
 
     * **Descriptor**
     
         (Optional) Specifies the Event frame descriptor property for the particular source Recipe object.
+
+    <!-- 
+    
+    MB 6/11/21: removed parameters that don't apply to interface
+
 
     * **DefaultProperty[x].Name**
     
@@ -95,6 +108,8 @@ The interface includes a set of built-in default recipe templates that control t
     * **DefaultProperty[x].UseFirstValue**
     
         (Optional) Use the first matching event for the event frame to get the value if set to T or True. The default behavior is to use the last matching event.
+    
+    -->     
 
     * **Category**
     

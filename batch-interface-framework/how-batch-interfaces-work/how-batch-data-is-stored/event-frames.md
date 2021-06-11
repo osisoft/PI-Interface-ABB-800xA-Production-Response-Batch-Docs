@@ -4,6 +4,8 @@ uid: BIF_EventFrames
 
 # Event frames
 
+<!-- This framework topic has been modified for the specific adapter. -->
+
 Use event frames to record batch data. Event frames allow you to use recipe templates to define the attributes to be stored in event frames at every level of the hierarchy.
 
 Each event frame contains the following fields:
@@ -127,6 +129,9 @@ The name field of the phase state event frames reflects an actual source recipe 
 | Unit                        |                   | Unit               |
 | Operation Module            |                   | Operation Module   |
 | Phase Module                | Phase Module      | Phase Step         |
+
+
+<!-- Added content for interface-->
 
 ## Phase Step
 

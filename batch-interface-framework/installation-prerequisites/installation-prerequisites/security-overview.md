@@ -2,7 +2,10 @@
 uid: BIF_SecurityOverview
 ---
 
-# Security overview 
+<!-- This framework topic has been modified for the specific adapter. -->
+
+<!-- Updated title -->
+# Security overview for ABB800xA Production Response Batch 
 
 If you are running PI Data Archive 3.4.380.36 or later, you can take advantage of its support for Windows Integrated Security by running the interface service using a Windows account that has the required permissions on the PI Data server. To configure Windows Integrated Security, use PI SMT to define a mapping that assigns a PI identity that has the required permissions to the user or user\'s group.
 
