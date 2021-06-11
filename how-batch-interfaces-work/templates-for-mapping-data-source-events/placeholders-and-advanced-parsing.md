@@ -99,10 +99,9 @@ For example, to update a PI tag when a PI batch is started or ended, specify the
 ```text
 Tag[1].Name=BESName:PIEvent.Batch.Active 
 Tag[1].Value=BATCH START: [BATCHID] |Prod: [PRODUCT] |Rec: [PROCEDURE] 
-Tag[1].Trigger=[EVENT,value="PIEVENT"] [DESCRIPT, value="BATCH"] 
-[PVAL,value="START"] 
+Tag[1].Trigger=[EVENT,value="PIEVENT"] [DESCRIPT, value="BATCH"] [PVAL,value="START"]
+
 Tag[2].Name=BESName:PIEvent.Batch.Active 
 Tag[2].Value=BATCH END: [BATCHID] |Prod: [PRODUCT] |Rec: [PROCEDURE] 
-Tag[2].Trigger=[EVENT,value="PIEVENT"] [DESCRIPT, value="BATCH"] 
-[PVAL,value="END"]
+Tag[2].Trigger=[EVENT,value="PIEVENT"] [DESCRIPT, value="BATCH"] [PVAL,value="END"]
 ```
