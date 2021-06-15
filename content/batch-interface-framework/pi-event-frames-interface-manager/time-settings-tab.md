@@ -2,6 +2,8 @@
 uid: BIF_TimeSettingsTab
 ---
 
+<!-- Mark Bishop 6/8/21: Modified batch framework topic. -->
+
 # Time settings tab 
 
 You use the **Time Settings** tab to configure the settings that control how the interface handles loss of connectivity and how it processes data.
@@ -61,12 +63,14 @@ You use the **Time Settings** tab to configure the settings that control how the
 
     Specifies how long the interface continues retrying an attempt to write data. To avoid data loss, set to 0 (default, no timeout). 
 
-## SQL server connection settings
+<!-- Mark Bishop 6/8/21: DB section modified from SQL to local data store. -->
 
-* **SQL connection timeout (/PICONNTO=<seconds>)**
+## Local data store server connection settings
 
-    Override the default SQL Connection TimeOut property.
+### Connection timeout (/PICONNTO=<seconds>)
+    
+Override the default local data store Connection TimeOut property. 
 
-* **SQL data access timeout (/PIDATO=<seconds>)**
+### Data access timeout (/PIDATO=<seconds>)
 
-    Override the default SQL Data Access TimeOut property. 
+Override the default local data store Data Access TimeOut property. 

@@ -2,6 +2,8 @@
 uid: BIF_RecipeTemplatesEFIM
 ---
 
+<!-- Mark Bishop 6/8/21: Modified batch framework topic. -->
+
 # Recipe templates
 
 Recipe templates enable you to configure the names that are assigned and the data that is stored at each level of the batch hierarchy. A set of default recipe templates are is included with each batch interface. To display and override the default recipe templates, right-click the **Recipe Templates** node and choose **Add Default Templates**. The settings for recipe templates are as follows.
@@ -60,3 +62,9 @@ For example: `[Parameter, Value="Recipe Header"] [Descript, value="Product Name"
 ### Merge same named objects under parent
 
 Combines identically named child objects. 
+
+<!-- Mark Bishop 6/8/21: Added content for ABB 800xA. -->
+
+## Recipe template placeholders
+
+See <xref:TemplatePlaceholders> for the complete list of available placeholders.

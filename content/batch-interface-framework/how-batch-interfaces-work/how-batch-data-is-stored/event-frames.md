@@ -4,6 +4,8 @@ uid: BIF_EventFrames
 
 # Event frames
 
+<!-- This framework topic has been modified for the specific adapter. -->
+
 Use event frames to record batch data. Event frames allow you to use recipe templates to define the attributes to be stored in event frames at every level of the hierarchy.
 
 Each event frame contains the following fields:
@@ -128,3 +130,9 @@ The name field of the phase state event frames reflects an actual source recipe 
 | Operation Module            |                   | Operation Module   |
 | Phase Module                | Phase Module      | Phase Step         |
 
+
+<!-- Added content for interface-->
+
+## Phase Step
+
+Phase steps are not S88-compliant and support varies among BES vendors. (ABB800xA, Foxboro IA Series, Siemens Simatic and WonderWare InBatch do not support phase step.) Phase steps are created beneath the first phase state sub-batch named "RUNNING", regardless of whether the parent phase state is ended. The name of phase step start and stop events is read from the data source [DESCRIPT] column. The triggering event is "Report". Phase steps do not trigger the creation of parent-level events if the parent phase is not found. If the phase step was not closed by an appropriate closing event, the interface closes it by the end of its parent operation-level event frame. Zero-duration phase steps are ignored.

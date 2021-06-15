@@ -2,6 +2,8 @@
 uid: BIF_OperationalSettingsTab
 ---
 
+<!-- Mark Bishop 6/8/21: Modified batch framework topic. -->
+
 # Operational Settings tab
 
 Modify the settings on the Operational Settings tab to configure the interface mode and other related settings.
@@ -47,9 +49,15 @@ Configures how numeric values are formatted by the interface, to enable the inte
     
 Specifies the numeric interface instance identifier (maximum nine digits). To detect PI points maintained by the interface instance, the interface matches this setting against the value in the points' Location1 attribute. 
 
-## Point source (/PS=x)
+### Point source (/PS=x)
     
-Point source for the interface instance. Point source is not case sensitive. Corresponds to the PointSource attribute of individual PI points. The interface loads PI points with the same point source. 
+Point source for the interface instance. Point source is not case sensitive. Corresponds to the PointSource attribute of individual PI points. The interface loads PI points with the same point source.
+
+<!-- Mark Bishop 6/8/21: Added "Associate all reference...". -->
+
+### Associate all reference elements with child Event Frames (/DPRETC)
+    
+When creating event frames in PI AF, by default all reference elements are associated with child event frames. 
 
 ## Failover settings
 
