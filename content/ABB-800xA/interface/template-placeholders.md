@@ -2,7 +2,7 @@
 uid: TemplatePlaceholders
 ---
 
-# PI Interface for ABB 800xA Production Response Batch template placeholders
+# Template placeholders
 
 The PI Interface for ABB 800xA Production Response Batch supports the following placeholders for defining template settings.
 

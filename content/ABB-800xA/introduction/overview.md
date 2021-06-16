@@ -21,4 +21,4 @@ Enabling this interface requires user installation of the ABB Ability Manufactur
 * VtrinLib.dll
 * Newtonsoft.Json.dll
 
-For the procedure for installing these DLL files, see [Install DLLs for ABB 800xA Production Response Batch](xref:InstallDLLsforABB800xA). 
+For the procedure for installing these DLL files, see <xref:InstallDLLsforABB800xA>. 
