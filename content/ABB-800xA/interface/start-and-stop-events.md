@@ -2,7 +2,7 @@
 uid: StartAndStopEvents
 ---
 
-# PI Interface for ABB 800xA Production Response Batch start and stop events
+# Start and stop events
 
 The interface determines the recipe hierarchy from the History response stream and reads allocated equipment from the RESOURCE_response stream. The start and end time of the task with levelnumber = 1 is read from the BatchStartTime and BatchEndTime variables in the Variable Response stream. The start and end times of other tasks are read from the Event Response stream, and the recipe name is read from the Variable Response stream.
 

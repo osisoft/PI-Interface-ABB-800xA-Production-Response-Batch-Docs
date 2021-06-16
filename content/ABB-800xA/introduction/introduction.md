@@ -2,7 +2,7 @@
 uid: Introduction
 ---
 
-# Introduction to PI Interface for ABB 800xA Production Response Batch
+# Introduction
 
 The PI Interface for ABB 800xA Production Response Batch, which is based on a common batch interface framework discussed in this user guide, uses event streaming technology to collect ABB system data from ABB API.
 

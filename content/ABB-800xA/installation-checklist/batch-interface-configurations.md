@@ -2,7 +2,7 @@
 uid: BatchInterfaceConfigurations
 ---
 
-# ABB 800xA Production Response Batch configuration
+# Configuration
 
 The following diagram illustrates configuration of PI Interface for ABB 800xA Production Response Batch, with the data source sending event frames and assets to PI AF.
 

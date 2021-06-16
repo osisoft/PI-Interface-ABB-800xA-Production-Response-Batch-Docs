@@ -4,7 +4,7 @@ uid: BIF_InstallationPrerequisites
 
 <!-- Mark Bishop 6/8/21: Modified framework topic -->
 
-# Prerequisites for installing PI Interface for ABB 800xA Production Response Batch
+# Installation prerequisites
 
 Minimum required versions of PI Server software: PI Server 3.3 and PI AF 2010 R3 (2.4).
 
