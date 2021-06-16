@@ -89,4 +89,4 @@ This configuration is typical in an environment where a manufacturing execution 
 
 For example, the following figure illustrates an event frame created based on a batch from an Emerson DeltaV batch execution system. This event frame is referenced in an event frame created by a Werum PAS-X manufacturing execution system. Other batch interface instances that are configured to use the same linking element create references to their batches under the same link. 
 
-![linked event frames](../../content/images/linked-event-frames.png)
+![linked event frames](../../images/linked-event-frames.png)
