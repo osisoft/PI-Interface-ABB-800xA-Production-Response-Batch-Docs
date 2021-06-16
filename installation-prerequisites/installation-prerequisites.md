@@ -18,9 +18,7 @@ Before installing and configuring, ensure that the following prerequisites are m
 
 To install the interface, download and run its setup kit. By default, the interface is installed in an interface-specific folder in the following location:
 
-```text
-%PIHOME%\Interfaces\
-```
+`%PIHOME%\Interfaces\`
 
 The interface installation directory contains all the files and folders required to configure and run the interface, and includes example configurations.
 
