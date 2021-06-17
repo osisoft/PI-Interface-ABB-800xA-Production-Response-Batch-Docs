@@ -1,8 +1,8 @@
 ---
-uid: BIF_MergeSettingsTab
+uid: BIF_MergeSetupTab
 ---
 
-# Merge settings tab
+# Merge Setup tab
 
 The command line parameter settings on this tab configure merging of the batch generation, as described in the following table:
 

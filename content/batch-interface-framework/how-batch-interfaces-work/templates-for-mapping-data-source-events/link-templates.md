@@ -14,6 +14,8 @@ To define a link template on the **Templates** page of the PI Event Frame Interf
 | Value | The name of the destination batch level event frame. |
 | Trigger | The event that triggers the generation of the property. Updates can be triggered by the data source or by PI events such as the start or end of a recipe level. |
 
+## Examples
+
 To link an event frame that has an event where `Descript` is `WorkflowID` to a batch level event frame whose name is held in `Pval` in the same event, configure the template with the following settings:
 
 | Setting | Set to |
