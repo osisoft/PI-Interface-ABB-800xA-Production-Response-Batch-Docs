@@ -2,7 +2,7 @@
 
 User documentation for PI Interface for ABB 800xA Documentation.
 
->**Note:** This repository consumes two other repos as submodules:
+>**Note:** This repository consumes two other repos as subtrees:
 >
 >* https://github.com/osisoft/PI-Batch-Interface-Doc-Framework
 >* https://github.com/osisoft/PI-Interface-Doc-Framework
