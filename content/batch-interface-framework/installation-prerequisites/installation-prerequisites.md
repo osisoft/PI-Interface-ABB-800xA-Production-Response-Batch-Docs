@@ -36,4 +36,4 @@ If the data source is Microsoft SQL Server, you must install the Microsoft SQL N
 
 To configure the interface, use the PI Event Frame Manager configuration tool.
     
-**Note:** If you intend to run the interface as a Windows service and need to configure explicit login settings for your BES data sources, ensure that the account you configure for the service is the same account you use to run the configuration tool.
+**Tip:** If you intend to run the interface as a Windows service and need to configure explicit login settings for your BES data sources, ensure that the account you configure for the service is the same account you use to run the configuration tool.

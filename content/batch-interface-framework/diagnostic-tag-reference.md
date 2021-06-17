@@ -2,7 +2,7 @@
 uid: BIF_DiagnosticTagReference
 ---
 
-# Diagnostic/performance tag reference
+# Diagnostic tag reference
 
 Performance tags, which are automatically created for each instance of the interface, enable you to monitor the performance of the instance. There are 35 performance tags, categorized as follows:
 

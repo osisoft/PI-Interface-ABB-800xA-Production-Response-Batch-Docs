@@ -22,9 +22,9 @@ To launch the PI Event Frames Interface Manager, click **Start > All Programs > 
 
 To create an instance of the interface, perform the following steps using PI Event Frames Interface Manager:
 
-1. On the **Interface Selection** tab, click **Add Interface**. A list of installed interfaces displays.
-
 <!-- Mark Bishop 6/11/21: Updated step two for ABB 800xA -->
+
+1. On the **Interface Selection** tab, click **Add Interface**. A list of installed interfaces displays.
 
 2. Choose PI Interface for ABB 800xA Production Response Batch, and specify a service ID number and description if desired. 
 
