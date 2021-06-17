@@ -14,10 +14,10 @@ Performance tags, which are automatically created for each instance of the inter
 
 There are two tags designed to monitor the health of the interface: the **HeartBeat** tag and the **DeviceStatus** tag. The HeartBeat tag is updated with the scan frequency configured for the interface or 60 seconds, whichever is less. The value of the HeartBeat tag is a cycle of integers from 1 to 15. The device status tag is automatically created and configured by the interface on startup. The device tag reflects status as follows:
 
-* **"Good":** The interface is properly communicating and reading data from the data sources.
-* **"1 | Starting":** The interface is executing its initialization routines.
-* **"2 | <details>":** Indicates successful connection to the data source.
-* **"3 | <details>":** Indicates failure to access the event journal file directory or failure to read data from the event journal file.
+* `"Good":` The interface is properly communicating and reading data from the data sources.
+* `"1 | Starting":` The interface is executing its initialization routines.
+* `"2 | <details>":` Indicates successful connection to the data source.
+* `"3 | <details>":` Indicates failure to access the event journal file directory or failure to read data from the event journal file.
 
 The properties of health monitoring tags are provided in the table below, where the Prefix represents <Interface>_<ID>. Note, if these tags do not exist. the interface creates them automatically during startup.
 
