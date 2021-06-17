@@ -42,7 +42,7 @@
       items:
       - topicUid: BIF_TagTemplateExamples 
       # batch framework topic 
-    - topicUid: BIF_LinkTemplates# batch framework topic 
+    - topicUid: BIF_LinkTemplates # batch framework topic 
     - topicUid: BIF_PropertyTemplates 
     # modified batch framework topic
     - topicUid: BIF_RecipeTemplates 
