@@ -8,7 +8,7 @@ To process data from non-native language data sources, you can translate strings
 
 1. To configure a translation using PI Event Frame Interface Manager, open the desired template.
 
-2. Select the Translate check box and click Translations.
+2. Select the **Translate** check box and click **Translations**.
 
     The Translations window opens.
 

@@ -16,15 +16,12 @@ This section details the procedure for configuring tag templates. The tables in 
 
     For example, to track phase module report events on a per-unit basis, you might configure the name as follows:
 
-    ```text
-    [Unit] [phasemodule] Report
-    ```
+    `[Unit] [phasemodule] Report`
+
 
     With the preceding template, when the interface reads a report event for the NORTON phase module on unit XUNIT_52003, it replaces the placeholders with data from the specified fields and creates or updates a PI tag with the following name:
 
-    ```text
-    XUNIT_52003 NORTON Report
-    ```
+    `XUNIT_52003 NORTON Report`
 
     If the name structure contains placeholders, the tag template is triggered only if all the corresponding fields from the incoming event contain data (that is, are not blank).
 
@@ -34,23 +31,20 @@ This section details the procedure for configuring tag templates. The tables in 
 
     For example, to simply record the incoming value without transforming it, specify the [PVAL] placeholder. A more complex example: to configure a value that concatenates phase module, event, description, incoming value and engineering units, specify the following:
 
-    ```text
-    [PHASEMODULE].[EVENT].[DESCRIPT]: [PVAL] [EU]
-    ```
+    `[PHASEMODULE].[EVENT].[DESCRIPT]: [PVAL] [EU]`
+
 
     The preceding expression generates data like the following:
 
-    ```text
-    CHARGE_DIW.Recipe Value.CPP_HIGH_LIMIT: 2535 kg
-    ```
+    `CHARGE_DIW.Recipe Value.CPP_HIGH_LIMIT: 2535 kg`
+
 
     Unlike placeholders in tag names, value placeholders can be replaced with empty fields from the incoming event, unless you use advanced field parsing to configure the value.
     
 6. To update a tag when a particular event is read from the data source, specify the EVENT keyword in the **Name** field, as follows:
 
-    ```text
-    [EVENT, VALUE="event_text"]
-    ```
+    `[EVENT, VALUE="event_text"]`
+
 
     This approach enables you to write different values to the tag depending on the text in the EVENT column.
 
@@ -58,15 +52,12 @@ This section details the procedure for configuring tag templates. The tables in 
 
     To configure the template to handle multiple different events, specify separate triggers ("OR" logic). To ensure that the template is triggered only when a set of multiple conditions are all detected ("AND" logic), specify a single trigger containing all the conditions. For example, to trigger the template only for system message events that are phase logic failures, specify the trigger as follows:
 
-    ```text
-    [EVENT, value="System Message"] [DESCRIPT, value="Phase Logic Failure"]
-    ```
+    `[EVENT, value="System Message"] [DESCRIPT, value="Phase Logic Failure"]`
 
     To ignore specified incoming values, use "!=" (not equal) . For example, to ignore undefined values, specify the following expression:
 
-    ```text
-    [PVAL, VALUE!="UNDEFINED"]
-    ```
+    `[PVAL, VALUE!="UNDEFINED"]`
+
 
     You can use wildcards to specify pattern-matching expressions in triggers.
 
@@ -96,9 +87,7 @@ This section details the procedure for configuring tag templates. The tables in 
     
     For example, to detect the start of a batch, specify the following expression:
 
-    ```text
-    [EVENT, VALUE="PIEVENT"][DESCRIPT, VALUE="BATCH"][PVAL, VALUE="START"]
-    ```
+    `[EVENT, VALUE="PIEVENT"][DESCRIPT, VALUE="BATCH"][PVAL, VALUE="START"]`
 
     The following placeholders are supported when the triggering expression contains [Parameter, value="PIEVENT"].
 

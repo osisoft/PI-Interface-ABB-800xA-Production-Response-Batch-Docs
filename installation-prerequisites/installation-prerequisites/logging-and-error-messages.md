@@ -8,4 +8,8 @@ The interface logs operational messages during interface startup, data collectio
 
 **Note:** From the command line, use the pigetmsg utility.
 
-For detailed information about interface logging, refer to [OSIsoft Knowledge Base article KB00401](https://customers.osisoft.com/s/knowledgearticle?knowledgeArticleUrl=How-to-check-your-PI-Interface-log-files). For details about managing the error logging process, see the PI API Installation Instructions manual. To enable debug output for troubleshooting, launch PI Event Frames Interface Manager, select your interface instance, and go to the **Operational Settings** tab.
+For detailed information about interface logging, refer to [OSIsoft Knowledge Base article KB00401](https://customers.osisoft.com/s/knowledgearticle?knowledgeArticleUrl=How-to-check-your-PI-Interface-log-files). 
+
+For details about managing the error logging process, see the PI API Installation Instructions manual. 
+
+To enable debug output for troubleshooting, launch PI Event Frames Interface Manager, select your interface instance, and go to the **Operational Settings** tab.
