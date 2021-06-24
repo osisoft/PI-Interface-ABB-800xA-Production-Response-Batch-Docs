@@ -1,15 +1,12 @@
-# PI Interface for ABB 800xA Documentation
+# PI-Interface-ABB-800xA-Docs
 
-User documentation for PI Interface for ABB 800xA Documentation.
+User documentation for PI Interface for ABB 800xA Production Response Batch.
 
->**Note:** This repository consumes two other repos as subtrees:
->
->* https://github.com/osisoft/PI-Batch-Interface-Doc-Framework
->* https://github.com/osisoft/PI-Interface-Doc-Framework
+This repository consumes another repo as a subtree within the `/content` directory: https://github.com/osisoft/PI-Batch-Interface-Doc-Framework. To update the subtree, enter the following command:
 
-## License
+`git subtree pull --prefix content https://github.com/osisoft/PI-Batch-Interface-Doc-Framework main --squash`
 
-<a href="https://www.osisoft.com/copyright/">&copy; 2019 - 2021 OSIsoft, LLC. All rights reserved.</a>
+License &copy; 2019 - 2021 OSIsoft, LLC. All rights reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at:
 
