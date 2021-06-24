@@ -65,5 +65,5 @@
   items: 
   - topicUid: BIF_InitializationFileExamples # modified batch framework topic
 - topicUid: BIF_DiagnosticTagReference 
-- topicUid: SK_Glossary # framework topic
-- topicUid: SK_Frontmatter # framework topic
+- topicUid: BIF_Glossary # framework topic
+- topicUid: BIF_TechnicalSupportAndFeedback # framework topic
