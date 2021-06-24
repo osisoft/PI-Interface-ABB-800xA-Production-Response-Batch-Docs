@@ -2,9 +2,9 @@
 uid: BIF_OperationalSettingsTab
 ---
 
-<!-- Mark Bishop 6/8/21: Modified batch framework topic. -->
-
 # Operational Settings tab
+
+<!-- Mark Bishop 6/8/21: Customized for ABB 800xA. -->
 
 Modify the settings on the Operational Settings tab to configure the interface mode and other related settings.
 

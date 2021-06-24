@@ -4,6 +4,8 @@ uid: BIF_TestConfigurationTab
 
 # Test configuration tab
 
+<!-- Topic requires customization for specific interface -->
+
 You test the configuration settings in the Test Configuration tab.
 
 Specify test settings as follows, then click **Run Test**, and check the output file for results.

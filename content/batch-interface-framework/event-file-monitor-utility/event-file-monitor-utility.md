@@ -4,6 +4,8 @@ uid: BIF_EventFileMonitorUtility
 
 # Event file monitor utility
 
+<!-- Topic requires customization for specific interface -->
+
 For interfaces that can use event journal files for a data source, OSIsoft provides a utility that automatically copies new event journals from the directory where the BES creates them to the directory where the interface processes them.
 
 The utility is installed in the same directory as the interface, along with a template Windows command file that you can copy and edit to launch the utility with the desired settings. The executable file name ends with "Sync" (for example, `EVTSync.exe`).

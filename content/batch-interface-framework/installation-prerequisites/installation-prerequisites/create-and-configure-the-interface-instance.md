@@ -4,7 +4,7 @@ uid: BIF_CreateAndConfigureInterfaceInstance
 
 # Create and configure the interface instance
 
-<!-- This framework topic has been modified for the specific adapter. -->
+<!-- Customized for ABB 800xA. -->
 
 For each instance you create, settings are stored in a separate Windows command (.bat) file and an initialization (.ini) file in the interface installation folder. The batch file launches the interface, specifying settings as command line parameters. The initialization file also contains settings, and it defines templates that determine how data from the data source is stored in the PI System. To configure settings for interfaces, use the PI Event Frames Interface Manager. Use this tool even if you are configuring the interface to store data in the PI Batch Database rather than event frames.
 

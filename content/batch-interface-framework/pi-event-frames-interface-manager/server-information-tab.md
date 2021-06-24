@@ -4,7 +4,7 @@ uid: BIF_ServerInformationTab
 
 # Server Information tab
 
-<!-- This framework topic has been modified for the specific adapter. -->
+<!-- Customized for ABB 800xA. -->
 
 The **Server Information** tab is where you configure the PI Data server and PI Asset server that you intend to use with the interface instance. The interface can generate either batches in the PI Batch Database or event frames in the PI Asset Framework.
 

@@ -2,9 +2,9 @@
 uid: BIF_SourceTab
 ---
 
-<!-- Mark Bishop 6/8/21: Modified batch framework topic. Removed SQL language. -->
-
 # Source tab
+
+<!-- Mark Bishop 6/8/21: Topic customzied for ABB 800xA. Removed SQL language. -->
 
 Configure the data sources that you want the interface to read. To add a data source, right-click the top **Sources** node and choose the **Add** option for the type of source you are configuring. 
 

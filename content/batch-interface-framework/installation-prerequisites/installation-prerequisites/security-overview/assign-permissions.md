@@ -4,6 +4,8 @@ uid: BIF_AssignPermissions
 
 # Assign permissions for user accounts and PI points
 
+<!-- Static topic. No modifications usually required -->
+
 The user that runs the interface requires read/write access to the PI Data Archive. To create event frames and write data to elements and attributes, the user must have permission to connect to the PI Asset Framework. To configure the interface, the user must be in the local
 Administrators group. Assign the required permissions to the user that runs the interface and all users who need to run the PI Event Frames Interface Manager configuration tool.
 
@@ -15,9 +17,9 @@ Administrators group. Assign the required permissions to the user that runs the 
    
 4. For PI points maintained by batch interfaces, set security as follows:
 
-    * Set the PtSecurity to read and write permission for any point that the interface creates.
-    * Set the DataSecurity to read and write permission for any point to which the interface writes data.
+    1. Set the PtSecurity to read and write permission for any point that the interface creates.
+    2. Set the DataSecurity to read and write permission for any point to which the interface writes data.
 
-You can set PI point permissions using PI SMT by choosing **Points > Point Builder**. 
+    You can set PI point permissions using PI SMT by choosing **Points > Point Builder**. 
 
-You can change point settings in bulk using the PI SMT plug-in for Microsoft Excel.
+    You can change point settings in bulk using the PI SMT plug-in for Microsoft Excel.

@@ -6,6 +6,8 @@ uid: BIF_RecipeTemplatesEFIM
 
 # Recipe templates
 
+<!-- Topic requires customization for specific interface -->
+
 Recipe templates enable you to configure the names that are assigned and the data that is stored at each level of the batch hierarchy. A set of default recipe templates are is included with each batch interface. To display and override the default recipe templates, right-click the **Recipe Templates** node and choose **Add Default Templates**. The settings for recipe templates are as follows.
 
 ## Configuration

@@ -3,9 +3,9 @@ uid: BIF_InitializationFileExamples
 ---
 
 
-# Initialization file example
+## Multiple EVT Sources
 
-<!-- This framework topic has been modified for the specific adapter. -->
+<!-- Customized for ABB 800xA. -->
 
 ```text
 //*******************************************************************

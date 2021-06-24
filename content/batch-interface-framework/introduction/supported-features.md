@@ -4,9 +4,14 @@ uid: BIF_SupportedFeatures
 
 # Supported features
 
+<!-- Add custom intro for interface -->
+
+
+<!-- Content below applies to all batch interfaces -->
+
 | Feature | Support |
 | ------- | ------- |
-| Part Number | *See interface-specific chapter* |
+| Part Number | <UPDATE_FOR_INTERFACE> |
 | Auto-creates PI Points and equipment assets? | Yes |
 | Point Builder Utility | No |
 | Stores batch data in PIBatch Database and PI Module Database | No |
@@ -42,11 +47,11 @@ uid: BIF_SupportedFeatures
 
 Some PI Batch Interfaces run against BES or MES that support equipment arbitration events. Those events provide precise time stamps for the start and end times of unit batches. Individual installations of BES/MES that support equipment arbitration events may not be configured to provide such events. In the event the BES/MES supports equipment arbitration events, but is configured to not provide them you should use the command line parameter: /noarbitration. Using /noarbitration will ensure that the interface:
 
-* Sets the start time of unit batches using the timestamp of the \"Unit Procedure Started\" event or the start of the next operation or phase for the unit, whichever is later.
+* Sets the start time of unit batches using the timestamp of the "Unit Procedure Started" event or the start of the next operation or phase for the unit, whichever is later.
 
-* Sets the end time of unit batches using the timestamp of the \"Unit Procedure Finished\" event or the end of the last operation or phase for the unit, whichever is earlier.
+* Sets the end time of unit batches using the timestamp of the "Unit Procedure Finished" event or the end of the last operation or phase for the unit, whichever is earlier.
 
-* For operation-level recipes, the interface uses the start time of the first phase as the start time for the parent operation and unit batch, and the timestamp of the \"Operation Finished\" message as the end time of the phase, operation and unit batch.
+* For operation-level recipes, the interface uses the start time of the first phase as the start time for the parent operation and unit batch, and the timestamp of the "Operation Finished" message as the end time of the phase, operation and unit batch.
 
 ## History recovery
 
@@ -56,14 +61,14 @@ You can stop the interface without losing any data, because the data is persiste
 
 This string tag contains information about communication between the interface and the data source. This tag is evaluated only while the heartbeat tag is updating and is updated on startup, change, and shutdown.
 
-During normal operation, the tag contains the digital state set value \"Good,\" indicating that the interface is communicating properly with the data source. Otherwise, the tag contains a string indicating status.
+During normal operation, the tag contains the digital state set value "Good", indicating that the interface is communicating properly with the data source. Otherwise, the tag contains a string indicating status.
 
 The following table lists standard status strings.
 
 | Message | Description |
 |--|--|
-| 1 Starting | The interface is starting. |
-| 2 Connected / No Data | The interface is connected to the data source but is not capable or reading or writing data to the foreign device. |
-| 3 n device(s) in error | The interface is not able to communicate with the specified number of devices. Usually includes additional interface-specific details. |
-| 4 Intf Shutdown | The interface is shutting down. |
-| 5 interface_specific_message | Message specific to the interface. |
+| `1 Starting` | The interface is starting. |
+| `2 Connected / No Data` | The interface is connected to the data source but is not capable or reading or writing data to the foreign device. |
+| `3 n device(s) in error` | The interface is not able to communicate with the specified number of devices. Usually includes additional interface-specific details. |
+| `4 Intf Shutdown` | The interface is shutting down. |
+| `5 interface_specific_message` | Message specific to the interface. |

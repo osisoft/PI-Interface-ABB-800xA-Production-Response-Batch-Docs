@@ -4,6 +4,8 @@ uid: BIF_InterfaceModes
 
 # Interface modes
 
+<!-- Static topic. No modifications usually required -->
+
 PI Interfaces for Batch and Manufacturing Execution Systems can be run in five different modes:
 
 * RealTime (default)
