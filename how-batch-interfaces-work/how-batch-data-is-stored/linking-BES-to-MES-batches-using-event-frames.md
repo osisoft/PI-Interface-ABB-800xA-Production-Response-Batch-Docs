@@ -1,8 +1,10 @@
 ---
-uid: LinkingBESToMESBatchesUsingEventFrames
+uid: BIF_LinkingBESToMESBatchesUsingEventFrames
 ---
 
 # Linking BES to MES batches using event frames
+
+<!-- Static topic. No modifications usually required -->
 
 To consolidate the output of a manufacturing execution system (MES) and a batch execution system (BES), specify the linking element as follows:
 

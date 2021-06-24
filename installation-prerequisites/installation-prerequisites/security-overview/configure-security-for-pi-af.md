@@ -4,6 +4,8 @@ uid: BIF_ConfigureSecurityForPIAF
 
 # Configure security for the PI Asset Framework
 
+<!-- Static topic. No modifications usually required -->
+
 To configure batch interface security settings for the PI Asset Framework, perform the following steps.
 
 1. Launch PI System Explorer.
@@ -15,11 +17,7 @@ To configure batch interface security settings for the PI Asset Framework, perfo
 4. Browse to the category and enter the required settings:
 
     1. Set **Database** to read/write.
-
     2. Set **Categories** to read.
-
     3. Set **Element** to read/write.
-
     4. Set **Element templates** to read.
-
     5. Set **Event frames** to read/write.

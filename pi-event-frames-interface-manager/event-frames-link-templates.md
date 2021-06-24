@@ -4,6 +4,8 @@ uid: BIF_EventFramesLinkTemplates
 
 # Link Templates
 
+<!-- Topic requires customization for specific interface -->
+
 Link templates enable you to configure how event frames in an interface link to batch level event frames created by another interface. To add links, right-click the **Link Templates** node and choose **Add Default Templates**.
 
 **Note:** For link templates to work, configure Link to child event frames and Link from parent event frames as appropriate on the **Batch Setup** tab.

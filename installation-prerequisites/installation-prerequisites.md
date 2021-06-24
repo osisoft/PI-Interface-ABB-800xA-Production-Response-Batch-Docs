@@ -4,6 +4,8 @@ uid: BIF_InstallationPrerequisites
 
 # Installation prerequisites
 
+<!-- Static topic. No modifications usually required -->
+
 Minimum required versions of PI Server software: PI Server 3.3 and PI AF 2010 R3 (2.4).
 
 Before installing and configuring, ensure that the following prerequisites are met:

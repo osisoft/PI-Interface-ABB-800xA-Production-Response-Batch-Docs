@@ -2,7 +2,9 @@
 uid: BIF_InterfaceConfiguration
 ---
 
-# Batch interface configuration for PI Interface for <interfacename>
+# Batch interface configuration
+
+<!-- Interface-specific framework topic. Customize this topic for your interface. Remove the diagrams that don't apply -->
 
 The following diagrams illustrate various options for configuring batch interfaces, depending on the data source and the desired PI System output.
 

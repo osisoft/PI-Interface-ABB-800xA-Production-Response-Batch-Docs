@@ -4,6 +4,8 @@ uid: BIF_EventFrames
 
 # Event frames
 
+<!-- Static topic. No modifications usually required -->
+
 Use event frames to record batch data. Event frames allow you to use recipe templates to define the attributes to be stored in event frames at every level of the hierarchy.
 
 Each event frame contains the following fields:
@@ -43,12 +45,12 @@ To match the source batch with an event frame, the interface stores additional i
 The following table shows how the source batch properties map to event frame data.
 
 | Source Procedure Property | Event Frame Field | Event Frame Attribute |
-|---------------------------|-------------------|-----------------------|
-| BatchID                   | Name              |                       |
-| Procedure Name            |                   | Recipe                |
-| Product                   |                   | Product               |
-| Start Time                | Start Time        |                       |
-| End Time                  | End Time          |                       |
+|--|--|--|
+| BatchID | Name |  |
+| Procedure Name |  | Recipe |
+| Product |  | Product |
+| Start Time | Start Time |  |
+| End Time | End Time |  |
         
 By default, the interface captures the following batch-associated properties and stores them in procedure-level event frame attributes:
 
@@ -68,13 +70,13 @@ The interface creates a unit procedure-level event frame for each unit procedure
 The name field of the unit procedure-level event frames contains the unit procedure name as read from the data source. The batch ID and product properties are searchable attributes of the event frame. The following table shows how, by default, the source batch properties map to event frame data:
 
 | Source UnitProcedure Property | Event Frame Field | Event Frame Attribute | Reference Element |
-|-------------------------------|-------------------|-----------------------|-------------------|
-| BatchID                       |                   | BatchID               |                   |
-| UnitProcedure Name            | Name              | Procedure             |                   |
-| Product                       |                   | Product               |                   |
-| Start Time                    | Start Time        |                       |                   |
-| End Time                      | End Time          |                       |                   |
-| Unit                          |                   |                       | Unit              |
+|--|--|--|--|
+| BatchID |  | BatchID |  |
+| UnitProcedure Name | Name | Procedure |  |
+| Product |  | Product |  |
+| Start Time | Start Time |  |  |
+| End Time | End Time |  |  |
+| Unit |  |  | Unit |
     
 In addition to batch ID, procedure and product attributes, the interface records recipe and report events in event frame attributes. For these events, the attribute name is assigned from the [DESCRIPTION] column, the value from the source [PVALUE] column, and units of measure from the [EU] column. 
 
@@ -89,11 +91,11 @@ The interface creates an operation-level event frame for each operation read fro
 The name field of the operation-level event frames is the operation name read from the data source. The following table shows how the source batch properties map to event frame attributes:
     
 | Source Operation Property | Event Frame Field | Reference Element |
-|---------------------------|-------------------|-------------------|
-| Operation Name            | Name              |                   |
-| Start Time                | Start Time        |                   |
-| End Time                  | End Time          |                   |
-| Unit                      |                   | Unit              |
+|--|--|--|
+| Operation Name | Name |  |
+| Start Time | Start Time |  |
+| End Time | End Time |  |
+| Unit |  | Unit |
 
 By default, the interface records recipe value and report events in event frame attributes. For these events, the attribute name is assigned from the [DESCRIPTION] column, the value from the source [PVALUE] column, and units of measure from the [EU] column. 
 
@@ -104,12 +106,12 @@ The interface creates a phase-level event frame for each phase read from the dat
 The name field of the phase-level event frame contains the phase name read from the data source. The following table shows how the source batch properties map to event frame attributes:
 
 | Source Phase Property | Event Frame Field | Reference Elements |
-|-----------------------|-------------------|--------------------|
-| Phase Name            | Name              |                    |
-| Start Time            | Start Time        |                    |
-| End Time              | End Time          |                    |
-| Unit                  |                   | Unit               |
-| Phase Module          |                   | Phase Module       |
+|--|--|--|
+| Phase Name | Name |  |
+| Start Time | Start Time |  |
+| End Time | End Time |  |
+| Unit |  | Unit |
+| Phase Module |  | Phase Module |
     
 By default, the interface records recipe value and report events in event frame attributes. For these events, the attribute name is assigned from the [DESCRIPTION] column, the value from the source [PVALUE] column, and units of measure from the [EU] column. 
 
@@ -120,11 +122,11 @@ The interface creates a phase state-level event frame for each phase state read 
 The name field of the phase state event frames reflects an actual source recipe phase state name. Below is the mapping of source phase state to event frame fields and attributes:
 
 | Source Phase State Property | Event Frame Field | Referenced Element |
-|-----------------------------|-------------------|--------------------|
-| Phase State                 | Name              |                    |
-| Start Time                  | Start Time        |                    |
-| End Time                    | End Time          |                    |
-| Unit                        |                   | Unit               |
-| Operation Module            |                   | Operation Module   |
-| Phase Module                | Phase Module      | Phase Step         |
+|--|--|--|
+| Phase State | Name |  |
+| Start Time | Start Time |  |
+| End Time | End Time |  |
+| Unit |  | Unit |
+| Operation Module |  | Operation Module |
+| Phase Module | Phase Module | Phase Step |
 

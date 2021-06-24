@@ -4,6 +4,8 @@ uid: BIF_OperationalSettingsTab
 
 # Operational Settings tab
 
+<!-- Topic requires customization for specific interface -->
+
 Modify the settings on the Operational Settings tab to configure the interface mode and other related settings.
 
 ## Operational Settings
@@ -19,7 +21,7 @@ For the Recovery, Statistics, Preprocess, and Delete options, you can identify a
 | Realtime (default) | Scan data source to collect data in realtime. |
 | Recovery | Scan data source and generate or correct events accordingly. Always starts in recovery mode, then switches to realtime mode. |
 | Statistics | Compare data source history against events and report results without updating any data. |
-| Preprocess | Source data is written to the PI Data archives with timestamps earlier than those written to the primary PI archive.<br><br>**Note:** This mode requires that you use the offline archive utility to reprocess older archives. This is done after completion when the interface stops. |
+| Preprocess | Source data is written to the PI Data archives with timestamps earlier than those written to the primary PI archive.<br><br>**Note:** This mode requires that you use the offline archive utility to reprocess older archives. This is done after completion when the interface stops.<br><br>**Note:** This mode requires that you use the offline archive utility to reprocess older archives. This is done after completion when the interface stops. |
 | Delete | Delete events for a specified period.<br><br>**Note:** Selecting "Delete mode" limits you to specifying a Start Time only. In the GUI, the End Time is always specified with "*" asterisk symbol, a dereference operator pointed to by the variable's value.<br><br>The interface allows for "spot deletion", meaning the deletion of event frames from within a specific time window. For example, you may have a scenario where you have received "junk data" from previous days. Spot deletion allows you to delete event frames back to the date when you began receiving unusable data. The GUI does not provide the means to specify both ends of the time window that you wish to delete. That can be done through edits to the configuration file.<br><br>An RST for Delete mode can still be specified in the initialization file, but the GUI will always disable spot deletion.   |
 
 ### Perform one scan then stop (/SINGLERUN)

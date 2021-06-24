@@ -4,6 +4,8 @@ uid: BIF_LoggingAndErrorMessages
 
 # Logging and error messages
 
+<!-- Static topic. No modifications usually required -->
+
 The interface logs operational messages during interface startup, data collection and recovery. Additional messages are logged if you enable debugging. To view messages, open PI System Management Tools, go to **Operation > Message Logs** and click the **PI Message Log** tab. 
 
 **Note:** From the command line, use the pigetmsg utility.

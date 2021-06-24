@@ -4,6 +4,8 @@ uid: BIF_InitializationFileExamples
 
 # Initialization file examples
 
+<!-- Topic requires customization for specific interface -->
+
 ## Multiple EVT Sources
 
 ```text

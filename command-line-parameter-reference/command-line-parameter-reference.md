@@ -4,6 +4,8 @@ uid: BIF_CommandLineParameterReference
 
 # Command line parameter reference
 
+<!-- Topic requires customization for specific interface -->
+
 To configure an interface, you use the PI Event Frames Interface Manager, which maintains the files that contain batch interface settings. This appendix describes the command line settings and is provided for troubleshooting purposes.
     
 To ensure that settings files are formatted correctly, always use PI Event Frames Interface Manager to configure settings. Do not edit settings files manually.

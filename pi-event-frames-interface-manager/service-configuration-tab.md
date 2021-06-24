@@ -4,6 +4,8 @@ uid: BIF_ServiceConfigurationTab
 
 # Service Configuration tab
 
+<!-- Topic requires customization for specific interface -->
+
 This tab is where you install and configure the interface as a service. The status of your interface is indicated (for example, "Interface PIWPASXBATCH1 is not installed as a service") and you are notified as to whether the interface is running.
 
 ## Create service

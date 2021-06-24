@@ -4,6 +4,8 @@ uid: BIF_ServerInformationTab
 
 # Server Information tab
 
+<!-- Static topic. No modifications usually required -->
+
 The **Server Information** tab is where you configure the PI Data server and PI Asset server that you intend to use with the interface instance. The interface can generate either batches in the PI Batch Database or event frames in the PI Asset Framework.
 
 ## PI Data server (/HOST) settings

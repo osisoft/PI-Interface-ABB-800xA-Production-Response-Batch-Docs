@@ -1,8 +1,10 @@
 ---
-uid: HowToMergeMultipleSourceBatches
+uid: BIF_HowToMergeMultipleSourceBatches
 ---
 
 # How to merge multiple source batches
+
+<!-- Static topic. No modifications usually required -->
 
 To merge multiple source batches that have identical batch IDs, enable the **Merge multiple source batches with same batch ID into one PI batch** option on the **Merge Setup** tab of the PI Event Frame Interface Manager. To ensure that related batch IDs match, you can configure a batch ID mask that extracts a common substring from the incoming ID. The interface caches batches and, when it reads a new batch from the source, it checks its cache for a batch with a matching ID. If a match is found, the interface merges the batches. If no match is found in the cache, the interface creates a new batch. By default, the interface caches batches for one day. To configure the cache duration, go to the **Time Settings** tab and set the **Cache time** value.
 

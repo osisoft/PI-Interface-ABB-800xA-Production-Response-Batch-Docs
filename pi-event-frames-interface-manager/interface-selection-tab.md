@@ -4,6 +4,8 @@ uid: BIF_InterfaceSelectionTab
 
 # Interface Selection tab
 
+<!-- Static topic. No modifications usually required -->
+
 The **Interface Selection** tab is where you select or add a new instance of an interface. Click **Interface Selection** in the left panel to display a drop-down menu from which you can choose an interface.
     
 **Note:** PI Event Frames Manager defaults to the batch interface package with which it was installed. You will see the name of the default batch interface listed, along with the drop-down menu from which you can choose another installed instance.

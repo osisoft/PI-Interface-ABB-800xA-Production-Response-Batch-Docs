@@ -4,6 +4,8 @@ uid: BIF_InitializationFileReference
 
 # Initialization file reference
 
+<!-- Topic requires customization for specific interface -->
+
 The initialization (.ini) file stores configuration information for an interface instance. This file is generated and updated by the PI Event Frame Interface Manager configuration tool. To enable you to control access to these files, initialization files are stored under the ProgramData folder. (Note that, prior to release 4.x, initialization files were stored in the interface installation directory.)
 
 **Note:** To ensure a correctly configured .ini file, use the PI Event Frame Interface Manager configuration tool. Do not edit the .ini file manually.

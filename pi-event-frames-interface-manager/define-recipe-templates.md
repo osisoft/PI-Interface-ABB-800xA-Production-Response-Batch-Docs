@@ -4,6 +4,8 @@ uid: BIF_DefineRecipeTemplates
 
 # Define Recipe templates
 
+<!-- Topic requires customization for specific interface -->
+
 The interface includes a set of built-in default recipe templates that control the name assigned to each level in the batch hierarchy and the data stored at each level. To override the naming convention and data assigned to PI batches, unit batches, subbatches and event frames, you define **recipe templates**. To define recipe templates, launch the **Event Frames Interface Manager** and perform the following steps.
 
 1. Go to the **Templates** page and navigate to the list of recipe templates.
