@@ -2,6 +2,8 @@
 uid: BIF_CommandLineParameterReference
 ---
 
+<!-- Mark Bishop 6/9/21: Modified batch framework topic. -->
+
 # Command line parameter reference
 
 <!-- Topic requires customization for specific interface -->
@@ -14,7 +16,56 @@ The following table is a compilation of the command line settings for all the OS
 
 ## Available command line parameters
 
-The following headings describe each command line parameter available.
+The following command line parameters are available.
+
+* [`/abto =<#days>`](#abto-days)
+* [`/adu =[true | false]`](#adu-true--false)
+* [`/batchrcp =[true | false]`](#batchrcp-true--false)
+* [`/bidm =<list>`](#bidm-list)
+* [`/cachetime=<days>`](#cachetimedays)
+* [`/dac`](#dac)
+* [`/datasec=<string>`](#datasecstring)
+* [`/db =[#]`](#db-)
+* [`/dpretc`](#dpretc)
+* [`/failoverID =<string>`](#failoverid-string)
+* [`/failovertag =<tag name>`](#failovertag-tag-name)
+* [`/host =host:port`](#host-hostport)
+* [`/id =<identifier>`](#id-identifier)
+* [`/includeincompletedata`](#includeincompletedata)
+* [`/inifile =<path>`](#inifile-path)
+* [`/link =<AF element path>`](#link-af-element-path)
+* [`/maxqtf =<days>`](#maxqtf-days)
+* [`/maxstoptime =<seconds>`](#maxstoptime-seconds)
+* [`/merge`](#merge)
+* [`/mode =<mode>`](#mode-mode)
+* [`/mop`](#mop)
+* [`/mup`](#mup)
+* [`/noarbitration`](#noarbitration)
+* [`/ns[=lang]`](#nslang)
+* [`/piconnto =<seconds>`](#piconnto-seconds)
+* [`/pidato =<seconds>`](#pidato-seconds)
+* [`/pipswd =<password>`](#pipswd-password)
+* [`/piuser =<name>`](#piuser-name)
+* [`/print =<filename>`](#print-filename)
+* [`/ps =pointsource`](#ps-pointsource)
+* [`/ptsec =<string>`](#ptsec-string)
+* [`/ras =<startstr, stopstr>`](#ras-startstr-stopstr)
+* [`/readlink= <AFelementpath>`](#readlink-afelementpath)
+* [`/restore`](#restore)
+* [`/restef`](#restef)
+* [`/ret =<datetime>`](#ret-datetime)
+* [`/retry =<seconds>`](#retry-seconds)
+* [`/retryto =<seconds>`](#retryto-seconds)
+* [`/rst =<datetime>`](#rst-datetime)
+* [`/rti`](#rti)
+* [`/scan =<seconds>`](#scan-seconds)
+* [`/singlerun`](#singlerun)
+* [`/smp ="equipment path"`](#smp-equipment-path)
+* [`/swaptime =<seconds>`](#swaptime-seconds)
+* [`/tbid`](#tbid)
+* [`/tbse`](#tbse)
+* [`/ts=GMT | LCL`](#tsgmt--lcl)
+* [`/writelink= <AFelementpath>`](#writelink-afelementpath)
 
 ### `/abto =<#days>` 
 
@@ -63,9 +114,15 @@ In the last example, the first and second masks do not match, so the third mask 
 
 (Optional) Disable arbitration counters: directs the interface to release a unit on the first resource release event even if the number of acquire events is higher than number of release events. By default, the interface requires the number of acquire and release events for a unit to be the same.
 
+<!-- 
+
+MB 6/9/21: Does not apply to 800xA
+
 ### `/damcae` 
 
-(Optional) Ignore events from a DeltaV Event Chronicle (alarms & events) data source when creating or checking PI Module Database objects. If the module path defined for an AlarmTag[#].Alias entry contains the root node symbol ($), the interface checks the module path regardless of whether this option is enabled.
+(Optional) Ignore events from a DeltaV Event Chronicle (alarms & events) data source when creating or checking PI Module Database objects. If the module path defined for an AlarmTag[#].Alias entry contains the root node symbol ($), the interface checks the module path regardless of whether this option is enabled. 
+
+-->
 
 ### `/datasec=<string>`
 
@@ -89,6 +146,10 @@ Example:
 
 (Optional – event frames only) Disable propagation of referenced elements to children. By default, the interface propagates each event frame element reference to its children event frames.
 
+<!-- 
+
+MB 6/9/21: Does not apply to 800xA
+
 ### `/equipmentXML =<filepath>` 
 
 (Optional) Specifies the location of the DeltaV-generated equipment hierarchy XML file. The EMDVB interface uses this reference data to locate missing ProcessCell field by searching based on the combination of Area and Unit fields. Valid only when a DeltaV AE SQL datasource is defined. 
@@ -97,7 +158,9 @@ Example:
 
 ```text
 /EquipmentXML="C:\DeltaV\Equip.xml"
-```
+``` 
+
+-->
 
 ### `/failoverID =<string>`
 
@@ -308,6 +371,7 @@ For the ABB 800xA interface, enable recovery of batches from restored archives i
 ### `/retryto =<seconds>`
 
 Specifies how long the interface retries a failed attempt to write data before timing out. By default, the interface never times out. If you configure a timeout setting, be advised that you risk losing data.
+
 ### `/rst =<datetime>`
 
 (Optional) Specifies recovery start time. The interface recovers batches that start after the specified time, as well as batches that start before the specified time but end after it. Specify the time using the interface node format and time zone.
@@ -320,7 +384,9 @@ Remove trailing index from Recipe fields. Applicable to Procedure, Unit Procedur
 
 (Optional) Specifies, in seconds, how often to scan the data source for new data. The default is 60 seconds. A scan that returns a large amount of data can cause the interface to skip the subsequent scan.
 
-### `/singlerun` | (Optional) Perform one scan and stop.
+### `/singlerun` 
+
+(Optional) Perform one scan and stop.
 
 ### `/smp ="equipment path"`
 
@@ -328,13 +394,19 @@ Remove trailing index from Recipe fields. Applicable to Procedure, Unit Procedur
 
 `\\<RootModule>\<SubModule>\<…>`
 
+<!-- 
+
+MB 6/9/21: Does not apply to 800xA
+
 ### `/sqlconnto =<seconds>` (DeltaV SQL only)
 
 (Optional) Override the default SQL timeout setting (60 seconds).
 
 ### `/sqldato=<seconds>` (DeltaV SQL only)
 
-(Optional) Override the default SQL data access timeout setting (100 seconds).
+(Optional) Override the default SQL data access timeout setting (100 seconds). 
+
+-->
 
 ### `/swaptime =<seconds>`
 
@@ -352,9 +424,13 @@ Remove trailing index from Recipe fields. Applicable to Procedure, Unit Procedur
 
 (Optional) Specifies how the interface interprets event timestamps from an SQL data source. Options are local time or GMT. Default is GMT.
 
+<!-- 
+
+MB 6/9/21: Do not apply to 800xA
+
 ### `/uobev` (DeltaV SQL 9.3+ only)
 
-(Optional) Directs the interface to use the original batch event view. By default the interface queries 17 tables to retrieve data for batch-associated events. Note that this view does not provide explicit [Descript], [Pval] and [EU] fields. Instead the [Descript] field combines data from all three fields. This option is provided for backward compatibility.
+(Optional) Directs the interface to use the original batch event view. By default the interface queries 17 tables to retrieve data for batch-associated events. Note that this view does not provide explicit [Descript], [Pval] and [EU] fields. Instead the [Descript] field combines data from all three fields. This option is provided for backward compatibility. 
 
 ### `/ubr`
 
@@ -377,6 +453,8 @@ Provided for backward compatibility with version 1.0.0.0 of the interface. |
 This parameter is only supported in interface PIEMDVBCS and allows the interface to ignore checking or sending requests to the Syncade workflow web services. If connecting to WF 4.9 this parameter must be set to true.
 
 Added in version 4.0.30.
+
+-->
 
 ### `/writelink= <AFelementpath>` 
 

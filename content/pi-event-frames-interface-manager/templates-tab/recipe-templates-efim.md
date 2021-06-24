@@ -2,6 +2,8 @@
 uid: BIF_RecipeTemplatesEFIM
 ---
 
+<!-- Mark Bishop 6/8/21: Modified batch framework topic. -->
+
 # Recipe templates
 
 <!-- Topic requires customization for specific interface -->
@@ -62,3 +64,9 @@ For example: `[Parameter, Value="Recipe Header"] [Descript, value="Product Name"
 ### Merge same named objects under parent
 
 Combines identically named child objects. 
+
+<!-- Mark Bishop 6/8/21: Added content for ABB 800xA. -->
+
+## Recipe template placeholders
+
+See <xref:TemplatePlaceholders> for the complete list of available placeholders.

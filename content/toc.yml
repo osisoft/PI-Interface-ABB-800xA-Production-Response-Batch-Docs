@@ -1,80 +1,69 @@
-# Introduction
-- topicUid: BIF_Introduction # Modify for interface
+- topicUid: Introduction # ABB-800xA content
   items:
-  - topicUid: BIF_InterfaceModes # No modifications required
-  - topicUid: BIF_SupportedFeatures # Modify for interface
-  - topicUid: BIF_ReferenceManuals # Modify for interface
-# Installation Prerequisites
-- topicUid: BIF_InterfaceConfiguration # Modify for interface
-  items: 
-  - topicUid: BIF_InstallationPrerequisites # No modifications required
-  - topicUid: BIF_SecurityOverview # No modifications required
+  - topicUid: Overview # ABB-800xA content
+  - topicUid: ReferenceManuals # ABB-800xA content
+- topicUid: BIF_InstallationPrerequisites # modified batch framework topic
+  items:
+  - topicUid: InstallDLLsforABB800xA # ABB-800xA content
+  - topicUid: BIF_SecurityOverview # modified batch framework topic
+  - topicUid: BIF_CreateAndConfigureInterfaceInstance # modified batch framework topic
+  - topicUid: BatchInterfaceConfigurations # ABB-800xA content
+  - topicUid: BIF_PIServerConnectivity
+  - topicUid: BIF_LoggingAndErrorMessages
+- topicUid: BIF_HowBatchInterfacesWork
+  items:
+  - topicUid: BIF_HowInterfacesProcessBatchEventData # modified batch framework topic
     items:
-      - topicUid: BIF_AssignPermissions # No modifications required
-      - topicUid: BIF_ConfigureSecurityForPIAF # No modifications required
-      - topicUid: BIF_ConfigureSecurityForPIDataArchive # No modifications required
-  - topicUid: BIF_CreateAndConfigureInterfaceInstance # No modifications required
-  - topicUid: BIF_PIServerConnectivity # No modifications required
-  - topicUid: BIF_LoggingAndErrorMessages # No modifications required
-# How Batch Interfaces Work
-- topicUid: BIF_HowBatchInterfacesWork # No modifications required
-  items:
-  - topicUid: BIF_HowInterfacesProcessBatchEventData # No modifications required
-    items: 
-    - topicUid: BIF_InterfaceModes # No modifications required
-    - topicUid: BIF_HowBatchDataIsStored # Modify for interface
+    - topicUid: BIF_EventFrames 
+    - topicUid: BIF_EquipmentHierarchy
+  - topicUid: BIF_EquipmentArbitrationEventsUnavailable  # batch framework topic
+  - topicUid: BIF_TemplatesForMappingDataSourceEvents 
+  # batch framework topic
+    items:
+    - topicUid: BIF_PlaceholdersAndAdvancedParsing 
+    # batch framework topic
+    - topicUid: BIF_TagTemplates 
+    # modified batch framework topic
       items:
-      - topicUid: BIF_EventFrames # No modifications required
-    - topicUid: BIF_EquipmentHierarchy # No modifications required
-    - topicUid: BIF_HowToMergeMultipleSourceBatches # No modifications required
-    - topicUid: BIF_LinkingBESToMESBatchesUsingEventFrames # No modifications required
-  - topicUid: BIF_TemplatesForMappingDataSourceEvents
-# Specific Considerations
-#
-# Note: Depending on inteface, this section either begins with BIF_Interface or BIF_WorkflowSupport
-#
-- topicUid: BIF_Interface # Modify for interface
-- topicUid: BIF_WorkflowSupport # Modify for interface
+      - topicUid: BIF_TagTemplateExamples 
+      # batch framework topic 
+    - topicUid: BIF_LinkTemplates 
+    - topicUid: BIF_PropertyTemplates # modified batch framework topic
+    - topicUid: BIF_RecipeTemplates # modified batch framework topic
+      items:
+      - topicUid: BIF_RecipeTemplateExamples 
+    - topicUid: BIF_FilterIncomingEvents 
+    - topicUid: BIF_TranslateForeignLanguageData
+  - topicUid: BIF_InterfaceModes
+- topicUid: Interface # ABB-800xA content
   items:
-  - topicUid: BIF_DataSources # Modify for interface
-  - topicUid: BIF_StartAndStopEvents # Modify for interface
-  - topicUid: BIF_TemplatePlaceholders # Modify for itnerface
-# PI Event Frames Interface Manager
-- topicUid: BIF_PIEventFramesInterfaceManager # No modifications required
+  - topicUid: DataSource # ABB-800xA content
+  - topicUid: StartAndStopEvents # ABB-800xA content
+  - topicUid: TemplatePlaceholders # ABB-800xA content
+- topicUid: BIF_PIEventFramesInterfaceManager 
   items:
-  - topicUid: BIF_InterfaceSelectionTab # No modifications required
-  - topicUid: BIF_ServerInformationTab # No modifications required
+  - topicUid: BIF_InterfaceSelectionTab 
+  - topicUid: BIF_ServerInformationTab # modified batch framework topic
+  - topicUid: BIF_SourceTab # modified batch framework topic
+  - topicUid: BIF_TemplatesTab # modified batch framework topic
     items:
-    - topicUid: BIF_WindowsCredentialManagerAuthentication # Modify for interface
-  - topicUid: BIF_SourceTab # Modify for interface
-  - topicUid: BIF_AlarmTagTemplates # Modify for interface
-  - topicUid: BIF_TemplatesTab # Modify for interface
-    items: 
-    - topicUid: BIF_TagTemplates # Modify for interface
-    - topicUid: BIF_PropertyTemplates # Modify for interface
-    - topicUid: BIF_EventFramesLinkTemplates # Modify for interface
-    - topicUid: BIF_RecipeTemplatesEFIM # Modify for interface
-      items: 
-      - topicUid: BIF_DefineRecipeTemplates # Modify for interface
-    - topicUid: BIF_Triggers # Modify for interface
-  - topicUid: BIF_FiltersTab # Modify for interface
-  - topicUid: BIF_TimeSettingsTab # Modify for interface
-  - topicUid: BIF_BatchSetupTab # Modify for interface
-  - topicUid: BIF_MergeSetupTab # Modify for interface
-  - topicUid: BIF_OperationalSettingsTab # Modify for interface
-  - topicUid: BIF_TestConfigurationTab # Modify for interface
-  - topicUid: BIF_ServiceConfigurationTab # Modify for interface
-# Command Line Parameters
-- topicUid: BIF_CommandLineParameterReference # Modify for interface
-# Initialization File
-- topicUid: BIF_InitializationFileReference # Modify for interface
+    - topicUid: BIF_TagTemplatesEFIM 
+    - topicUid: BIF_PropertyTemplatesEFIM # modified batch framework topic
+    - topicUid: BIF_RecipeTemplatesEFIM # modified batch framework topic
+      items:
+      - topicUid: BIF_Triggers
+    - topicUid: BIF_LinkTemplates 
+  - topicUid: BIF_FiltersTab 
+  - topicUid: BIF_TimeSettingsTab # modified batch framework topic
+  - topicUid: BIF_BatchSetupTab # modified batch framework topic
+  - topicUid: BIF_MergeSetupTab 
+  - topicUid: BIF_OperationalSettingsTab # modified batch framework topic
+  - topicUid: BIF_TestConfigurationTab 
+  - topicUid: BIF_ServiceConfigurationTab
+- topicUid: BIF_CommandLineParameterReference # modified batch framework topic
+- topicUid: BIF_InitializationFileReference # modified batch framework topic
   items: 
-  - topicUid: BIF_InitializationFileExamples # Modify for interface
-# Diagnostic Point Reference
-- topicUid: BIF_DiagnosticPointReference # No modifications required
-# Event file monitor utility
-- topicUid: BIF_EventFileMonitorUtility # No modifications required
-# Glossary
-- topicUid: BIF_Glossary
-# Technical Support and Feedback
-- topicUid: BIF_TechnicalSupportAndFeedback
+  - topicUid: BIF_InitializationFileExamples # modified batch framework topic
+- topicUid: BIF_DiagnosticTagReference 
+- topicUid: SK_Glossary # framework topic
+- topicUid: SK_Frontmatter # framework topic

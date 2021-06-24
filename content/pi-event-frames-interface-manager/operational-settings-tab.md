@@ -4,7 +4,7 @@ uid: BIF_OperationalSettingsTab
 
 # Operational Settings tab
 
-<!-- Topic requires customization for specific interface -->
+<!-- Mark Bishop 6/8/21: Customized for ABB 800xA. -->
 
 Modify the settings on the Operational Settings tab to configure the interface mode and other related settings.
 
@@ -21,9 +21,14 @@ For the Recovery, Statistics, Preprocess, and Delete options, you can identify a
 | Realtime (default) | Scan data source to collect data in realtime. |
 | Recovery | Scan data source and generate or correct events accordingly. Always starts in recovery mode, then switches to realtime mode. |
 | Statistics | Compare data source history against events and report results without updating any data. |
-| Preprocess | Source data is written to the PI Data archives with timestamps earlier than those written to the primary PI archive.<br><br>**Note:** This mode requires that you use the offline archive utility to reprocess older archives. This is done after completion when the interface stops.<br><br>**Note:** This mode requires that you use the offline archive utility to reprocess older archives. This is done after completion when the interface stops. |
-| Delete | Delete events for a specified period.<br><br>**Note:** Selecting "Delete mode" limits you to specifying a Start Time only. In the GUI, the End Time is always specified with "*" asterisk symbol, a dereference operator pointed to by the variable's value.<br><br>The interface allows for "spot deletion", meaning the deletion of event frames from within a specific time window. For example, you may have a scenario where you have received "junk data" from previous days. Spot deletion allows you to delete event frames back to the date when you began receiving unusable data. The GUI does not provide the means to specify both ends of the time window that you wish to delete. That can be done through edits to the configuration file.<br><br>An RST for Delete mode can still be specified in the initialization file, but the GUI will always disable spot deletion.   |
+| Preprocess | Source data is written to the PI Data archives with timestamps earlier than those written to the primary PI archive.<br><br>**Note:** This mode requires that you use the offline archive utility to reprocess older archives. This is done after completion when the interface stops. |
+| Delete | Delete events for a specified period. |
 
+<!-- Removed Content from delete row:
+
+<br><br>**Note:** Selecting "Delete mode" limits you to specifying a Start Time only. In the GUI, the End Time is always specified with "*" asterisk symbol, a dereference operator pointed to by the variable's value.<br><br>The interface allows for "spot deletion", meaning the deletion of event frames from within a specific time window. For example, you may have a scenario where you have received "junk data" from previous days. Spot deletion allows you to delete event frames back to the date when you began receiving unusable data. The GUI does not provide the means to specify both ends of the time window that you wish to delete. That can be done through edits to the configuration file.<br><br>An RST for Delete mode can still be specified in the initialization file, but the GUI will always disable spot deletion.
+
+-->
 ### Perform one scan then stop (/SINGLERUN)
     
 The interface performs one scan of active points, then exits. 
@@ -49,9 +54,15 @@ Configures how numeric values are formatted by the interface, to enable the inte
     
 Specifies the numeric interface instance identifier (maximum nine digits). To detect PI points maintained by the interface instance, the interface matches this setting against the value in the points' Location1 attribute. 
 
-## Point source (/PS=x)
+### Point source (/PS=x)
     
-Point source for the interface instance. Point source is not case sensitive. Corresponds to the PointSource attribute of individual PI points. The interface loads PI points with the same point source. 
+Point source for the interface instance. Point source is not case sensitive. Corresponds to the PointSource attribute of individual PI points. The interface loads PI points with the same point source.
+
+<!-- Mark Bishop 6/8/21: Added "Associate all reference...". -->
+
+### Associate all reference elements with child Event Frames (/DPRETC)
+    
+When creating event frames in PI AF, by default all reference elements are associated with child event frames. 
 
 ## Failover settings
 
