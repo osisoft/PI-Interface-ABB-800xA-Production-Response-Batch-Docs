@@ -65,7 +65,6 @@ Specifies how often the interface retries failed attempts to write data. The def
 
 Specifies how long the interface continues retrying an attempt to write data. To avoid data loss, set to 0 (default, no timeout). 
 
-<<<<<<< HEAD
 <!-- Mark Bishop 6/8/21: DB section modified from SQL to local data store. -->
 
 ## Local data store server connection settings
@@ -79,13 +78,8 @@ Override the default local data store Connection TimeOut property.
 Override the default local data store Data Access TimeOut property. 
 
 <!-- Mark Bishop 6/16: These headings don't apply to ABB 800xA
-=======
-<!--
-
-Mark Bishop 6/21/21: SQL Settings used sometimes
 
 ## SQL server connection settings
->>>>>>> f93a5198cfa25233a0801cf2b75c189d080c7d1c
 
 ### SQL connection timeout (/PICONNTO=<seconds>)
 

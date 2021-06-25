@@ -111,8 +111,7 @@ The interface includes a set of built-in default recipe templates that control t
     * **Descriptor**
     
         (Optional) Specifies the Event frame descriptor property for the particular source Recipe object.
-
-
+        
     * **Category**
     
         (Optional) For each recipe level, defines the event frame category. If the event that creates an event frame contains insufficient information, no category is assigned. To assign a category to an event frame after its creation, use Category[x].
