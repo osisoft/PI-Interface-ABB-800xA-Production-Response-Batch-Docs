@@ -88,6 +88,7 @@ This section details the procedure for configuring tag templates. The tables in 
     
     The following placeholders are supported when the triggering expression contains `[Parameter, value="PIEVENT"]`.
 
+<<<<<<< HEAD
     | Placeholder | Event Frames |
     |:-|:-|
     | [BATCHID] | For a top-level event frame, Name property. For second-level event frame, BatchID attribute |
@@ -99,3 +100,16 @@ This section details the procedure for configuring tag templates. The tables in 
     | [PHASESTEP] | Event frame Name property |
     | [UNIT] | Event frame Name property |
     | [PHASEMODULE] | Event frame Name property |
+=======
+    | Placeholder | Batch Database | Event Frames |
+    |--|--|--|
+    | [BATCHID] | PIBatch and PIUnitBatch: BatchID property. | For a top-level event frame, "Name" property. For second-level event frame, "BatchID" attribute |
+    | [PROCEDURE] | PIBatch "Recipe" property | Event frame "Recipe" attribute |
+    | [UNITPROCEDURE] | PIUnitBatch "Procedure" property | Event frame "Name" property |
+    | [OPERATION] | PISubBatch "Name" property | Event frame "Name" property |
+    | [PHASE] | Level 4 PISubBatch "Name" property | Event frame "Name" property |
+    | [PHASESTATE] | Level 5 PISubBatch "Name" property | Event frame "Name" property |
+    | [PHASESTEP] | Level 6 PISubBatch "Name" property | Event frame "Name" property |
+    | [UNIT] | PIUnit "Name" property | Event frame "Name" property |
+    | [PHASEMODULE] | Phase module "Name" property | Event frame "Name" property |
+>>>>>>> adf92df263b7c857e7c2cc11b8c1bb866c636e4c
