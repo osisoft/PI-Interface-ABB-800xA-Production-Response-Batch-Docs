@@ -14,7 +14,7 @@ You use the **Time Settings** tab to configure the settings that control how the
 
 Specifies how frequently the interface scans the data source. 
 
-### **Cache time (/CACHETIME=<days>)**
+### Cache time (/CACHETIME=<days>)
 
 Specifies how long completed events are retained in memory. Default is one day. Specify the maximum duration expected between events that need to be merged, plus any desired margin of safety. 
 The value can be specified as whole day or fraction of a day. For example, to release completed batches when their end time is less than 7 days and 12 hours from current time, specify the following cache time setting:

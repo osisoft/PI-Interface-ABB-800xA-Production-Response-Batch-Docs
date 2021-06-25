@@ -86,7 +86,7 @@ This section details the procedure for configuring tag templates. The tables in 
     
     `[EVENT, VALUE="PIEVENT"][DESCRIPT, VALUE="BATCH"][PVAL, VALUE="START"]`
     
-    The following placeholders are supported when the triggering expression contains [Parameter, value="PIEVENT"].
+    The following placeholders are supported when the triggering expression contains `[Parameter, value="PIEVENT"]`.
 
     | Placeholder | Batch Database | Event Frames |
     |--|--|--|
@@ -99,4 +99,3 @@ This section details the procedure for configuring tag templates. The tables in 
     | [PHASESTEP] | Level 6 PISubBatch "Name" property | Event frame "Name" property |
     | [UNIT] | PIUnit "Name" property | Event frame "Name" property |
     | [PHASEMODULE] | Phase module "Name" property | Event frame "Name" property |
-    
