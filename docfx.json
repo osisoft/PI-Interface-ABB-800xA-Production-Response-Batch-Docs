@@ -30,9 +30,7 @@
       "resource": [
         {
           "files": [
-            "content/images/**",
-            "content/batch-interface-framework/images/**",
-            "content/interface-framework/images/**"
+            "content/images/**"
           ]
         }
       ],
