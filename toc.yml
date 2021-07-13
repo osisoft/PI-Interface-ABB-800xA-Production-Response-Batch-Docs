@@ -3,7 +3,7 @@
   items:
   - topicUid: BIF_InterfaceModes # No modifications required
   - topicUid: BIF_SupportedFeatures # Modify for interface
-  - topicUid: BIF_ReferenceManuals # Modify for interface
+  - topicUid: BIF_ReferenceManuals # No edits required
 # Installation Prerequisites
 - topicUid: BIF_InterfaceConfiguration # Modify for interface
   items: 

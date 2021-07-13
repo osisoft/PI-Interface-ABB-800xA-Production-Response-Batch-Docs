@@ -18,7 +18,7 @@ uid: BIF_SupportedFeatures
 | Stores batch data in PI AF | Yes |
 | Supports equipment arbitration events | No |
 | ICU Control | No (use PI Event Frame Interface Manager configuration tool) |
-| PI Point Data Types* | Int32/ Float32/ String |
+| PI Point Data Types | Int32/ Float32/ String |
 | Sub-second Timestamps | Yes |
 | Sub-second Scan Classes | No |
 | Automatically Incorporates Changes to PI Point Attributes | No |
@@ -31,11 +31,11 @@ uid: BIF_SupportedFeatures
 | Uses PI SDK | Yes: version 1.3.4.333 or higher required|
 | Uses AF SDK | Yes: version 2.5.x or higher required |
 | PINet String Support | N/A |
-| Source of Timestamps* | BES (not system time on interface node) |
+| Source of Timestamps | BES (not system time on interface node) |
 | History Recovery | Yes |
 | UniInt-based | No |
-| Disconnected Startup* | No |
-| SetDeviceStatus* | Yes |
+| Disconnected Startup | No |
+| SetDeviceStatus | Yes |
 | Failover | Yes |
 | Vendor Software Required on PI Interface Node | No |
 | Vendor Hardware Required | No |
@@ -45,7 +45,9 @@ uid: BIF_SupportedFeatures
 
 ## Equipment arbitration events
 
-Some PI Batch Interfaces run against BES or MES that support equipment arbitration events. Those events provide precise time stamps for the start and end times of unit batches. Individual installations of BES/MES that support equipment arbitration events may not be configured to provide such events. In the event the BES/MES supports equipment arbitration events, but is configured to not provide them you should use the command line parameter: /noarbitration. Using /noarbitration will ensure that the interface:
+This PI Batch Interface runs against a BES or MES that supports equipment arbitration events. These events provide precise time stamps for the start and end times of unit batches. Individual installations of BES or MES that support equipment arbitration events may not be configured to provide such events. If the BES or MES supports equipment arbitration events but is configured not to provide them, use the following command line parameter: [/noarbitration](xref:BIF_CommandLineParameterReference#noarbitration). 
+
+Using `/noarbitration` ensures that the interface:
 
 * Sets the start time of unit batches using the timestamp of the "Unit Procedure Started" event or the start of the next operation or phase for the unit, whichever is later.
 
