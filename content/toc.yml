@@ -1,8 +1,10 @@
-- topicUid: Introduction # ABB-800xA content
+- topicUid: BIF_Introduction # Customized for ABB 800xA
   items:
-  - topicUid: Overview # ABB-800xA content
-  - topicUid: ReferenceManuals # ABB-800xA content
-- topicUid: BIF_InstallationPrerequisites # modified batch framework topic
+  - topicUid: BIF_InterfaceModes # No edits
+  - topicUid: BIF_SupportedFeatures # No edits
+  - topicUid: BIF_ReferenceManuals # No edits
+  - topicUid: BIF_Overview # No edits
+- topicUid: BIF_InstallationPrerequisites # Customized for ABB 800xA
   items:
   - topicUid: InstallDLLsforABB800xA # ABB-800xA content
   - topicUid: BIF_SecurityOverview # modified batch framework topic
