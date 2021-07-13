@@ -8,44 +8,45 @@
   items:
   - topicUid: BIF_InterfaceConfiguration # Customized for ABB 800xA
   - topicUid: BIF_SecurityOverview # No edits
+    - topicUid: BIF_AssignPermissions # No edits
+    - topicUid: BIF_ConfigureSecurityForPIAF # No edits
+    - topicUid: BIF_ConfigureSecurityForPIDataArchive # No edits
   - topicUid: BIF_CreateAndConfigureInterfaceInstance # Customized for ABB 800xA
   - topicUid: BIF_ConfigureInstancesForFailover # No edits
   - topicUid: BIF_PIServerConnectivity
   - topicUid: BIF_LoggingAndErrorMessages
   ## Not in Rick's spreadsheet - topicUid: InstallDLLsforABB800xA # ABB-800xA content
-- topicUid: BIF_HowBatchInterfacesWork
+- topicUid: BIF_HowBatchInterfacesWork # No edits
   items:
-  - topicUid: BIF_HowInterfacesProcessBatchEventData # modified batch framework topic
-  items:
+  - topicUid: BIF_HowInterfacesProcessBatchEventData # Customized for ABB 800xA
+    items:
     - topicUid: BIF_EventFrames 
     - topicUid: BIF_EquipmentHierarchy
-  - topicUid: BIF_EquipmentArbitrationEventsUnavailable  # batch framework topic
-  - topicUid: BIF_TemplatesForMappingDataSourceEvents 
-  # batch framework topic
+  - topicUid: BIF_HowBatchDataIsStored # No edits  
+  - topicUid: BIF_EquipmentArbitrationEventsUnavailable  # No edits
+  - topicUid: BIF_TemplatesForMappingDataSourceEvents # No edits
     items:
-    - topicUid: BIF_PlaceholdersAndAdvancedParsing 
-    # batch framework topic
-    - topicUid: BIF_TagTemplates 
-    # modified batch framework topic
+    - topicUid: BIF_PlaceholdersAndAdvancedParsing # No edits
+    - topicUid: BIF_TagTemplates # No edits
       items:
-      - topicUid: BIF_TagTemplateExamples 
-      # batch framework topic 
-    - topicUid: BIF_LinkTemplates 
-    - topicUid: BIF_PropertyTemplates # modified batch framework topic
-    - topicUid: BIF_RecipeTemplates # modified batch framework topic
+      - topicUid: BIF_TagTemplateExamples # No edits
+    - topicUid: BIF_LinkTemplates # No edits
+    - topicUid: BIF_PropertyTemplates # Customized for ABB 800xA
+    - topicUid: BIF_RecipeTemplates # Customized for ABB 800xA
       items:
-      - topicUid: BIF_RecipeTemplateExamples 
-    - topicUid: BIF_FilterIncomingEvents 
-    - topicUid: BIF_TranslateForeignLanguageData
-  - topicUid: BIF_InterfaceModes
-- topicUid: Interface # ABB-800xA content
+      - topicUid: BIF_RecipeTemplateExamples # No edits
+    - topicUid: BIF_FilterIncomingEvents # No edits
+    - topicUid: BIF_TranslateForeignLanguageData # No edits
+  - topicUid: BIF_InterfaceModes # No edits
+- topicUid: BIF_Interface # Customized for ABB 800xA
   items:
-  - topicUid: DataSource # ABB-800xA content
-  - topicUid: StartAndStopEvents # ABB-800xA content
-  - topicUid: TemplatePlaceholders # ABB-800xA content
-- topicUid: BIF_PIEventFramesInterfaceManager 
+  - topicUid: BIF_DataSources # Customized for ABB 800xA
+  - topicUid: BIF_StartAndStopEvents # Customized for ABB 800xA
+  - topicUid: BIF_Databases # No edits
+  - topicUid: BIF_TemplatePlaceholders # Customized for ABB 800xA
+- topicUid: BIF_PIEventFramesInterfaceManager # No edits
   items:
-  - topicUid: BIF_InterfaceSelectionTab 
+  - topicUid: BIF_InterfaceSelectionTab # No edits
   - topicUid: BIF_ServerInformationTab # modified batch framework topic
   - topicUid: BIF_SourceTab # modified batch framework topic
   - topicUid: BIF_TemplatesTab # modified batch framework topic
