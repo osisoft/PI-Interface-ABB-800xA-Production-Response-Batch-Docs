@@ -2,6 +2,8 @@
 uid: BIF_Interface
 ---
 
-# [!include[interface](../includes/interface-name.md)]
+# ABB 800xA Production Response Batch interface
 
-<!-- Requires customization for interface -->
+<!-- Customized for ABB 800xA -->
+
+PI Interface for Production Response Batch is intended for use with ABB 800xA version 6.0 and later systems that use the ABB Ability&trade; MOM for streaming events.
