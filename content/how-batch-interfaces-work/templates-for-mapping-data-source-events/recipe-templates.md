@@ -8,7 +8,7 @@ uid: BIF_RecipeTemplates
 
 <!-- 
     
-MB 6/11/21: Step 3--removed placeholders that don't apply to interface 
+MB 6/11/21: Step 3. Removed placeholders that don't apply to interface 
 
 The following placeholders are supported:
 
@@ -36,7 +36,7 @@ The following placeholders are supported:
 
 <!-- 
     
-MB 6/11/21: Step 4--removed parameters that don't apply to interface
+MB 6/11/21: Step 4. removed parameters that don't apply to interface
 
 
 * **DefaultProperty[x].Name**
