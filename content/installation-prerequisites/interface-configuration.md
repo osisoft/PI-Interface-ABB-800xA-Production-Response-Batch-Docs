@@ -10,4 +10,4 @@ The following diagram illustrates configuration of PI Interface for ABB 800xA Pr
 
 **Data source: Batch Execution System Server. Target: PI AF (event frames and assets)**
 
-![Data source target](../../images/data-source-target.png)
+![Data source target](../images/data-source-target.png)

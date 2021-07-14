@@ -8,6 +8,7 @@
   items:
   - topicUid: BIF_InterfaceConfiguration # Customized for ABB 800xA
   - topicUid: BIF_SecurityOverview # No edits
+    items:
     - topicUid: BIF_AssignPermissions # No edits
     - topicUid: BIF_ConfigureSecurityForPIAF # No edits
     - topicUid: BIF_ConfigureSecurityForPIDataArchive # No edits
