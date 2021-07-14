@@ -2,13 +2,19 @@
 uid: BIF_Introduction
 ---
 
-# Introduction to [!include[interface](../includes/interface-name.md)]
+# Introduction
 
-<!-- Add customized content between comments for the interace you're writing for -->
+<!-- Introduction customized for ABB 800xA -->
 
+The PI Interface for ABB 800xA Production Response Batch uses event streaming technology to collect ABB system data from ABB API.
 
+PI interfaces for batch and manufacturing execution systems are scan-based interfaces that populate the PI AF database (with event frames and elements) based on events and data read from a data source. The interfaces can be configured to create and update PI tags based on the data received. The interface cannot update the batch data source.
+    
+**Note:** To use event frames, your PI batch interface must be version 3.x or higher.
 
-<!-- end comment-->
+Unlike other OSIsoft interfaces, batch-related interfaces do not use PI buffering. Batch data is persistent in the data source and not in danger of being lost. If the interface loses its connection to the PI Data server, it continues to collect data from the data source, transmitting it to the server when the connection is reestablished. Similarly, you need not configure failover for batch interfaces. If for any reason the interface is unable to collect data, the data remains available in the database or event files and you can use recovery mode to fill in any data that was missed during the time the interface was down.
+    
+**Note:** These interfaces are designed for recipes that constrain a unit to run only one unit procedure at a time.
 
 <!-- Content below applies to all interfaces. -->
 
