@@ -46,8 +46,6 @@
 - topicUid: BIF_PIEventFramesInterfaceManager # No edits
   items:
   - topicUid: BIF_InterfaceSelectionTab # No edits
-    items:
-    - topicUid: BIF_CreateANewInstanceOfThePIEFGenInterface # No edits
   - topicUid: BIF_ServerInformationTab # Customized for ABB 800xA
   - topicUid: BIF_SourceTab # Customized for ABB 800xA
   - topicUid: BIF_TemplatesTab # Customized for ABB 800xA
