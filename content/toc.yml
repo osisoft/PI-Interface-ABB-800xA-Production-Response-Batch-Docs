@@ -1,7 +1,5 @@
 - topicUid: BIF_Introduction # Customized for ABB 800xA
   items:
-  - topicUid: BIF_InterfaceModes # No edits
-  - topicUid: BIF_SupportedFeatures # No edits
   - topicUid: BIF_ReferenceManuals # No edits
   - topicUid: BIF_Overview # No edits
 - topicUid: BIF_InstallationPrerequisites # Customized for ABB 800xA
