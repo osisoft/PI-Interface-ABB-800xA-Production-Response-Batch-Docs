@@ -6,17 +6,19 @@ uid: BIF_InitializationFileReference
 
 <!-- Topic requires customization for specific interface -->
 
-The initialization (.ini) file stores configuration information for an interface instance. This file is generated and updated by the PI Event Frame Interface Manager configuration tool. To enable you to control access to these files, initialization files are stored under the ProgramData folder. (Note that, prior to release 4.x, initialization files were stored in the interface installation directory.)
+The initialization (.ini) file stores configuration information for an interface instance. The PI Event Frame Interface Manager configuration tool generates and updates this file each time you edit the instance configuration. You can access initialization files from `%ProgramData%\OSIsoft\Interfaces\`. 
 
-**Note:** To ensure a correctly configured .ini file, use the PI Event Frame Interface Manager configuration tool. Do not edit the .ini file manually.
+**Note:** Before release 4.x, initialization files were stored in the interface installation directory.
 
-The information in this appendix is intended for troubleshooting purposes, to enable you to understand the contents of the .ini file.
+**Tip:** To ensure a valid .ini file, use the PI Event Frame Interface Manager configuration tool. Do not edit the .ini file manually.
 
-The .ini file is divided into the following sections:
+Use this appendix to learn about the contents of the .ini file for troubleshooting purposes.
 
-* **COMMAND LINE PARAMETERS:** Basic interface settings.
-* **SIMPLE SWITCHES:** Connection settings.
-* **SOURCE TEMPLATE:** Specifies the settings required to connect to the data source, and events to be skipped (filtered)
+The .ini file contains the following sections:
+
+* **COMMAND LINE PARAMETERS:** Defines basic interface settings.
+* **SIMPLE SWITCHES:** Defines connection settings.
+* **SOURCE TEMPLATE:** Defines the settings required to connect to the data source and events to be skipped (filtered)
 * **RECIPE TEMPLATE:** Defines how data is recorded at each level of the batch hierarchy.
 * **TAG TEMPLATE:** Defines how tags are created and updated based on incoming data from the data source.
 * **PROPERTY TEMPLATE:** Define how PI properties or event frame attributes are created based on incoming data from the data source.
@@ -68,7 +70,7 @@ Optional for SQL data source. Available in DeltaV 9.3+.
 
 #### `evtdir=<path>`
 
-Required for event file data sources, specifies the folder that contains the event files. 
+Required for event file data sources. This parameters defines the folder that contains the event files. 
 
 Example:
 
@@ -145,11 +147,13 @@ Optional for SQL Server data source. Specifies the name of the database, if you 
 
 #### `sqlpswd=<password>` 
 
-For explicit login to SQL Server, password for user specified in sqluser setting.
+For explicit login to SQL Server. Enter the password for the `sqluser` parameter.
 
 #### `sqluser=<user name>` 
 
-User name for explicit login to SQL Server. By default the interface uses Windows authentication to connect to SQL Server.
+For explicit login to SQL Server. Use this parameter with `sqlpswd`. 
+
+**Note:** By default the interface uses Windows authentication to connect to SQL Server. 
 
 ## Property template settings
 
@@ -181,7 +185,7 @@ The following property is added to the resulting batch or batch-level event fram
 
 ### Available property template settings
 
-The following headings describes the settings required to define property templates.
+The following headings describe the settings required to define property templates.
 
 #### NAME 
 
@@ -237,7 +241,7 @@ Advanced parsing:
 Property[1].Value = [BatchID] | event: [*,value="State*"] | [Descript] | val: [Pval]
 ```
 
-**Note:** For SQL dta sources with the "Use original batch event view" option enabled (/UOBEV), you cannot use the [PVAL] or [EU] placeholders. To obtain this data you must parse it from the [DESCRIPT] placeholder.
+**Note:** For SQL data sources with the "Use original batch event view" option enabled (/UOBEV), you cannot use the [PVAL] or [EU] placeholders. To obtain this data you must parse it from the [DESCRIPT] placeholder.
 
 **Valid Placeholders**
 
@@ -311,7 +315,7 @@ Property[1].Trigger=[Event, value="State*] [Pval,value=RUNNING"]
 
 #### TRANSLATE 
 
-To specify that the value is to be translated according to the translation map you define set this setting to TRUE.
+Specifies values for translation according to the translation map you define. Values set to `TRUE` are translated.
 
 **Valid Placeholders**
 
@@ -597,7 +601,7 @@ Specifies the event that causes the interface to generate or update the tag. To 
 
 #### TRANSLATE 
 
-To specify that tag settings are to be translated according to the translation map you define, set this setting to TRUE.
+To translate the value according to the translation map that you define, set to TRUE.
 
 **Valid Placeholders**
 
