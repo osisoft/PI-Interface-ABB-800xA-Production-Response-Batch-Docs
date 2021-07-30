@@ -18,12 +18,12 @@ Credentials are stored in Windows Credential Manager using the following format:
 {interfacename}_{interfaceid}_{source}.
 ```
 
-The `{source}` can be "PI", "AF", or can also be `{source}_{index number}`. For example, a credential used for the [!include[interface](../includes/interface-name.md)] may be identified in Windows Credential Manager as:
+The `{source}` can be "PI", "AF", or can also be `{source}_{index number}`. For example, a credential used for the [!include[interface](../includes/product-short.md)] may be identified in Windows Credential Manager as:
 
 <!-- Update <PLACHOLDERS> for interface -->
 
-* `<PLACEHOLDER>_1_PI` for the PI Data server associated with the [!include[interface](../includes/interface-name.md)]
-* `<PLACEHOLDER>_1_AF` for the PI Asset Framework server associated with the [!include[interface](../includes/interface-name.md)]
-* `<PLACEHOLDER>_1_Source_1` for the data source associated with the [!include[interface](../includes/interface-name.md)]
+* `<PLACEHOLDER>_1_PI` for the PI Data server associated with the [!include[interface](../includes/product-short.md)]
+* `<PLACEHOLDER>_1_AF` for the PI Asset Framework server associated with the [!include[interface](../includes/product-short.md)]
+* `<PLACEHOLDER>_1_Source_1` for the data source associated with the [!include[interface](../includes/product-short.md)]
 
 You can change log in credentials by modifying the batch interface configuration file. Windows Credential Manager automatically updates with the newly encrypted log in information, resetting the flags in the .ini file to True.
