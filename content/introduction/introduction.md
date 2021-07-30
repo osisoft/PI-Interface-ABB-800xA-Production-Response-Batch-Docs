@@ -2,7 +2,7 @@
 uid: BIF_Introduction
 ---
 
-# Introduction to PI Interface for ABB 800xA Production Response Batch
+# Introduction to [!include[interface](../includes/interface-name.md)] [!include[version](../includes/version.md)]
 
 <!-- Introduction customized for ABB 800xA -->
 
