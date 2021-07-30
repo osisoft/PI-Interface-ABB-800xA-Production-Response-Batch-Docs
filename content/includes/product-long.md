@@ -1,1 +1,1 @@
-<PRODUCT_LONG>
+PI Interface for ABB 800xA Production Response Batch
