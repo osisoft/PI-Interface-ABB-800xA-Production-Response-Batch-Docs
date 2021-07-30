@@ -6,7 +6,9 @@ uid: BIF_Introduction
 
 <!-- Introduction customized for ABB 800xA -->
 
-The PI Interface for ABB 800xA Production Response Batch uses event streaming technology to collect ABB system data from ABB API.
+The [!include[interface](../includes/product-long.md)] [!include[version](../includes/product-version.md)] uses event streaming technology to collect ABB system data from ABB API.
+
+**Note:** For release notes, see the OSIsoft Customer Portal page for [!include[interface](../includes/product-long.md)] [!include[version](../includes/product-version.md)].
 
 PI interfaces for batch and manufacturing execution systems are scan-based interfaces that populate the PI AF database (with event frames and elements) based on events and data read from a data source. The interfaces can be configured to create and update PI tags based on the data received. The interface cannot update the batch data source.
     
