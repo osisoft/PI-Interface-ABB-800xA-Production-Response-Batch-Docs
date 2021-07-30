@@ -42,7 +42,6 @@
   items:
   - topicUid: BIF_DataSources # Customized for ABB 800xA
   - topicUid: BIF_StartAndStopEvents # Customized for ABB 800xA
-  - topicUid: BIF_Databases # No edits
   - topicUid: BIF_TemplatePlaceholders # Customized for ABB 800xA
 - topicUid: BIF_PIEventFramesInterfaceManager # No edits
   items:
