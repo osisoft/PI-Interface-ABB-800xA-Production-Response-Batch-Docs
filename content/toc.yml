@@ -5,7 +5,7 @@
   - topicUid: BIF_ReferenceManuals # No edits
 - topicUid: BIF_InstallationPrerequisites # Customized for ABB 800xA
   items:
-  - topicUid: BIF_InterfaceConfiguration # Customized for ABB 800xA
+  - topicUid: InstallDLLsforABB800xA # ABB-800xA content
   - topicUid: BIF_SecurityOverview # No edits
     items:
     - topicUid: BIF_AssignPermissions # No edits
@@ -15,7 +15,6 @@
   - topicUid: BIF_ConfigureInstancesForFailover # No edits
   - topicUid: BIF_PIServerConnectivity
   - topicUid: BIF_LoggingAndErrorMessages
-  ## Not in Rick's spreadsheet - topicUid: InstallDLLsforABB800xA # ABB-800xA content
 - topicUid: BIF_HowBatchInterfacesWork # No edits
   items:
   - topicUid: BIF_HowInterfacesProcessBatchEventData # Customized for ABB 800xA
