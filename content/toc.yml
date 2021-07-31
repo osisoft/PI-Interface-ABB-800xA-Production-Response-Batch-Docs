@@ -51,11 +51,11 @@
   - topicUid: BIF_SourceTab # Customized for ABB 800xA
   - topicUid: BIF_TemplatesTab # Customized for ABB 800xA
     items:
-    - topicUid: BIF_PropertyTemplatesEFIM # Customized for ABB 800xA
     - topicUid: BIF_TagTemplatesEFIM # Customized for ABB
+    - topicUid: BIF_PropertyTemplatesEFIM # Customized for ABB 800xA
+    - topicUid: BIF_LinkTemplates
     - topicUid: BIF_RecipeTemplatesEFIM # Customized for ABB 800xA
-    - topicUid: BIF_AlarmTagTemplates # No edits 
-    - topicUid: BIF_DefineAttributeTemplates # No edits
+    
   - topicUid: BIF_ConfigureTagTemplates # No edits
   - topicUid: BIF_EventFramesLinkTemplates # No edits
   - topicUid: BIF_FiltersTab # No edits
