@@ -47,22 +47,17 @@
   items:
   - topicUid: BIF_InterfaceSelectionTab # No edits
   - topicUid: BIF_ServerInformationTab # Customized for ABB 800xA
-  - topicUid: EventFrameStructureTab # ABB 800xA content
   - topicUid: BIF_SourceTab # Customized for ABB 800xA
   - topicUid: BIF_TemplatesTab # Customized for ABB 800xA
     items:
-    - topicUid: BIF_TagTemplatesEFIM # Customized for ABB
     - topicUid: BIF_PropertyTemplatesEFIM # Customized for ABB 800xA
-    - topicUid: BIF_LinkTemplates
     - topicUid: BIF_RecipeTemplatesEFIM # Customized for ABB 800xA
-    
-  - topicUid: BIF_ConfigureTagTemplates # No edits
-  - topicUid: BIF_EventFramesLinkTemplates # No edits
+    - topicUid: BIF_TagTemplatesEFIM # Customized for ABB
+    - topicUid: BIF_LinkTemplates # No Edits
+    - topicUid: BIF_Triggers # No edits
   - topicUid: BIF_FiltersTab # No edits
   - topicUid: BIF_TimeSettingsTab # Customized for ABB 800xA
   - topicUid: BIF_BatchSetupTab # Customized for ABB 800xA
-- topicUid: BIF_BatchSettings # No edits
-  - topicUid: BIF_MergeSetupTab # No edits
   - topicUid: BIF_OperationalSettingsTab # Customized for ABB 800xA
   - topicUid: BIF_TestConfigurationTab # No edits
   - topicUid: BIF_ServiceConfigurationTab # No edits
