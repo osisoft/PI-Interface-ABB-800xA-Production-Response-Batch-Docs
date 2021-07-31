@@ -1,12 +1,11 @@
 - topicUid: BIF_Introduction # Customized for ABB 800xA
+  name: Introduction
   items:
-  - topicUid: BIF_InterfaceModes # No edits
-  - topicUid: BIF_SupportedFeatures # No edits
+  - topicUid: Overview # Non-framework topic
   - topicUid: BIF_ReferenceManuals # No edits
-  - topicUid: BIF_Overview # No edits
 - topicUid: BIF_InstallationPrerequisites # Customized for ABB 800xA
   items:
-  - topicUid: BIF_InterfaceConfiguration # Customized for ABB 800xA
+  - topicUid: InstallDLLsforABB800xA # ABB-800xA content
   - topicUid: BIF_SecurityOverview # No edits
     items:
     - topicUid: BIF_AssignPermissions # No edits
@@ -14,9 +13,9 @@
     - topicUid: BIF_ConfigureSecurityForPIDataArchive # No edits
   - topicUid: BIF_CreateAndConfigureInterfaceInstance # Customized for ABB 800xA
   - topicUid: BIF_ConfigureInstancesForFailover # No edits
+  - topicUid: BIF_InterfaceConfiguration # Customized for ABB 800xA
   - topicUid: BIF_PIServerConnectivity
   - topicUid: BIF_LoggingAndErrorMessages
-  ## Not in Rick's spreadsheet - topicUid: InstallDLLsforABB800xA # ABB-800xA content
 - topicUid: BIF_HowBatchInterfacesWork # No edits
   items:
   - topicUid: BIF_HowInterfacesProcessBatchEventData # Customized for ABB 800xA
@@ -43,29 +42,22 @@
   items:
   - topicUid: BIF_DataSources # Customized for ABB 800xA
   - topicUid: BIF_StartAndStopEvents # Customized for ABB 800xA
-  - topicUid: BIF_Databases # No edits
   - topicUid: BIF_TemplatePlaceholders # Customized for ABB 800xA
 - topicUid: BIF_PIEventFramesInterfaceManager # No edits
   items:
   - topicUid: BIF_InterfaceSelectionTab # No edits
-    items:
-    - topicUid: BIF_CreateANewInstanceOfThePIEFGenInterface # No edits
   - topicUid: BIF_ServerInformationTab # Customized for ABB 800xA
   - topicUid: BIF_SourceTab # Customized for ABB 800xA
   - topicUid: BIF_TemplatesTab # Customized for ABB 800xA
     items:
     - topicUid: BIF_PropertyTemplatesEFIM # Customized for ABB 800xA
-    - topicUid: BIF_TagTemplatesEFIM # Customized for ABB
     - topicUid: BIF_RecipeTemplatesEFIM # Customized for ABB 800xA
-    - topicUid: BIF_AlarmTagTemplates # No edits 
-    - topicUid: BIF_DefineAttributeTemplates # No edits
-  - topicUid: BIF_ConfigureTagTemplates # No edits
-  - topicUid: BIF_EventFramesLinkTemplates # No edits
+    - topicUid: BIF_TagTemplatesEFIM # Customized for ABB
+    - topicUid: BIF_LinkTemplates # No Edits
+    - topicUid: BIF_Triggers # No edits
   - topicUid: BIF_FiltersTab # No edits
   - topicUid: BIF_TimeSettingsTab # Customized for ABB 800xA
   - topicUid: BIF_BatchSetupTab # Customized for ABB 800xA
-  - topicUid: BIF_BatchSettings # No edits
-  - topicUid: BIF_MergeSetupTab # No edits
   - topicUid: BIF_OperationalSettingsTab # Customized for ABB 800xA
   - topicUid: BIF_TestConfigurationTab # No edits
   - topicUid: BIF_ServiceConfigurationTab # No edits
