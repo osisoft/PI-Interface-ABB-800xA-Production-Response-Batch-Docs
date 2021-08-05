@@ -47,6 +47,8 @@
   items:
   - topicUid: BIF_InterfaceSelectionTab # No edits
   - topicUid: BIF_ServerInformationTab # Customized for ABB 800xA
+    items: 
+    - topicUid: BIF_WindowsCredentialManagerAuthentication # No edits
   - topicUid: BIF_SourceTab # Customized for ABB 800xA
   - topicUid: BIF_TemplatesTab # Customized for ABB 800xA
     items:
