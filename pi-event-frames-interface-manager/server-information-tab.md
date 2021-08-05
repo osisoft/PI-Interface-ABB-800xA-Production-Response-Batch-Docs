@@ -12,7 +12,9 @@ The **Server Information** tab is where you configure the PI Data server and PI 
 
 The PI Data server specified under PI Data server specifies the server to which the interface sends batch data. _Host_ is the IP address or fully-qualified domain name of the PI Data server. If the server that you want to use is not listed in the drop-down menu, add it to the known servers table using the [About PI-SDK utility](https://livelibrary.osisoft.com/LiveLibrary/content/en/server-v5/GUID-92B81C3E-8C8C-4670-AFFE-033F45A9DB5C). 
 
-If you are using a PI Data Archive version prior to 3.4.380.36, select **Use explicit log** in to specify a **PI user name** and **PI password**. 
+If you are using a PI Data Archive version prior to 3.4.380.36, select **Use explicit log** in to specify a **PI user name** and **PI password**.
+
+**Note:** When you use an explicit login to authenticate with PI Data server, [!include[interface](../includes/product-short.md)] stores the credentials you enter in Windows Credential Manager. For details, see <xref:BIF_WindowsCredentialManagerAuthentication>.
 
 If you are using a PI Data Archive version 3.4.380.36 and higher, use Windows Integrated Security for authentication. Ensure that the Windows account that runs the interface has sufficient permissions on the PI Data server to write data to PI points.
 
@@ -34,4 +36,6 @@ Under **Enable Auto Checkin**, select from the following options:
         
 **Note:** If the same user account is running multiple batch interfaces, our recommendation is to set **Enable Auto Checkin** to None. The OSIsoft best practice is to have a separate service account for each batch interface.
 
-If you are not using Windows Integrated Security for authentication, check **User explicit login for PI Asset Framework** and enter the **Windows account** and **Password** for the Windows user account that you intend to use to connect to PI Asset Framework. 
+If you are not using Windows Integrated Security for authentication, check **User explicit login for PI Asset Framework** and enter the **Windows account** and **Password** for the Windows user account that you intend to use to connect to PI Asset Framework.
+
+**Note:** When you use an explicit login to authenticate with PI Asset Framework, [!include[interface](../includes/product-short.md)] stores the credentials you enter in Windows Credential Manager. For details, see <xref:BIF_WindowsCredentialManagerAuthentication>.

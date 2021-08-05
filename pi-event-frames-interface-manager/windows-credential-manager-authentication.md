@@ -4,26 +4,59 @@ uid: BIF_WindowsCredentialManagerAuthentication
 
 # Windows Credential Manager for authentication
 
-<!-- Update topic for specific interface -->
+As a security best practice, [!include[interface](../includes/product-short.md)] stores any credentials that you enter during interface configuration to Windows Credential Manager. [!include[interface](../includes/product-short.md)] uses these credentials to authenticate with: 
 
-Batch interfaces use Windows Credential Manager for authentication, encrypting your user name and log in information so that you are not required to re-enter authentication information for subsequent log ins.
+* PI Data server 
+* PI Asset Framework
+* The batch interface data source
 
-The .ini file includes PIUSECM, AFUSECM, and SOURCE.USECM flags that are set to False until your batch interface is run for the first time. After this point, the user name and password are stored in Windows Credential Manager, those .ini file flags are reset to True, thus authorizing your subsequent use of that machine without requiring you to reenter your log in credentials.
+Storage of credentials within Windows Credential Manager benefits you by:
 
-After this point the user name and password are stored in Windows Credential Manager your user name and password information is encrypted
+* Caching credentials for future authentication, so that you do not have to re-enter them.
+* Removing any reference to passwords within the interface instance .ini file.
+* Encrypting the credentials.
 
-Credentials are stored in Windows Credential Manager using the following format:
+**Tip:** For more information on where to configure credentials that [!include[interface](../includes/product-short.md)] uses for authentication, see:
 
-```text
-{interfacename}_{interfaceid}_{source}.
-```
+* <xref:BIF_ServerInformationTab>
+* <xref:BIF_SourceTab>
 
-The `{source}` can be "PI", "AF", or can also be `{source}_{index number}`. For example, a credential used for the [!include[interface](../includes/interface-name.md)] may be identified in Windows Credential Manager as:
+## Credential creation
 
-<!-- Update <PLACHOLDERS> for interface -->
+When you configure an interface using the PI Event Frames Interface Manager (see links in tip above), [!include[interface](../includes/product-short.md)] temporarily writes the credentials that you enter to the applicable .ini file. These settings remain in the .ini file until you start the interface. 
 
-* `<PLACEHOLDER>_1_PI` for the PI Data server associated with the [!include[interface](../includes/interface-name.md)]
-* `<PLACEHOLDER>_1_AF` for the PI Asset Framework server associated with the [!include[interface](../includes/interface-name.md)]
-* `<PLACEHOLDER>_1_Source_1` for the data source associated with the [!include[interface](../includes/interface-name.md)]
+After you start [!include[interface](../includes/product-short.md)], it makes the following updates:
 
-You can change log in credentials by modifying the batch interface configuration file. Windows Credential Manager automatically updates with the newly encrypted log in information, resetting the flags in the .ini file to True.
+* All credentials are saved to Windows Credential Manager.
+* Within the interface .ini file, any reference to passwords are removed.
+
+## Credential storage
+
+After you start [!include[interface](../includes/product-short.md)], the credentials that it uses for authentication with PI components and data sources are listed in [Windows Credential Manager](https://support.microsoft.com/en-us/windows/accessing-credential-manager-1b5c916a-6a16-889f-8581-fc16e8165ac0). 
+
+The following table lists credentials for [!include[interface](../includes/product-short.md)]:
+
+| Credentials | Name |
+|--|--|
+| PI Data server | [!include[interface](../includes/dir-short.md)]_X_PI |
+| PI Asset Framework | [!include[interface](../includes/dir-short.md)]_X_AF |
+| Batch interface data source | [!include[interface](../includes/dir-short.md)]_X_Source_Y |
+
+**Notes:** 
+
+* `X` is a placeholder for an interface instance **Service ID**.
+* `Y` is a placeholder for a data source instance number.
+
+## To update credentials
+
+If you need to update the credentials that the interface uses for authentication, edit the configuration settings for the instance using PI Event Frames Interface Manager.
+
+1. From **Interface Selection**, select the applicable [!include[interface](../includes/product-short.md)] instance.
+
+1. From **Server Information**, update the credentials used to authenticate with PI Data server or PI Asset Framework.
+
+1. From **Source**, update the credentials used to authenticate with a data source. 
+   
+1. Click **Save Settings**.
+
+**Result:** The credentials are updated within the instance configuration. Restart the interface to update the credentials within Windows Credentials Manager.
