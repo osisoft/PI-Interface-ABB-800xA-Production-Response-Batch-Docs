@@ -2,7 +2,7 @@
 uid: BIF_EventFilePIBatchUnitProcedure
 ---
 
-# Event file PIUnitBatch unit procedure
+# Event file PIUnitBatch Unit Procedure
 
 ## Event journal start/end events
 
@@ -12,7 +12,7 @@ For procedure- and unit procedure-level recipes, the interface requires both a s
 
 * [EVENT] = "System Message" and [DESCRIPT] field = "Unit Procedure Started"
 
-And
+Or
 
 * [EVENT] field = "Recipe Arbitration", [DESCRIPT] field = "Resource Acquired by recipe" and [EU] field = "Unit". The [PVALUE] field contains the actual unit name.
 The latest timestamp is used as the start time for the unit batch.
@@ -22,10 +22,6 @@ Operation and phase-level recipes create parent batches and unit batches automat
 ### End
 
 For procedure- and unit procedure-level recipes, the interface requires both an end event and an "equipment released" event, as follows:
-
-* [EVENT] = "System Message" and [DESCRIPT] field = "Unit Procedure Finished".
-
-And
 
 * [EVENT] = "System Message" and [DESCRIPT] field = "Unit Procedure Finished".
 
