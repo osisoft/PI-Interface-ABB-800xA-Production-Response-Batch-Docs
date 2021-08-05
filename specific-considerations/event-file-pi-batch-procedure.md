@@ -2,7 +2,7 @@
 uid: BIF_EventFilePIBatchProcedure
 ---
 
-# Event file PIbatch procedure
+# Event file PIBatch Procedure
 
 ## Event journal start/end events
 
