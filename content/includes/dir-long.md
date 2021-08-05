@@ -1,1 +1,1 @@
-<INSTALL_DIR_NAME_LONG>
+`%ProgramData%\OSIsoft\Interfaces\ABB800xaPR`
