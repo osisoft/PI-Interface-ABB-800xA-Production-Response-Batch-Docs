@@ -2,7 +2,7 @@
 uid: BIF_EventFilePhase
 ---
 
-# Event file phase
+# Event file Phase
 
 ## Event journal start/end events
 

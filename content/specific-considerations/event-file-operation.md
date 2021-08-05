@@ -2,7 +2,7 @@
 uid: BIF_EventFileOperation
 ---
 
-# Event file operation
+# Event file Operation
 
 ## Event journal start/end events
 

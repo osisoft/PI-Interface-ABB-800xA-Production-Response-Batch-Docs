@@ -2,7 +2,7 @@
 uid: BIF_EventFilePhaseStep
 ---
 
-# Event file phase step
+# Event file Phase Step
 
 By default, phase steps are not detected. You must enable phase steps and configure the strings that indicate state changes. Unlike other levels, no end events are recorded for phase steps: the start of a phase step ends the preceding one.
 
