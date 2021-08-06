@@ -6,7 +6,7 @@ uid: BIF_InitializationFileReference
 
 <!-- Customized for ABB 800xA. -->
 
-The initialization (.ini) file stores configuration information for an interface instance. The PI Event Frame Interface Manager configuration tool generates and updates this file each time you edit the instance configuration. You can access initialization files from `%ProgramData%\OSIsoft\Interfaces\`. 
+The initialization (.ini) file stores configuration information for an interface instance. The PI Event Frame Interface Manager configuration tool generates and updates this file each time you edit the instance configuration. You can access initialization files from [!include[programdata](../includes/dir-long.md)]. 
 
 **Note:** Before release 4.x, initialization files were stored in the interface installation directory.
 
@@ -106,34 +106,9 @@ Required.
 The user name required to explicitly login to ABB Ability MOM Services. Contact your ABB 800xA Administrator for additional guidance if needed.
 
 
-<!--
-
-MB 6/11/21: removing content that doesn't apply to ABB 800xA
-
-Following are some simple examples of data source templates.
-
-Single DeltaV Batch Historian:
-
-```text
-Source[1].sqlserver = deltav10 Source[1].database = DVHisDB
-```
-
-DeltaV Batch Historian plus Alarms and Events:
-
-```text
-Source[1].sqlserver = deltav10 Source[1].database = DVHisDB Source[2].sqlserver = deltav10\DELTAV_CHRONICLE Source[2].database = Ejournal Source[2].isAE = true
-``` -->
-
 ### Data source template parameters
 
 The following headings describe the parameters for data source templates.
-
-#### `cursor= client | server` 
-
-Optional for SQL data source. Available in DeltaV 9.3+.
-
-* Client (default): The interface retrieves complete dataset prior to processing. High memory consumption on interface node.
-* Server: The interface requests and processes one dataset record at a time. Reduces interface node memory consumption.
 
 #### `evtdir=<path>`
 
@@ -161,13 +136,11 @@ Indicates that the data source is a DeltaV Alarms and Events server.
 
 #### `opcnode=<node name or IP address>`
 
-Required for OPC alarms and events data source. Available in DeltaV 10.3 and higher. Specifies the host of the DeltaV OPCAE server is installed. If used with DeltaV SQL server, must be defined for the same source. 
+Required for OPC alarms and events data source. Available in DeltaV 10.3 and higher. Specifies the host of the DeltaV OPCAE server is installed.
 
 Example:
 
 ```text
-Source[1].sqlserver = deltav10
-Source[1].sqldatabase = DVHisDB
 Source[1].opcnode = deltav10
 Source[1].opcserver = DeltaV.OPCEventServer.1
 ```
@@ -203,24 +176,6 @@ Example:
 ```text
 skipunits = unit_1, u*2
 ```
-
-#### `sqlserver=<node name or IP address>`
-
-Required for SQL Server data source. Specifies the host where SQL Server is running. Available in DeltaV 9.3+.
-
-#### `sqldatabase=<database name>`
-
-Optional for SQL Server data source. Specifies the name of the database, if you are not using the default database. (DVHisDB).
-
-#### `sqlpswd=<password>` 
-
-For explicit login to SQL Server. Enter the password for the `sqluser` parameter.
-
-#### `sqluser=<user name>` 
-
-For explicit login to SQL Server. Use this parameter with `sqlpswd`. 
-
-**Note:** By default the interface uses Windows authentication to connect to SQL Server. 
 
 ## Property template settings
 
@@ -287,7 +242,6 @@ Property[1].Name = $\[Event]
 * [UNIT]
 * [UNITPROCEDURE]
 * [USERID] 
-
 * [*,value="Exact Field"]
 * [*,value="Field Mask"]
 * advanced parsing
@@ -307,8 +261,6 @@ Advanced parsing:
 ```text
 Property[1].Value = [BatchID] | event: [*,value="State*"] | [Descript] | val: [Pval]
 ```
-
-**Note:** For SQL data sources with the "Use original batch event view" option enabled (/UOBEV), you cannot use the [PVAL] or [EU] placeholders. To obtain this data you must parse it from the [DESCRIPT] placeholder.
 
 **Valid Placeholders**
 
@@ -375,7 +327,6 @@ Property[1].Trigger=[Event, value="State*] [Pval,value=RUNNING"]
 * [UNIT]
 * [UNITPROCEDURE]
 * [USERID] 
-
 * [*,value="Exact Field"]
 * [*,value="Field Mask"]
 * advanced parsing
@@ -425,7 +376,6 @@ Specifies the data type for the value. To configure the interface to evaluate th
 * [UNIT]
 * [UNITPROCEDURE]
 * [USERID] 
-
 * [*,value="Exact Field"]
 * [*,value="Field Mask"]
 * advanced parsing
@@ -497,7 +447,6 @@ Annotate the tag using a string.
 * [UNIT]
 * [UNITPROCEDURE]
 * [USERID]
-
 * [*,value="Exact Field"]
 * [*,value="Field Mask"]
 * advanced parsing
@@ -524,7 +473,6 @@ Annotate the tag using a name/value object.
 * [UNIT]
 * [UNITPROCEDURE]
 * [USERID]
-
 * [*,value="Exact Field"]
 * [*,value="Field Mask"]
 * advanced parsing
@@ -551,7 +499,6 @@ Specifies how the descriptor field of the tag is populated.
 * [UNIT]
 * [UNITPROCEDURE]
 * [USERID]
-
 * [*,value="Exact Field"]
 * [*,value="Field Mask"]
 * advanced parsing
@@ -578,7 +525,6 @@ Specifies the engineering units for the tag.
 * [UNIT]
 * [UNITPROCEDURE]
 * [USERID]
-
 * [*,value="Exact Field"]
 * [*,value="Field Mask"]
 * advanced parsing
@@ -605,7 +551,6 @@ Specifies how the tag is to be named.
 * [UNIT]
 * [UNITPROCEDURE]
 * [USERID]
-
 * [*,value="Exact Field"]
 * [*,value="Field Mask"]
 * advanced parsing
@@ -632,7 +577,6 @@ Configures the naming convention for the phase module alias generated by the int
 * [UNIT]
 * [UNITPROCEDURE]
 * [USERID]
-
 * [*,value="Exact Field"]
 * [*,value="Field Mask"]
 * advanced parsing
@@ -659,7 +603,6 @@ Specifies the event that causes the interface to generate or update the tag. To 
 * [UNIT]
 * [UNITPROCEDURE]
 * [USERID]
-
 * [*,value="Exact Field"]
 * [*,value="Field Mask"]
 * advanced parsing
@@ -706,7 +649,6 @@ Configures the naming convention for the unit alias generated by the interface. 
 * [UNIT]
 * [UNITPROCEDURE]
 * [USERID]
-
 * [*,value="Exact Field"]
 * [*,value="Field Mask"]
 * advanced parsing
@@ -735,7 +677,6 @@ Configures the naming convention for the unit alias generated by the interface. 
 * [UNIT]
 * [UNITPROCEDURE]
 * [USERID]
-
 * [*,value="Exact Field"]
 * [*,value="Field Mask"]
 * advanced parsing
@@ -871,11 +812,9 @@ Advanced parsing:
 * [UNIT]
 * [UNITPROCEDURE]
 * [USERID]
-
 * [*,value="Exact Field"],
 * [*,value="Field Mask"],
 * advanced parsing
-
 
 ### TRIGGER
     
@@ -910,10 +849,6 @@ DCSTemplate[1].Trigger=[Event, value="State*] [Pval,value=RUNNING"]
 * [UNIT]
 * [UNITPROCEDURE]
 * [USERID]
-
 * [*,value="Exact Field"],
 * [*,value="Field Mask"],
 * advanced parsing
-
-    
-
