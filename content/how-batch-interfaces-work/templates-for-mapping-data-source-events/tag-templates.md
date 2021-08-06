@@ -92,16 +92,11 @@ Mark Bishop 7/13/21: step does not apply
     
     `[EVENT, VALUE="PIEVENT"][DESCRIPT, VALUE="BATCH"][PVAL, VALUE="START"]`
     
-    The following placeholders are supported when the triggering expression contains `[Parameter, value="PIEVENT"]`.
+    Placeholders are supported when the triggering expression contains `[Parameter, value="PIEVENT"]`.
 
-    | Placeholder | Batch Database | Event Frames |
-    |--|--|--|
-    | [BATCHID] | PIBatch and PIUnitBatch: BatchID property. | For a top-level event frame, "Name" property. For second-level event frame, "BatchID" attribute |
-    | [PROCEDURE] | PIBatch "Recipe" property | Event frame "Recipe" attribute |
-    | [UNITPROCEDURE] | PIUnitBatch "Procedure" property | Event frame "Name" property |
-    | [OPERATION] | PISubBatch "Name" property | Event frame "Name" property |
-    | [PHASE] | Level 4 PISubBatch "Name" property | Event frame "Name" property |
-    | [PHASESTATE] | Level 5 PISubBatch "Name" property | Event frame "Name" property |
-    | [PHASESTEP] | Level 6 PISubBatch "Name" property | Event frame "Name" property |
-    | [UNIT] | PIUnit "Name" property | Event frame "Name" property |
-    | [PHASEMODULE] | Phase module "Name" property | Event frame "Name" property |
+    For a top-level event frame, the interface uses the "Name" property, as do all the Tag template placeholders with the following exceptions:
+
+      * For a second-level event frame, the interface uses the [BATCHID] attribute.
+      * The [PROCEDURE] placeholder uses the event frame "Recipe" attribute.
+
+    See <xref:BIF_TemplatePlaceholders> for the complete list of available placeholders. 
