@@ -2,8 +2,7 @@
 uid: BIF_InitializationFileExamples
 ---
 
-
-## Multiple EVT Sources
+# Initialization file example 
 
 <!-- Customized for ABB 800xA. -->
 
