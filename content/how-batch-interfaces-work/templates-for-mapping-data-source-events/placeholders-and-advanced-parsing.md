@@ -83,16 +83,16 @@ The following table lists examples of parsing a field that contains the followin
 
 These placeholders are supported for expression triggered by PI batch events (Parameter, value="PIEVENT"]).
 
-| Place Holder | Batch Level | How Batch Database is Stored | How Event Frames are Stored |
+| Place Holder | Batch Level | How Event Frames are Stored |
 |--|--|--|--|
-| [BATCHID] | 1 or 2 | String value that is stored as PIBatch BatchID and PIUnitBatch BatchID property | Top-level event frame: Name property Second-level event frame: BatchID attribute. |
-| [PROCEDURE] | 1 | PIBatch Recipe property | Top level event frame Recipe Attribute |
-| [UNITPROCEDURE] | 2 | PIUnitBatch Procedure property | Name property |
-| [OPERATION] | 3 | PISubBatch Name property | Name property |
-| [PHASE] | 4 | PISubBatch Name property | Name property |
-| [PHASESTATE] | 5 | PISubBatch Name property | Name property |
-| [PHASESTEP] | 6 | PISubBatch Name property | Name property |
-| [UNIT] | n/a | PIModule Name property | PI AF element Name property. |
+| [BATCHID] | 1 or 2 | Top-level event frame: Name property Second-level event frame: BatchID attribute. |
+| [PROCEDURE] | 1 | Top level event frame Recipe Attribute |
+| [UNITPROCEDURE] | 2 | Name property |
+| [OPERATION] | 3 | Name property |
+| [PHASE] | 4 | Name property |
+| [PHASESTATE] | 5 | Name property |
+| [PHASESTEP] | 6 | Name property |
+| [UNIT] | n/a | PI AF element Name property. |
 
 For example, to update a PI tag when a PI batch is started or ended, specify the following tag templates:
 
