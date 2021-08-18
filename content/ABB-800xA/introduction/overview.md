@@ -22,3 +22,5 @@ Enabling this interface requires user installation of the ABB Ability Manufactur
 * Newtonsoft.Json.dll
 
 For the procedure for installing these DLL files, see <xref:InstallDLLsforABB800xA>. 
+
+**Note:** This interface can only create Event Frames in the PI Asset Framework server and cannot create batches in the PI Batch Database.
