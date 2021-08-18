@@ -24,7 +24,7 @@ If you are using a PI Data Archive version 3.4.380.36 and higher, use Windows In
 
 In this section you configure PI Asset Framework configuration settings. 
 
-Select **Create event frames in PI Asset Framework** to create event frames in PI Asset Framework, instead of creating batches in the PI Batch Database. 
+Select **Create event frames in PI Asset Framework** to create event frames in PI Asset Framework. 
 
 The PI Asset server and PI Asset Framework database are displayed in the **Host and Database** (/AFHOST and /AFDATABASE) field. Click **Select Asset server** to open the Select Database window to choose an alternative server. 
 
