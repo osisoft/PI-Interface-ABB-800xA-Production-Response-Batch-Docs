@@ -14,7 +14,7 @@ Before installing and configuring, ensure that the following prerequisites are m
 
 * Verify that the PI Data Archive is running and is accessible from the computer where you intend to run the interface (the interface node).
 
-* If you intended to generate event frames, make sure that the PI AF Server is running and is accessible from the interface node.
+* Ensure that the PI AF Server is running and is accessible from the interface node.
 
 * Ensure that the system time on all these computers is correct.
 

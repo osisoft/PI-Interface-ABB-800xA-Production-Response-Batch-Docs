@@ -90,3 +90,5 @@ This configuration is typical in an environment where a manufacturing execution 
 For example, the following figure illustrates an event frame created based on a batch from an Emerson DeltaV batch execution system. This event frame is referenced in an event frame created by a Werum PAS-X manufacturing execution system. Other batch interface instances that are configured to use the same linking element create references to their batches under the same link. 
 
 ![linked event frames](../images/linked-event-frames.png)
+
+Unlike other OSIsoft interfaces, batch-related interfaces do not use PI buffering. Batch data is persistent in the data source and not in danger of being lost. If the interface loses its connection to the PI Data server, it continues to collect data from the data source, transmitting it to the server when the connection is reestablished.

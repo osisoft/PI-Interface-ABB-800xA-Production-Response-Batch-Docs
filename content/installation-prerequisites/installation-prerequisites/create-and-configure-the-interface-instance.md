@@ -32,7 +32,7 @@ To create an instance of the interface, perform the following steps using PI Eve
 
 4. On the **Server Information** tab, specify settings for your PI servers.
 
-    If you intend to create event frames, check **Create event  frames** and specify the PI Asset server and AF database.
+    Ensure that **Create event frames** is selected and specify the PI Asset server and AF database.
 
 5. On the **Source** tab, configure the settings for the data source (the BES).
 

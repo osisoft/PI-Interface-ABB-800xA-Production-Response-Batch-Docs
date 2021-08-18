@@ -22,7 +22,6 @@
     items:
     - topicUid: BIF_EventFrames 
     - topicUid: BIF_EquipmentHierarchy
-  - topicUid: BIF_HowBatchDataIsStored # No edits  
   - topicUid: BIF_EquipmentArbitrationEventsUnavailable  # No edits
   - topicUid: BIF_TemplatesForMappingDataSourceEvents # No edits
     items:
