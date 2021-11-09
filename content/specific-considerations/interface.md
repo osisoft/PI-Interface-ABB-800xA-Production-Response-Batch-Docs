@@ -2,7 +2,7 @@
 uid: BIF_Interface
 ---
 
-# ABB 800xA Production Response Batch interface
+# [!include[interface](../includes/product-long.md)]
 
 <!-- Customized for ABB 800xA -->
 

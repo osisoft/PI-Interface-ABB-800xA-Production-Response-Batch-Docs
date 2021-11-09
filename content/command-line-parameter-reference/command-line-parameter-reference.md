@@ -147,9 +147,24 @@ Example:
 
 (Optional – event frames only) Disable propagation of referenced elements to children. By default, the interface propagates each event frame element reference to its children event frames.
 
-<!-- 
+### `/enabledmonitortags =<TAG>]`
 
-MB 6/9/21: Does not apply to 800xA
+Indicates which [monitor tags](xref:BIF_MonitorTagSetupTab) are enabled. Each enabled tag consumes a license, but disabled tags do not. You can enable multiple monitor tags by separating each one with a comma-separated list. For example:
+
+```text
+/enabledmonitortags=BATCHSTATUS,BATCHPROCESSORSTATUS,BATCHLISTCOUNT,EQUIPMENTCOUNT,TAGLISTCOUNT,TAGAELISTCOUNT,EVENTREADCOUNT,ERRORCOUNT,SOURCEUNITCOUNT,PIUNITCOUNT,SOURCEPHASEMODCOUNT,PIPHASEMODCOUNT,SOURCEBATCHCOUNT,PIBATCHCOUNT,SOURCEUNITBATCHCOUNT,PIUNITBATCHCOUNT,SOURCESUBBATCHCOUNT,PISUBBATCHCOUNT,SOURCEPROPERTYNODECOUNT,PIPROPERTYNODECOUNT,SOURCEPROPERTYEVENTCOUNT,PIPROPERTYEVENTCOUNT,SOURCETAGCOUNT,PITAGCOUNT,SOURCETAGEVENTCOUNT,PITAGEVENTCOUNT,SOURCETAGALIASCOUNT,PITAGALIASCOUNT,CACHEDBATCHCOUNT,OPENBATCHCOUNT,SOURCEREADTIME,TAGCACHETIME,BATCHCACHETIME,EQUIPMENTCACHETIME,BATCHSYNCTIME,TAGSYNCTIME,EQUIPMENTSYNCTIME,TOTALTIME,WAITINGFOREQUIPMENTUB,NUMBEROFWORKORDERS,NUMBEROFOPENWORKORDERS,WORKORDERQUERYTIMEAVG
+```
+
+For more information about each tag available, see [Monitor tag reference](xref:BIF_MonitorTagSetupTab#monitor-tag-reference).
+
+Additionally, you can enable or disable all tags using the `ALL` or `NONE` options:
+
+```text
+/enabledmonitortags=ALL
+/enabledmonitortags=NONE
+```
+
+<!--
 
 ### `/equipmentXML =<filepath>` 
 
@@ -241,7 +256,11 @@ With merging enabled, only the CleaningTest batches are merged. To merge the oth
 * **Delete:** Delete batch data from PI archives for specified period, leaving data from all other sources intact. Use only if the interface is unable to synchronize source batch data with the PI System. Must be used in conjunction with the recovery mode switches (`/rst` and `/ret`).
 
 * **NoData:** Newly-added tags, units and modules are indexed (referenced) in the primary PI archive, but older archives do not have entries for these modules, units and tags. In NoData mode, the interface creates modules, units, tags and tag aliases without processing batch data and writing events to the tags. To recover batch data for a period prior to the one in the primary archive, you must reprocess older archives with the offline archive utility. Manual archive reprocessing creates indexes for newly-added units, modules, tags. Always run the interface in this mode before writing new batch data to older PI archives (that is, archives other than the primary archive).
-  
+
+### `/monitortagwindow =<days>`
+
+(Optional) Monitor tag time window in days. Most [monitor tags](xref:BIF_MonitorTagSetupTab) show a sum of events over a number of days. This setting allows the size of the window to be adjusted. The default value is one day.
+
 ### `/mop`
 
 (Optional) Merge identically named operations under the same parent unit procedure. The start time of the combined operation is the start of the earliest operation and the end time is the end time of the latest or longest operation that was merged.

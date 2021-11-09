@@ -4,6 +4,7 @@ uid: BIF_Databases
 
 # Databases
 
+<<<<<<< HEAD
 [!include[interface](../includes/product-short.md)] is a manufacturing execution system that generates consumable log files in the form of Event Journal Files (EVT files). [!include[interface](../includes/product-short.md)] collects data from those EVT files.
 
 A single interface instance can collect data from multiple [!include[interface](../includes/product-short.md)] sources by configuring the interface to read EVT files from multiple locations.
@@ -11,6 +12,15 @@ A single interface instance can collect data from multiple [!include[interface](
 ## Event Journals
 
 Event journals are text files in which the BES logs batch events. For the [!include[interface](../includes/product-short.md)] systems, the interface expects each line in the event journal to be composed of the following tab-delimited fields, in the order specified:
+=======
+[!include[interface](../includes/product-long.md)] is a manufacturing execution system that generates consumable log files in the form of Event Journal Files (EVT files). [!include[interface](../includes/product-long.md)] collects data from those EVT files.
+
+A single interface instance can collect data from multiple [!include[interface](../includes/product-long.md)] sources by configuring the interface to read EVT files from multiple locations.
+
+## Event Journals
+
+Event journals are text files in which the BES logs batch events. For the [!include[interface](../includes/product-long.md)] systems, the interface expects each line in the event journal to be composed of the following tab-delimited fields, in the order specified:
+>>>>>>> 0bd79ba306f7edd7b6875841dd34a0de501f4fa4
 
 ```
 [TIMESTAMP] [BATCHID] [RECIPE] [DESCRIPT] [EVENT] [PVALUE] [EU] [AREA] [PROCCELL] [UNIT] [PHASE] [PHASEDESC] [USERID] [UNIQUEID] [COMMENT]

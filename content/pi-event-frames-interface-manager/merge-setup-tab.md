@@ -15,3 +15,5 @@ The command line parameter settings on this tab configure merging of the batch g
 | Merge multiple source batches with same batch ID into one batch (/MERGE) |Enable merging of multiple source batches with same ID. The original data for each batch merged is stored in PI properties under a node named using the ID of the original batch. |
 | Batch ID mask (/BIDM) | Override the incoming batch ID. |
 | Truncate batch ID (/TBID) | Use the truncated batch ID in the batch ID field of unit procedures. |
+
+**Note:** Event frames separated by more than the configured [Cache time](xref:BIF_TimeSettingsTab#cache-time-cachetimedays) setting will not merge.
