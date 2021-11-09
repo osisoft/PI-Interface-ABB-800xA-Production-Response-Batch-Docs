@@ -60,7 +60,7 @@
   - topicUid: BIF_TimeSettingsTab # Customized for ABB 800xA
   - topicUid: BIF_BatchSetupTab # Customized for ABB 800xA
   - topicUid: BIF_OperationalSettingsTab # Customized for ABB 800xA
-  - topicUid: BIF_MonitorTagSetupTab # No modifications required
+# - topicUid: BIF_MonitorTagSetupTab # No modifications required
   - topicUid: BIF_TestConfigurationTab # No edits
   - topicUid: BIF_ServiceConfigurationTab # No edits
 - topicUid: BIF_CommandLineParameterReference # Customized for ABB 800xA
