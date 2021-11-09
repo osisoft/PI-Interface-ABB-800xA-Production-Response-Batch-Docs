@@ -2,7 +2,7 @@
 uid: BIF_Introduction
 ---
 
-# Introduction to [!include[interface](../includes/interface-name.md)] [!include[version](../includes/version.md)]
+# Introduction to [!include[interface](../includes/product-long.md)] [!include[interface](../includes/product-version.md)]
 
 <!-- Add customized content between comments for the interace you're writing for -->
 

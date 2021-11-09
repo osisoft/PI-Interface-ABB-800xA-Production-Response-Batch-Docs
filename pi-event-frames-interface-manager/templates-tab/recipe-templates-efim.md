@@ -29,6 +29,32 @@ Defines the naming convention used by the interface to assign names to batch eve
 
 For example: abc_[Procedure] If the incoming event's [Procedure] field contains "Test", the resulting procedure **Recipe** field is "abc_Test".
 
+### Value
+
+**Note**: The **Value**, **Create property**, **Data type**, and **Translate** options are only available for recipe template properties.
+    
+Specifies the value to be recorded. Use placeholders to include values from the data emitted by the data source. 
+
+### Create property
+    
+Specifies the level at which the property is to be created. Options are as follows:
+
+* **At recipe level**: By default, properties are created at the recipe level corresponding to the level in the data source from which the data was read.
+
+* **Under root node**: Create properties at the top level of the batch or event frame hierarchy, regardless of the level at which they originated.
+
+* **Under UniqueID node**: (Batch database only, not event frames) Create properties under the batch's UniqueID node.
+
+### Data type
+    
+PI data type of the value. Note that if the incoming value is incompatible with the specified type, the event is not processed, and an error is logged. 
+
+### Translate
+
+Maps text from the data source to the text that you want to record in the PI System. 
+    
+Specifies the value to be recorded. Use placeholders to include values from the data emitted by the data source. 
+
 ## Advanced features
 
 ### Batch ID

@@ -4,13 +4,13 @@ uid: BIF_Databases
 
 # Databases
 
-[!include[interface](../includes/interface-name.md)] is a manufacturing execution system that generates consumable log files in the form of Event Journal Files (EVT files). [!include[interface](../includes/interface-name.md)] collects data from those EVT files.
+[!include[interface](../includes/product-long.md)] is a manufacturing execution system that generates consumable log files in the form of Event Journal Files (EVT files). [!include[interface](../includes/product-long.md)] collects data from those EVT files.
 
-A single interface instance can collect data from multiple [!include[interface](../includes/interface-name.md)] sources by configuring the interface to read EVT files from multiple locations.
+A single interface instance can collect data from multiple [!include[interface](../includes/product-long.md)] sources by configuring the interface to read EVT files from multiple locations.
 
 ## Event Journals
 
-Event journals are text files in which the BES logs batch events. For the [!include[interface](../includes/interface-name.md)] systems, the interface expects each line in the event journal to be composed of the following tab-delimited fields, in the order specified:
+Event journals are text files in which the BES logs batch events. For the [!include[interface](../includes/product-long.md)] systems, the interface expects each line in the event journal to be composed of the following tab-delimited fields, in the order specified:
 
 ```
 [TIMESTAMP] [BATCHID] [RECIPE] [DESCRIPT] [EVENT] [PVALUE] [EU] [AREA] [PROCCELL] [UNIT] [PHASE] [PHASEDESC] [USERID] [UNIQUEID] [COMMENT]

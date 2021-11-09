@@ -10,7 +10,7 @@ The interface logs operational messages during interface startup, data collectio
 
 **Note:** From the command line, use the pigetmsg utility.
 
-For detailed information about interface logging, refer to [OSIsoft Knowledge Base article KB00401](https://customers.osisoft.com/s/knowledgearticle?knowledgeArticleUrl=How-to-check-your-PI-Interface-log-files). 
+For detailed information about interface logging, refer to [How to check your PI Interface log files](https://osisoft.lightning.force.com/lightning/r/Knowledge__kav/ka01I000000Fn6iQAC/view). 
 
 For details about managing the error logging process, see the PI API Installation Instructions manual. 
 

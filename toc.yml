@@ -62,6 +62,7 @@
   - topicUid: BIF_BatchSetupTab # Modify for interface
   - topicUid: BIF_MergeSetupTab # Modify for interface
   - topicUid: BIF_OperationalSettingsTab # Modify for interface
+  - topicUid: BIF_MonitorTagSetupTab # No modifications required
   - topicUid: BIF_TestConfigurationTab # Modify for interface
   - topicUid: BIF_ServiceConfigurationTab # Modify for interface
 # Command Line Parameters
