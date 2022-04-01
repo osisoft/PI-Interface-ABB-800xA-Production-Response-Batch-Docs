@@ -63,9 +63,11 @@ The following table lists each monitor tag that you can disable from the **Monit
 | EquipmentSyncTime | Float32 | false | Time spent synching equipment per event list. |
 | TotalTime | Float32 | false | Total time spent caching and synching batches, tags, and equipment per event list. |
 | WaitingForEquipmentUB | Int32 | false | Number of unit batches waiting for unit defining events. |
-| NumberOfWorkOrders  <!-- PASX Only --> |    Int32 |   false | Number of Work Orders being processed.|
-| NumberofOpenWorkOrders <!-- PASX Only --> |   Int32 |   false | Number of Open Work Orders Being Processed.|
-| WorkOrderQueryTimeAvg  <!-- PASX Only --> | Float32 | false | WorkOrder Query Time Average.|
+
+<!-- PASX Monitor Tags Only 
+| NumberOfWorkOrders |    Int32 |   false | Number of Work Orders being processed.|
+| NumberofOpenWorkOrders |   Int32 |   false | Number of Open Work Orders Being Processed.|
+| WorkOrderQueryTimeAvg | Float32 | false | WorkOrder Query Time Average.| --> 
 
 <sup>1</sup>: Indicates whether the point that is created archives past values.
 
