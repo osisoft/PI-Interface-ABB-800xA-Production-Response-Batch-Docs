@@ -64,6 +64,7 @@ Point source for the interface instance. Point source is not case sensitive. Cor
     
 When creating event frames in PI AF, by default all reference elements are associated with child event frames. 
 
+<!-- WEM 4/7/22: This interface doesn't support failover
 ## Failover settings
 
 ### Failover tag (/FAILOVERTAG=x)
@@ -77,7 +78,8 @@ A unique identifier for this interface instance, used to coordinate which instan
 ### Failover swap time (/SWAPTIME=<seconds>)
 
 Select to specify how long an interface can be inactive before failover to another instance occurs. The default is 300 seconds. 
-
+-->
+    
 ## Security settings
 
 ### Specify point security (/PTSEC=x)
