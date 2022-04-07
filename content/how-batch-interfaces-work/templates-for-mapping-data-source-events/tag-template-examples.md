@@ -37,7 +37,7 @@ Resulting event added to PI point:
 * Value: Level:123.456:cm-Report_Just for Testing
 * Annotation: Batch_123
 
-The MDB module or PI AF asset for this phase module will have an alias that refers to this point.
+The PI AF asset for this phase module will have an alias that refers to this point.
 
 ## Multiple triggers for same tag
 
