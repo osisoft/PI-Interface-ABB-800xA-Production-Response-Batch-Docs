@@ -27,8 +27,6 @@ The following command line parameters are available.
 * [`/datasec=<string>`](#datasecstring)
 * [`/db =[#]`](#db-)
 * [`/dpretc`](#dpretc)
-* [`/failoverID =<string>`](#failoverid-string)
-* [`/failovertag =<tag name>`](#failovertag-tag-name)
 * [`/host =host:port`](#host-hostport)
 * [`/id =<identifier>`](#id-identifier)
 * [`/includeincompletedata`](#includeincompletedata)
@@ -60,10 +58,8 @@ The following command line parameters are available.
 * [`/scan =<seconds>`](#scan-seconds)
 * [`/singlerun`](#singlerun)
 * [`/smp ="equipment path"`](#smp-equipment-path)
-* [`/swaptime =<seconds>`](#swaptime-seconds)
 * [`/tbid`](#tbid)
 * [`/tbse`](#tbse)
-* [`/ts=GMT | LCL`](#tsgmt--lcl)
 * [`/writelink= <AFelementpath>`](#writelink-afelementpath)
 
 ### `/abto =<#days>` 
@@ -178,6 +174,7 @@ Example:
 
 -->
 
+<!--
 ### `/failoverID =<string>`
 
 (Optional) Configure a unique failover ID for the interface instance. Must be used with the `/failover` parameter.
@@ -190,6 +187,7 @@ Example: `/FailOverID="intf1"`
 
 Example: `/failovertag="Batch_FailoverTag"`
 
+-->
 ### `/host =host:port`
 
 (Required) Specifies the PI Data server where data is to be stored. Host is the IP address or domain name of the server node. Port is the port number for TCP/IP communication. The port is always 5450.
@@ -423,10 +421,11 @@ MB 6/9/21: Does not apply to 800xA
 (Optional) Override the default SQL data access timeout setting (100 seconds). 
 
 -->
-
+<!--
 ### `/swaptime =<seconds>`
 
 (Optional) Specifies, in seconds, how long the current primary interface must be unavailable before failover occurs. Default: 300 seconds.
+-->
 
 ### `/tbid`
 
@@ -435,11 +434,11 @@ MB 6/9/21: Does not apply to 800xA
 ### `/tbse`
 
 (Optional) Directs the interface to use top level recipe start/end events for creating batch objects. By default, the interface uses batch load/unload events. Intended for batches with S88 recipe types: Procedure, Unit Procedure, Operation, and Phase.
-
+<!--
 ### `/ts=GMT | LCL` 
 
 (Optional) Specifies how the interface interprets event timestamps from an SQL data source. Options are local time or GMT. Default is GMT.
-
+-->
 <!-- 
 
 MB 6/9/21: Do not apply to 800xA
