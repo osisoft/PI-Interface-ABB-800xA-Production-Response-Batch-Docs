@@ -12,7 +12,6 @@
     - topicUid: BIF_ConfigureSecurityForPIAF # No edits
     - topicUid: BIF_ConfigureSecurityForPIDataArchive # No edits
   - topicUid: BIF_CreateAndConfigureInterfaceInstance # Customized for ABB 800xA
-  - topicUid: BIF_ConfigureInstancesForFailover # No edits
   - topicUid: BIF_InterfaceConfiguration # Customized for ABB 800xA
   - topicUid: BIF_PIServerConnectivity
   - topicUid: BIF_LoggingAndErrorMessages
