@@ -10,7 +10,7 @@ uid: BIF_PropertyTemplates
 
 Properties associate data from the data source with a desired level of the batch or event frame hierarchy. To create properties, you define property templates on the **Templates** page of the PI Event Frame Interface Manager. The property templates specify the data to be extracted and the level of the hierarchy at which they are created. Placeholders, wildcards and advanced parsing features enable you to extract precisely the desired data from the events that the interface reads from the data source.
 
-With event frames, properties (AF attributes) can be created at any level of the batch hierarchy. However, in the batch database, properties are stored only at the top (procedure or batch) level of the batch hierarchy. This top-level collection of properties includes the properties for the lower levels of the batch hierarchy, arranged according to level.
+With event frames, properties (AF attributes) can be created at any level of the batch hierarchy. 
 
 To define a property template on the **Templates** page of the PI Event Frame Interface Manager, configure the following settings:
 

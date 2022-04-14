@@ -42,11 +42,12 @@ To help manage workload and memory usage, defines the maximum time frame for que
 ### Maximum stop time (/MAXSTOPTIME=<seconds>)
 
 Specifies the maximum time allowed for the interface to properly shutdown. If the shutdown process takes longer than the specified time, the interface is forced to terminate immediately. The default value is 120 seconds.
-
+<!-- WEM 4/7: /TS doesn't apply to this interface 
 ### Use local time stamps to process incoming events (/TS)
 
 Specifies whether timestamps from an SQL data source are interpreted as local time or GMT. By default, timestamps are interpreted as GMT. 
-
+-->
+    
 ## PI connection settings
 
 ### PI connection timeout (/PICONNTO=<seconds>)

@@ -36,7 +36,7 @@ uid: BIF_SupportedFeatures
 | UniInt-based | No |
 | Disconnected Startup | No |
 | SetDeviceStatus | Yes |
-| Failover | Yes |
+| Failover | No |
 | Vendor Software Required on PI Interface Node | No |
 | Vendor Hardware Required | No |
 | Additional PI Software Included with Interface | Yes  |
