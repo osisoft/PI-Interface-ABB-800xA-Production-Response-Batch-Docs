@@ -6,7 +6,7 @@ uid: BIF_EquipmentHierarchy
 
 <!-- Static topic. No modifications usually required -->
 
-When recording batch data from the data source in the PI Asset Framework, the interface creates PI AF elements representing equipment, according to data from the data source. The following equipment hierarchy is created:
+When recording batch data from the data source in the PI Asset Framework (AF), the interface creates PI AF elements representing equipment, according to data from the data source. The following equipment hierarchy is created:
 
 ![Equipmenthierarchy](../../images/equipment-hierarchy.png)
 
