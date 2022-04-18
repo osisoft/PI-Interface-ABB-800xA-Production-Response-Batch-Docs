@@ -21,7 +21,6 @@
     items:
     - topicUid: BIF_EventFrames 
     - topicUid: BIF_EquipmentHierarchy
-  - topicUid: BIF_EquipmentArbitrationEventsUnavailable  # No edits
   - topicUid: BIF_TemplatesForMappingDataSourceEvents # No edits
     items:
     - topicUid: BIF_PlaceholdersAndAdvancedParsing # No edits
