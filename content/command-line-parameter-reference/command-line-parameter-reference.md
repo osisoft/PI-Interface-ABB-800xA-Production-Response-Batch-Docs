@@ -38,7 +38,6 @@ The following command line parameters are available.
 * [`/mode =<mode>`](#mode-mode)
 * [`/mop`](#mop)
 * [`/mup`](#mup)
-* [`/noarbitration`](#noarbitration)
 * [`/ns[=lang]`](#nslang)
 * [`/piconnto =<seconds>`](#piconnto-seconds)
 * [`/pidato =<seconds>`](#pidato-seconds)
@@ -266,10 +265,6 @@ With merging enabled, only the CleaningTest batches are merged. To merge the oth
 ### `/mup`
 
 (Optional) Merge identically named sequential unit procedures running on the same unit into a single unit procedure. Unit procedures are not merged if the unit was used by another recipe between candidates for merging. The start time of the resulting merged unit procedure is the start of the earliest unit procedure, and the end time is the end time of the latest or longest unit procedure that was merged.
-
-### `/noarbitration`
-
-Create unit batches based solely on source batch recipe data. For use when the source Batch Executive System (BES) provides batch data without equipment arbitration.
 
 ### `/ns[=lang]`
 
