@@ -67,17 +67,17 @@ The following table lists examples of parsing a field that contains the followin
 
 | Example | Resulting Data |
 | ------- | -------------- |
-| [value, lbe=ʺN:ʺ] | 1123|E:kg|M:Local |
-| [value, lbi=ʺN:ʺ] | N:1123|E:kg|M:Local
-| [value, rbe=ʺtodʺ] | |U:brown |
-| [value, rbi=ʺtodʺ] | U:browntod |
-| [value, lbe=ʺU:ʺ, rbe=ʺ|ʺ] | Browntod |
-| [value, lbi=ʺU:ʺ, rbe=ʺ|ʺ] | U:browntod |
-| [value, lbe=ʺO:ʺ, rbi=ʺkgʺ] | 1200|N:1123|E:kg |
-| [value, delim=ʺ|ʺ,count=3] O:1200 |
-| [value, delim=ʺ|ʺ,count=3,lbe=ʺO:ʺ] | 1200 |
-| [value, delim=ʺ|ʺ,count=3,lbe=ʺC:SPʺ,rbe=ʺUNTʺ] | _CHARGE_AMO |
-| [value, delim=ʺ|ʺ,count=6,lbe=ʺM:ʺ] | Local |
+| [value, lbe=ʺN:ʺ] | 1123&#124;E:kg&#124;M:Local |
+| [value, lbi=ʺN:ʺ] | N:1123&#124;E:kg&#124;M:Local
+| [value, rbe=ʺtodʺ] | &#124;U:brown |
+| [value, rbi=ʺtodʺ] | &#124;U:browntod |
+| [value, lbe=ʺU:ʺ, rbe=ʺ&#124;ʺ] | Browntod |
+| [value, lbi=ʺU:ʺ, rbe=ʺ&#124;ʺ] | U:browntod |
+| [value, lbe=ʺO:ʺ, rbi=ʺkgʺ] | 1200&#124;N:1123&#124;E:kg |
+| [value, delim=ʺ&#124;ʺ,count=3] | O:1200 |
+| [value, delim=ʺ&#124;ʺ,count=3,lbe=ʺO:ʺ] | 1200 |
+| [value, delim=ʺ&#124;ʺ,count=3,lbe=ʺC:SPʺ,rbe=ʺUNTʺ] | _CHARGE_AMO |
+| [value, delim=ʺ&#124;ʺ,count=6,lbe=ʺM:ʺ] | Local |
 
 ## PIEVENT placeholders
 
