@@ -25,6 +25,8 @@ Specifies the level in recipe hierarchy as follows:
 |Phase State | 5 | PISubBatch Name field | Recipe[5].Name=[PhaseState] |
 | Phase Step | 6 | PISubBatch Name field | Recipe[6].Name=[PhaseStep] |
 
+**Note:** Phase State (PHASESTATE) and Phase Step (PHASESTEP) levels only exist in the recipe hierarchy after enabling the BATCHRCP interface (BATCHRCP = true).
+
 ### Name
 
 Defines the naming convention used by the interface to assign names to batch events. For event frames, this template modifies the Recipe AF attribute. For the Batch database, this template modifies the PIBatch name.
