@@ -4,7 +4,7 @@ uid: StartAndStopEvents
 
 # Start and stop events
 
-The interface determines the recipe hierarchy from the History response stream and reads allocated equipment from the RESOURCE_response stream. The start and end time of the task with levelnumber = 1 is read from the BatchStartTime and BatchEndTime variables in the Variable Response stream. The start and end times of other tasks are read from the Event Response stream, and the recipe name is read from the Variable Response stream.
+The interface determines the recipe hierarchy from the operation response stream and reads allocated equipment from the RESOURCE_response stream. The start and end time of the task with levelnumber = 1 is read from the BatchStartTime and BatchEndTime variables in the Variable Response stream. The start and end times of other tasks are read from the Event Response stream, and the recipe name is read from the Variable Response stream.
 
 Variable Response stream: The start and end times of other tasks are read from the Event Response stream, while the recipe name is read from the Variable Response stream.
 
