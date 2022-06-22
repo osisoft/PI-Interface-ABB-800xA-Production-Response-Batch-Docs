@@ -69,7 +69,7 @@ Configures the batch ID of the particular recipe object, overriding the incoming
 
 ### Module/Element Path
 
-Specifies the location in the PI module or AF element hierarchy where the unit or phase module resides. Valid for unit procedure (level 2) and phase (level 4). 
+Specifies the location in the PI module or AF element hierarchy where the unit or phase module resides. Valid for PIBatches (level 1), unit procedure (level 2) and phase (level 4) and uses configuration. 
 
 ### Product
 
