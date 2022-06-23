@@ -8,7 +8,7 @@ uid: BIF_RecipeTemplatesEFIM
 
 <!-- Topic requires customization for specific interface -->
 
-Recipe templates enable you to configure the names that are assigned and the data that is stored at each level of the batch hierarchy. A set of default recipe templates are is included with each batch interface. To display and override the default recipe templates, right-click the **Recipe Templates** node and choose **Add Default Templates**. The settings for recipe templates are as follows.
+Recipe templates enable you to configure the names that are assigned and the data that is stored at each level of the batch hierarchy. A set of default recipe templates is included with each batch interface. To display and override the default recipe templates, right-click the **Recipe Templates** node and choose **Add Default Templates**. The settings for recipe templates are as follows.
 
 ## Configuration
 
@@ -24,6 +24,8 @@ Specifies the level in recipe hierarchy as follows:
 | Phase | 4 | PISubBatch Name field | Recipe[4].Name=[Phase] |
 |Phase State | 5 | PISubBatch Name field | Recipe[5].Name=[PhaseState] |
 | Phase Step | 6 | PISubBatch Name field | Recipe[6].Name=[PhaseStep] |
+
+**Note:** Phase State (PHASESTATE) and Phase Step (PHASESTEP) levels only exist in the recipe hierarchy after enabling the BATCHRCP interface (BATCHRCP = true).
 
 ### Name
 
@@ -67,7 +69,7 @@ Configures the batch ID of the particular recipe object, overriding the incoming
 
 ### Module/Element Path
 
-Specifies the location in the PI module or AF element hierarchy where the unit or phase module resides. Valid for unit procedure (level 2) and phase (level 4). 
+Specifies the location in the PI module or AF element hierarchy where the unit or phase module resides. Valid for PIBatches (level 1), unit procedure (level 2) and phase (level 4) and uses configuration. 
 
 ### Product
 
