@@ -7,7 +7,7 @@ PI Interface for ABB 800xA Production Response Batch requires the installation o
 
 1. Install the ABB Ability Manufacturing Operations Management (MOM) Process Intelligence SDK on a server. It is not a requirement that you install the SDK in the same location where you installed the interface. It must be in a location where the interface can connect to it. Installing the SDK exposes DLL files that you need to install to make the interface work.
 
-1. Copy the following DLL files to the installation directory for the interface. To do this, locate the DLL file in your original file location and then place it in the folder where you installed the interface (%ProgramFiles(x86)%\pipc\interfaces\ABB800xaPR). 
+2. Copy the following DLL files to the installation directory for the interface by locating the DLL file in your original file location on the ABB Ability Manufacturing Operations Management (MOM) Process Intelligence SDK server and then placing it in the folder where you installed the interface (%ProgramFiles(x86)%\pipc\interfaces\ABB800xaPR). 
 
     | DLL File | Original File Location |
     |--|--|
