@@ -51,6 +51,8 @@
     items:
     - topicUid: BIF_PropertyTemplatesEFIM # Customized for ABB 800xA
     - topicUid: BIF_RecipeTemplatesEFIM # Customized for ABB 800xA
+      items:
+      - topicUid: BIF_RecipeDefaultProperties
     - topicUid: BIF_TagTemplatesEFIM # Customized for ABB
     - topicUid: BIF_LinkTemplates # No Edits
     - topicUid: BIF_Triggers # No edits
