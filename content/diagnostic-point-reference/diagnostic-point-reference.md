@@ -83,3 +83,4 @@ The last performance tag category is composed of timer tags, which are built aut
 | `<interfaceID>_TagSyncTime` | 31 | [UI_TAGSYNCTIME] | The time per scan it took the interface to synchronize local tag cache with the PI System. |
 | `<interfaceID>_EquipmentSyncTime` | 32 | [UI_EQUIPSYNCTIME] | The time per scan it took the interface to synchronize local equipment cache with the PI System. |
 | `<interfaceID>_TotalTime` | 33 | [UI_TOTALTIME] | The total time per scan it took to read data, cache it in local memory and synchronize the local cache with the PI System. |
+  
