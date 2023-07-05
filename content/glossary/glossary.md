@@ -75,8 +75,7 @@ subdirectory of the Interfaces directory under PIHOME64. For example, files for 
 
 ### PI Message Log
 
-The PI message log is the file to which OSIsoft interfaces based on UniInt 4.5.0.x and later write informational, debug and error messages. When a PI interface runs, it writes to the local PI message log. This message file 
-can only be viewed using the PIGetMsg utility. See the Message Logs section of the PI Universal Interface (UniInt) User Guide for more information on how to access these messages. 
+The PI message log is the file to which OSIsoft interfaces (based on UniInt 4.5.0.x and later) write informational, debug and error messages. When a PI interface runs, it writes to the local PI message log. This message file can only be viewed using the PIGetMsg utility. See the Message Logs section of the PI Universal Interface (UniInt) User Guide for more information on how to access these messages. 
 
 ### PI SDK
 
