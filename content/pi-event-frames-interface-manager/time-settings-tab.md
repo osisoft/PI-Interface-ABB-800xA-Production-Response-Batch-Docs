@@ -52,11 +52,11 @@ Specifies whether timestamps from an SQL data source are interpreted as local ti
 
 ### PI connection timeout (/PICONNTO=<seconds>)
 
-Override the default PI SDK Connection TimeOut property.
+Override the default PI Data server Connection TimeOut property.
 
 ### PI data access timeout (/PIDATO=<seconds>)
 
-Override the default PI SDK Data Access TimeOut property.
+Override the default PI Data Access TimeOut property.
 
 ### Retry (/RETRY=<seconds>)
 
