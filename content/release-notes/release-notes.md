@@ -118,7 +118,7 @@ The PI Interface for ABB 800xA Production Response Batch can be installed or upg
 
 For additional information regarding the PI Interface for ABB 800xA Production Response Batch installation, please see the Installation instructions portion of the *PI Interface for ABB 800xA Production Response Batch (ABB800xaPR) User Guide*. This user guide is available for download from the [OSIsoft Customer Portal](https://my.osisoft.com/).
 
-### Uninstalling PI Web API
+### Uninstalling PI Interface for ABB 800xA PR Batch
 
 The PI Interface for ABB 800xA Production Response Batch Interface can be uninstalled using the *Programs and Features* list accessible from the *Windows Control Panel*. After accessing the Programs and Features list, select the entry named *PI Interface for ABB 800xA Batch Interface (ABB800xA)* and then select *Uninstall* from the menu.
 
