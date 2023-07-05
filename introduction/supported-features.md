@@ -17,6 +17,7 @@ uid: BIF_SupportedFeatures
 | Stores batch data in PIBatch Database and PI Module Database | No |
 | Stores batch data in PI AF | Yes |
 | Supports equipment arbitration events | No |
+| Supports n-way buffering | Yes|
 | ICU Control | No (use PI Event Frame Interface Manager configuration tool) |
 | PI Point Data Types | Int32/ Float32/ String |
 | Sub-second Timestamps | Yes |
@@ -28,7 +29,6 @@ uid: BIF_SupportedFeatures
 | Supports Questionable Bit | No |
 | Supports Multi-character Pointsource | Yes |
 | Maximum Point Count | No maximum |
-| Uses PI SDK | Yes: version 1.3.4.333 or higher required|
 | Uses AF SDK | Yes: version 2.5.x or higher required |
 | PINet String Support | N/A |
 | Source of Timestamps | BES (not system time on interface node) |

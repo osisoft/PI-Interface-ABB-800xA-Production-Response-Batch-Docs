@@ -14,6 +14,9 @@
       - topicUid: BIF_ConfigureSecurityForPIAF # No modifications required
       - topicUid: BIF_ConfigureSecurityForPIDataArchive # No modifications required
   - topicUid: BIF_CreateAndConfigureInterfaceInstance # No modifications required
+  - topicUid: BIF_InterfaceFailover
+    items:
+      - topicUid: BIF_ConfigureInstancesForFailover
   - topicUid: BIF_PIServerConnectivity # No modifications required
   - topicUid: BIF_LoggingAndErrorMessages # No modifications required
 # How Batch Interfaces Work
@@ -23,6 +26,7 @@
     items: 
     - topicUid: BIF_InterfaceModes # No modifications required
     - topicUid: BIF_HowBatchDataIsStored # Modify for interface
+    - topicUid: BIF_batchlistmanagement
       items:
       - topicUid: BIF_EventFrames # No modifications required
     - topicUid: BIF_EquipmentHierarchy # No modifications required
@@ -70,6 +74,11 @@
 # Initialization File
 - topicUid: BIF_InitializationFileReference # Modify for interface
   items: 
+  - topicUid: BIF_sourcetemplatesettings
+  - topicUid: BIF_Recipetemplates
+  - topicUid: BIF_Tagtemplates
+  - topicUid: BIF_Propertytemplates
+  - topicUid: BIF_Translationtemplates
   - topicUid: BIF_InitializationFileExamples # Modify for interface
 # Diagnostic Point Reference
 - topicUid: BIF_DiagnosticPointReference # No modifications required

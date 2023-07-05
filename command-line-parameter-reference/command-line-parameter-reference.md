@@ -132,7 +132,7 @@ Example: `/failovertag="Batch_FailoverTag"`
 
 ### `/host =host:port`
 
-(Required) Specifies the PI Data server where data is to be stored. Host is the IP address or domain name of the server node. Port is the port number for TCP/IP communication. The port is always 5450.
+(Required) Specifies the PI Data server or PI Collective where data is to be stored. Host is the IP address or domain name of the server node. Port is the port number for TCP/IP communication. The port is always 5450.
 
 Examples: 
 
