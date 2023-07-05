@@ -12,9 +12,6 @@
       - topicUid: BIF_ConfigureSecurityForPIAF # No modifications required
       - topicUid: BIF_ConfigureSecurityForPIDataArchive # No modifications required
   - topicUid: BIF_CreateAndConfigureInterfaceInstance # No modifications required
-  - topicUid: BIF_InterfaceFailover
-    items:
-      - topicUid: BIF_ConfigureInstancesForFailover
   - topicUid: BIF_PIServerConnectivity # No modifications required
   - topicUid: BIF_LoggingAndErrorMessages # No modifications required
 # How Batch Interfaces Work
