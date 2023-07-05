@@ -8,23 +8,23 @@
   - topicUid: InstallDLLsforABB800xA # ABB-800xA content
   - topicUid: BIF_SecurityOverview # No edits
     items:
-    - topicUid: BIF_AssignPermissions # No edits
-    - topicUid: BIF_ConfigureSecurityForPIAF # No edits
-    - topicUid: BIF_ConfigureSecurityForPIDataArchive # No edits
-  - topicUid: BIF_CreateAndConfigureInterfaceInstance # Customized for ABB 800xA
-  - topicUid: BIF_InterfaceConfiguration # Customized for ABB 800xA
-  - topicUid: BIF_PIServerConnectivity
-  - topicUid: BIF_LoggingAndErrorMessages
-- topicUid: BIF_HowBatchInterfacesWork # No edits
+      - topicUid: BIF_AssignPermissions # No modifications required
+      - topicUid: BIF_ConfigureSecurityForPIAF # No modifications required
+      - topicUid: BIF_ConfigureSecurityForPIDataArchive # No modifications required
+  - topicUid: BIF_CreateAndConfigureInterfaceInstance # No modifications required
+  - topicUid: BIF_InterfaceFailover
+    items:
+      - topicUid: BIF_ConfigureInstancesForFailover
+  - topicUid: BIF_PIServerConnectivity # No modifications required
+  - topicUid: BIF_LoggingAndErrorMessages # No modifications required
+# How Batch Interfaces Work
+- topicUid: BIF_HowBatchInterfacesWork # No modifications required
   items:
-  - topicUid: BIF_HowInterfacesProcessBatchEventData # Customized for ABB 800xA
-    items:
-    - topicUid: BIF_EventFrames 
-    - topicUid: BIF_EquipmentHierarchy
-  - topicUid: BIF_TemplatesForMappingDataSourceEvents # No edits
-    items:
-    - topicUid: BIF_PlaceholdersAndAdvancedParsing # No edits
-    - topicUid: BIF_TagTemplates # No edits
+  - topicUid: BIF_HowInterfacesProcessBatchEventData # No modifications required
+    items: 
+    - topicUid: BIF_InterfaceModes # No modifications required
+    - topicUid: BIF_HowBatchDataIsStored # Modify for interface
+    - topicUid: BIF_batchlistmanagement
       items:
       - topicUid: BIF_TagTemplateExamples # No edits
     - topicUid: BIF_LinkTemplates # No edits
@@ -66,7 +66,17 @@
 - topicUid: BIF_CommandLineParameterReference # Customized for ABB 800xA
 - topicUid: BIF_InitializationFileReference # Customized for ABB 800xA
   items: 
-  - topicUid: BIF_InitializationFileExamples # Customized for ABB 800xA
-- topicUid: BIF_DiagnosticTagReference # No edits
-- topicUid: BIF_Glossary # No Edits
+  - topicUid: BIF_sourcetemplatesettings
+  - topicUid: BIF_Recipetemplates
+  - topicUid: BIF_Tagtemplates
+  - topicUid: BIF_Propertytemplates
+  - topicUid: BIF_Translationtemplates
+  - topicUid: BIF_InitializationFileExamples # Modify for interface
+# Diagnostic Point Reference
+- topicUid: BIF_DiagnosticPointReference # No modifications required
+# Event file monitor utility
+- topicUid: BIF_EventFileMonitorUtility # No modifications required
+# Glossary
+- topicUid: BIF_Glossary
+# Technical Support and Feedback
 - topicUid: ABBPRReleaseNotes # New for 5.1.6.7
