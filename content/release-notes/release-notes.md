@@ -6,13 +6,13 @@ uid: ABBPRReleaseNotes
 
 PI Interface for ABB800xA Production Response Batch Release
 
-**Version 5.1.6.7**
+**Version 5.1.6.9**
 
 ## Overview
 
 PI Interface for ABB 800xA Production Response Batch uses event streaming technology to collect ABB task driven system data from an ABB API. The interface converts this data to PI tags and PI batch properties and stores the collected data as event frames and elements within PI Asset Framework (PI AF). You can use tag templates to control PI point creation and event population. All elements, tags, tag aliases, and health tags are automatically created on the PI and AF Servers.
 
-This interface requires ABB Ability Manufacturing Operations Management Process Intelligence SDK to be installed by the end user to enable interface operation.
+This interface requires ***ABB Ability Manufacturing Operations Management Process Intelligence SDK*** to be installed by the end user to enable interface operation.
 
 This interface is compatible with the following 800xA Production Response MES versions:
 
@@ -20,7 +20,7 @@ This interface is compatible with the following 800xA Production Response MES ve
 * 6.0.3.3
 * 6.1.1
 
-The 5.1.6.7 release of PI Interface for ABB800xA Production Response Batch internally replaces PI SDK with AF SDK - this improves the security, robustness, and communication capabilities of the interface.
+The 5.1.6.9 release of PI Interface for ABB800xA Production Response Batch internally replaces PI SDK with AF SDK - this improves the security, robustness, and communication capabilities of the interface.
 
 Note: There are two OSIsoft interfaces for ABB800xA Batch -- one for the Production Data Log (Oracle-based 800xA backend), and one for Production Response (SQL-based 800xA backend). Please ensure this interface is compatible with your ABB 800xA version before proceeding.
 
@@ -68,8 +68,6 @@ This section lists items that were resolved or added in this release.
 | 52120     | Whenever an interface becomes the primary, it will use the /RST command line switch as the start date and process the batches. |
 | 67289     | UniRecord exports now include all UniRecord fields. |
 | 67298     | Event sorting is faster and memory consumption is better managed during event queuing. |
-| 67927     | A UID in the UIDLIST with zero or empty start times will be ignored.
-| 68377     | Changed the Batch list management algorithm to improve event processing accuracy (prevent missed batches). |
 | 68907     | Default account to setup interface service is now Default Virtual User (NT Service/<Interface Instance Name>). |
 | 69287     | Updated the BIFConfig utility to only allow TagPath properties to be set on Asset Templates and Property Templates. Fixed issue where the TAGPATH value was not being saved properly. |
 | 69486     | All attributes are now created on the correct event frame. |
@@ -107,14 +105,14 @@ This interface is a 64-bit application.
 | Microsoft Visual C++ 2015-2019 Redistributable (x86) | 14.21.27702 |
 | Microsoft Visual C++ 2015-2019 Redistributable (x64) | 14.21.27702 |
 | PI AF Client 2018 SP3 Patch 4 | 2.10.10.2539 |
-| PI Interface for ABB 800xA Production Response Batch (ABB800xaPR) | 5.1.6.7 |
+| PI Interface for ABB 800xA Production Response Batch (ABB800xaPR) | 5.1.6.9 |
 | PI Network Subsystem Support (PINS)* | 3.4.435.538 |
   
 *The PI Network Subsystem Support (PINS) component is not displayed on the installation welcome screen if the PI Data Archive is installed already.
 
 ### Installation and Upgrade
 
-The PI Interface for ABB 800xA Production Response Batch can be installed or upgraded using the PI Interface for ABB 800xA Production Response Batch installation kit, **ABB800xaPR_5.1.6.7_.exe**. This installation kit can be obtained by using the How to Download Products link listed in the OSIsoft Customer Portal How To's list. This list is located on the [OSIsoft Customer Portal](https://my.osisoft.com/).
+The PI Interface for ABB 800xA Production Response Batch can be installed or upgraded using the PI Interface for ABB 800xA Production Response Batch installation kit, **ABB800xaPR_5.1.6.9_.exe**. This installation kit can be obtained by using the How to Download Products link listed in the OSIsoft Customer Portal How To's list. This list is located on the [OSIsoft Customer Portal](https://my.osisoft.com/).
 
 For additional information regarding the PI Interface for ABB 800xA Production Response Batch installation, please see the Installation instructions portion of the *PI Interface for ABB 800xA Production Response Batch (ABB800xaPR) User Guide*. This user guide is available for download from the [OSIsoft Customer Portal](https://my.osisoft.com/).
 
@@ -128,4 +126,29 @@ We are [committed to releasing secure products](https://docs.osisoft.com/bundle/
 
 We [proactively disclose](https://docs.osisoft.com/bundle/security-commitment-and-disclosure-standards/page/securitycommitmentanddisclosurestandards.html#vulnerability-communication) aggregate information about the number and severity of security vulnerabilities addressed in each release. The tables below provide an overview of security issues addressed and their relative severity based on [standard scoring](https://docs.osisoft.com/bundle/security-commitment-and-disclosure-standards/page/securitycommitmentanddisclosurestandards.html#vulnerability-scoring). 
 
-There are no security vulnerabilities in this release. 
+### Overview of New Vulnerabilities Found or Fixed
+
+This section provides relevant security-related information to guide your installation or upgrade decision. We proactively disclose aggregate information about the number and severity of the security vulnerabilities that are fixed in this release of the PI Interface for ABB 800xA Production Response Batch.
+
+#### Vulnerabilities fixed in this release
+
+For this release of the PI Interface for ABB 800xA Production Response Batch Interface, one vulnerability was identified and fixed. Based on the CVSS scoring system, the vulnerability was categorized as a Low (0.0 - 3.9). The vulnerability has been resolved in the PI Interface for ABB 800xA Production Response Batch Interface. To reduce exposure to these security issues, upgrade to the latest release.
+
+No additional security vulnerabilities are applicable to this release. Subcomponents of this release contain known vulnerabilities which are not exploitable in PI Interface for ABB 800xA Production Response Batch Interface. This table lists the known vulnerabilities along with their mitigation in this product. 
+
+| Severity Category | CVSS Base Score Range | Number of Fixed Vulnerabilties  |
+| :-------- | :---------------| :-------------------------------------------- |
+| Critical  | 9.0 - 10  |  0  |
+| High      | 7.0 - 8.9 |  0  |
+| Medium    | 4.0 - 6.9 |  0  |
+| Low       | 0 - 3.9   |  1  |
+
+| Component | Version | CVE or Reference  | CVS  | Mitigation
+| :-------- | :-------| :---------------- | :--- | :--------- |
+| SQLite    | 3.42.0  | https://nvd.nist.gov/vuln/detail/CVE-2023-36191 | 3.6 | Our software does not use the -nonce option within SQLite, and therefore this vulnerability does not apply to this release. |
+
+
+
+
+
+
