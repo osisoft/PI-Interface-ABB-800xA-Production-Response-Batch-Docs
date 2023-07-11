@@ -140,12 +140,12 @@ No additional security vulnerabilities are applicable to this release. Subcompon
 | :-------- | :---------------| :-------------------------------------------- |
 | Critical  | 9.0 - 10  |  0  |
 | High      | 7.0 - 8.9 |  0  |
-| Medium    | 4.0 - 6.9 |  0  |
-| Low       | 0 - 3.9   |  1  |
+| Medium    | 4.0 - 6.9 |  1  |
+| Low       | 0 - 3.9   |  0  |
 
 | Component | Version | CVE or Reference  | CVS  | Mitigation
 | :-------- | :-------| :---------------- | :--- | :--------- |
-| SQLite    | 3.42.0  | https://nvd.nist.gov/vuln/detail/CVE-2023-36191 | 3.6 | Our software does not use the -nonce option within SQLite, and therefore this vulnerability does not apply to this release. |
+| SQLite    | 3.42.0  | https://nvd.nist.gov/vuln/detail/CVE-2023-36191 | 5.5 | Our software does not use the -nonce option within SQLite, and therefore this vulnerability does not apply to this release. |
 
 
 
