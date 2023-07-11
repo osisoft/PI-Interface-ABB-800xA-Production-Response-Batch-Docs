@@ -140,8 +140,10 @@ No additional security vulnerabilities are applicable to this release. Subcompon
 | :-------- | :---------------| :-------------------------------------------- |
 | Critical  | 9.0 - 10  |  0  |
 | High      | 7.0 - 8.9 |  0  |
-| Medium    | 4.0 - 6.9 |  1  |
-| Low       | 0 - 3.9   |  0  |
+| Medium    | 4.0 - 6.9 |  0  |
+| Low       | 0 - 3.9   |  1  |
+
+This release of the PI Interface for ABB 800xA Production Response Batch Interface contains 1 reported security issue. The vulnerability and its mitigation can be found in the following table:
 
 | Component | Version | CVE or Reference  | CVS  | Mitigation
 | :-------- | :-------| :---------------- | :--- | :--------- |
